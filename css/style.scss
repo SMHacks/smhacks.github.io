@@ -24,6 +24,9 @@ body {
       text-decoration: underline;
     }
   }
+  @media (max-width: 800px) {
+    font-size: 1em;
+  }
 }
 
 .outbox {
