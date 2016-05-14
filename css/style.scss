@@ -204,11 +204,11 @@ body {
 }
 
 #sponsors {
-  background: #235ea8;
+  background-color: #6198de;
   min-height: initial;
-  color: white;
+  color: black;
   .title {
-    color: #ff7242;
+    color: black;
   }
   .inbox {
     width: 80%;
@@ -221,6 +221,7 @@ body {
       font-style: italic;
     }
     div {
+      color: white;
       .button {
         padding: 15px 30px;
         border-radius: 10px;
@@ -240,25 +241,27 @@ body {
 #partners {
   min-height: initial;
   margin-bottom: 0px;
-  background-color: #153a67;
+  background-color: #a2c2eb;
   color: #d74a41;
   .inbox {
     display: table;
     margin: 0 auto;
     text-align: center;
-    width: 100%;
+    width: 50%;
     .partner {
       height:130px;
       display: inline-block;
       float: left;
-      width: 100%;
-      .stream {
-        background-image: url("../images/sponsors/stream.jpg");
-        background-size: auto auto;
-        background-repeat: no-repeat;
-        background-position: center center;
+      width: 50%;
+      @media(max-width: 800px) {
         width: 100%;
-        height: 100%;
+      }
+      img {
+        width: auto;
+        height: 120px;
+        &.stream {
+          border-radius: 50%;
+        }
       }
     }
   }

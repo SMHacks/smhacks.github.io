@@ -20,6 +20,9 @@ body {
     body a:hover {
       color: inherit;
       text-decoration: underline; }
+  @media (max-width: 800px) {
+    body {
+      font-size: 1em; } }
 
 .outbox {
   max-width: 100%;
@@ -161,11 +164,11 @@ body {
           padding-top: 5px; }
 
 #sponsors {
-  background: #235ea8;
+  background-color: #6198de;
   min-height: initial;
-  color: white; }
+  color: black; }
   #sponsors .title {
-    color: #ff7242; }
+    color: black; }
   #sponsors .inbox {
     width: 80%;
     margin: 0 auto;
@@ -174,39 +177,42 @@ body {
       margin-bottom: 30px; }
     #sponsors .inbox i {
       font-style: italic; }
-    #sponsors .inbox div .button {
-      padding: 15px 30px;
-      border-radius: 10px;
-      background-color: #194377;
-      text-transform: uppercase;
-      transition: .35s; }
-      #sponsors .inbox div .button:hover {
-        background-color: #93b9e8;
-        color: black;
-        border-radius: 15px; }
+    #sponsors .inbox div {
+      color: white; }
+      #sponsors .inbox div .button {
+        padding: 15px 30px;
+        border-radius: 10px;
+        background-color: #194377;
+        text-transform: uppercase;
+        transition: .35s; }
+        #sponsors .inbox div .button:hover {
+          background-color: #93b9e8;
+          color: black;
+          border-radius: 15px; }
 
 #partners {
   min-height: initial;
   margin-bottom: 0px;
-  background-color: #153a67;
+  background-color: #a2c2eb;
   color: #d74a41; }
   #partners .inbox {
     display: table;
     margin: 0 auto;
     text-align: center;
-    width: 100%; }
+    width: 50%; }
     #partners .inbox .partner {
       height: 130px;
       display: inline-block;
       float: left;
-      width: 100%; }
-      #partners .inbox .partner .stream {
-        background-image: url("../images/sponsors/stream.jpg");
-        background-size: auto auto;
-        background-repeat: no-repeat;
-        background-position: center center;
-        width: 100%;
-        height: 100%; }
+      width: 50%; }
+      @media (max-width: 800px) {
+        #partners .inbox .partner {
+          width: 100%; } }
+      #partners .inbox .partner img {
+        width: auto;
+        height: 120px; }
+        #partners .inbox .partner img.stream {
+          border-radius: 50%; }
 
 #team {
   background: linear-gradient(#34495e, #2c3e50); }
