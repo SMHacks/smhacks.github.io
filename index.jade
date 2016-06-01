@@ -6,7 +6,7 @@ html
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no')
     title SM Hacks
-    link(rel='stylesheet prefetch' href='https://bootswatch.com/readable/bootstrap.min.css')
+    link(rel='stylesheet prefetch' href='bootstrap.css')
     link(rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css')
     link(rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Cabin')
     link(rel='stylesheet prefetch' href='style.css')
@@ -18,7 +18,7 @@ html
     .loading
       img#logo(src='logo_2.0_solo.svg')
       .circle
-    img.bg(src='http://www.verdedesigninc.com/wp-content/uploads/2014/04/foster-city-1.jpg')
+    img.bg.scrollme.animateme(data-when='exit' data-from=0 data-to=1 data-translatey=-500 src='http://www.verdedesigninc.com/wp-content/uploads/2014/04/foster-city-1.jpg')
     .cover
       .container.text-center
         .row
@@ -39,7 +39,7 @@ html
       #collapse.collapse.navbar-collapse
         ul.nav.navbar-nav.navbar-right
           li: a(href='#faq') FAQ
-          li: a(href='#schedule') Schedule
+          //li: a(href='#schedule') Schedule
           li: a(href='#sponsors') Sponsors
           li: a(href='#partners') Partners
           li: a(href='#update') Subscribe
@@ -60,14 +60,14 @@ html
               p A hackathon is a 24-hour programming marathon where your ideas come to life. Over the course of the weekend, students from all backgrounds and all skill levels collaborate in teams of up to four to build something awesome.
             .col-sm-4
               h3 What if I don't know how to code?
-              p No worries! SM Hacks is the perfect time to learn how to code and all students, regardless of skill level and experience, are welcome. There will be plenty of mentors on hand glad to answer any and all questions and workshops specifically designed for those with no prior experience. Stay tuned for more information about workshops!
+              p No worries! SM Hacks is the perfect time to learn how to code and all students, regardless of skill level and experience, are welcome. There will be plenty of mentors on hand glad to answer any and all questions and workshops specifically designed for those with no prior experience. #[a(href='#update') Stay tuned] for more information about workshops!
           .row.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000)
             .col-sm-4
               h3 Do I have to be in high school?
               p Yes, only current high school students will be able to attend. Unfortunately, we are not accepting middle school students. College students are welcome to help out as mentors!
             .col-sm-4
               h3 What if I don't have a team or an idea?
-              p No worries! It is not uncommon for people to come into the hackathon without an already-formed group, but we'll make sure you're matched with the right people! We will have a team formation and ideation session the first night so everyone can find the perfect team and come up with awesome ideas, so don't you worry first-time hackers!
+              p No worries! It is not uncommon for people to come into the hackathon without an already-formed group, but we'll make sure you're matched with the right people. We will have a team formation and ideation session the first night so everyone can find the perfect team and come up with awesome ideas, so don't you worry first-time hackers!
             .col-sm-4
               h3 How big can teams be?
               p Teams can be up to four people. While you may work as an individual, we highly encourage collaborating with others. If you don't have a team or need help finding one, make sure not to miss our team formation and ideation session on Saturday.
@@ -77,10 +77,10 @@ html
               p Attendees should bring a valid student ID or some other form of identification, as well as a signed and completed waiver. Bring laptops and chargers, along with any other technology that you may want to use! We will have designated sleeping spots so feel free to bring a sleeping bag and pillow. Also it is highly suggested that you bring toiletries so you can feel refreshed and beautiful!
             .col-sm-4
               h3 How much does it cost to attend?
-              p Nothing! Just bring your beautiful self and ideas and we will provide you with the food, Wifi, workspace, and swag!
+              p Nothing! Just bring your beautiful self and ideas and we will provide you with the food, Wi-Fi, workspace, and swag!
             .col-sm-4
               h3 How can I apply?
-              p Applications are not open yet, but they will be processed on a rolling basis. To be notified when applications are open, click here.
+              p Applications are not open yet, but they will be processed on a rolling basis. To be notified when applications are open, #[a(href='#update') subscribe].
           .row.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000)
             .col-sm-4
               h3 What is the schedule like?
@@ -89,18 +89,19 @@ html
               h3 What if I have another question?
               p Email us at <a href='mailto:hi@smhacks.com'>hi@smhacks.com</a> if you have any additional questions. We are always happy to help!
         hr
-        #schedule.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatex=-1000)
-          h2.text-center Schedule
-          .row.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000)
-            .col-sm-6.text-center
-              h3 Day 1
-              ul.list-unstyled
-                li TBD
-            .col-sm-6.text-center
-              h3 Day 2
-              ul.list-unstyled
-                li TBD
-        hr
+        //
+          #schedule.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatex=-1000)
+            h2.text-center Schedule
+            .row.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000)
+              .col-sm-6.text-center
+                h3 Day 1
+                ul.list-unstyled
+                  li TBD
+              .col-sm-6.text-center
+                h3 Day 2
+                ul.list-unstyled
+                  li TBD
+          hr
         #sponsors.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatex=1000)
           h2.text-center Sponsors
           .row

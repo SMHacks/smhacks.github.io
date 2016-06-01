@@ -4,6 +4,7 @@ $('nav').data('offset-top',$(window).height())
 $('html,body').css('overflow-y','hidden')
 $(window).width()<768&&($('.scrollme').removeClass('scrollme'),$('.animateme').removeClass('animateme'))
 $(window).load(function(){
+  $('.bg').css($(window).width()/$(window).height()>1830/1027?{width:'100%',height:'auto'}:{width:'auto',height:'100%'})
 	$('.circle').delay(500).animate({
 		height:'2000px',
 		width:'2000px',
@@ -19,6 +20,7 @@ $(window).load(function(){
 	})
   $('a[href*="#"]:not([href="#"])').click(function(){
     if(location.pathname.replace(/^\//,'')==this.pathname.replace(/^\//,'')&&location.hostname==this.hostname){
+      $('.navbar-toggle').click()
       target=$(this.hash)
       target=target.length?target:$('[name='+this.hash.slice(1)+']')
       if(target.length){
@@ -31,9 +33,11 @@ $(window).load(function(){
   })
   $('#s').click(function(){
     $.post('https://smhacks-molarmanful.rhcloud.com/',{email:$('#u').val()},function(x){
-      $('#a').text(x).slideDown(100).addClass(x.match(/email/i)?'alert-danger':'alert-success').removeClass(x.match(/email/i)?'alert-success':'alert-danger').delay(4000).slideUp(200,function(){
-        $('#a').hasClass('alert-success')&&$('#update').slideUp(200)
-      })
+      $('#a').text(x).slideDown(100).addClass(x.match(/email/i)?'alert-danger':'alert-success').removeClass(x.match(/email/i)?'alert-success':'alert-danger').promise().done(function(){
+        $('#a').hasClass('alert-success')&&$('#u,#s').attr('disabled','true')
+      }).delay(4000).slideUp(200)
     })
   })
+}).resize(function(){
+  $('.bg').css($(window).width()/$(window).height()>1830/1027?{width:'100%',height:'auto'}:{width:'auto',height:'100%'})
 })
