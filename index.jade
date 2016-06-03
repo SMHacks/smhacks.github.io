@@ -2,6 +2,7 @@
 doctype html
 html
   head
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.load.min.js')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no')
@@ -10,15 +11,13 @@ html
     link(rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css')
     link(rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Cabin')
     link(rel='stylesheet prefetch' href='style.css')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
-    script(src='https://code.jquery.com/ui/1.11.4/jquery-ui.min.js')
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
-    script(src='https://rawgit.com/nckprsn/scrollme/master/jquery.scrollme.min.js')
+    script.
+      head.load('//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js','//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js','//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js','//rawgit.com/nckprsn/scrollme/master/jquery.scrollme.min.js','main.js')
   body
     .loading
       img#logo(src='logo_2.0_solo.svg')
       .circle
-    img.bg.scrollme.animateme(data-when='exit' data-from=0 data-to=1 data-translatey=-500 src='http://www.verdedesigninc.com/wp-content/uploads/2014/04/foster-city-1.jpg')
+    #particles-js.bg
     .cover
       .container.text-center
         .row
@@ -28,7 +27,7 @@ html
             p.lead San Mateo's first <b>high school</b> hackathon.
             //a.btn.btn-lg.btn-default Sign up!
             br
-            i.fa.fa-angle-down.fa-5x.scrollme.animateme(data-when='exit' data-from=0 data-to=1 data-translatey=500 data-rotatez=360)
+            i.fa.fa-angle-down.fa-5x.scrollme.animateme(data-when='exit' data-from=0 data-to=.5 data-translatey=500 data-rotatez=360 data-opacity=0)
     nav.navbar.navbar-default(data-spy='affix')
       .navbar-header
         b.navbar-brand SM Hacks
@@ -114,7 +113,7 @@ html
           .row.text-center
             .col-sm-6
               a(href='http://streameducation.org' target='_blank')
-                img.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000 src='stream.jpg')
+                img.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000 src='stream.png')
             .col-sm-6
               a(href='https://mlh.io' target='_blank')
                 img.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000 src='mlh-logo.png')
@@ -147,4 +146,3 @@ html
               .col-sm-7.hidden-xs
                 p.text-muted Made with <i class='fa fa-heart' style='color:#ff7242'></i> by SM Hacks.
               .col-sm-4.hidden-xs
-    script(src='main.js')

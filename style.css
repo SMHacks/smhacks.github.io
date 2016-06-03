@@ -41,13 +41,19 @@ html,body{
 }
 .bg{
   position:fixed;
-  -o-object-fit:contain;
-     object-fit:contain;
+  height:200%;
+  width:100%;
   top:0;
-  right:0;
-  z-index:-100;
-  -webkit-filter:grayscale(50%) brightness(70%) opacity(50%);
-          filter:grayscale(50%) brightness(70%) opacity(50%);
+  left:0;
+  background-color:#ff7242;
+  background-image:url('');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:50% 50%;
+}
+canvas{
+  display:block;
+  vertical-align:bottom;
 }
 .cover{
   display:table;
@@ -56,6 +62,7 @@ html,body{
   width:100%;
   min-height:100%;
   color:#333;
+  pointer-events:none;
 }
 .cover h1{
   line-height:.1em;
@@ -131,7 +138,7 @@ html,body{
   top:100%;
   bottom:0;
   color:#444444;
-  background-color:#fefefe;
+  background-color:rgba(254,254,254,.7);
 }
 .content a{
   color:#ff7242 !important;
