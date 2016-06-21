@@ -143,9 +143,20 @@ canvas{
 .content a{
   color:#ff7242 !important;
 }
-#partners img{
+#partners img, #sponsors img{
   padding:10px;
-  width:50%;
+  width:55%;
+  text-align:center;
+}
+#hackclub{
+  width:90% !important;
+  margin-top:10%;
+}
+#mlw{
+  width:45% !important;
+}
+#mlh{
+  margin-top:5%;
 }
 hr{
   margin-bottom:120px;

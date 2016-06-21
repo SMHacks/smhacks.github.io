@@ -6,7 +6,7 @@ $(window).load(function(){
   particlesJS("particles-js", {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 70,
         "density": {
           "enable": true,
           "value_area": 1000
@@ -23,11 +23,6 @@ $(window).load(function(){
         },
         "polygon": {
           "nb_sides": 11
-        },
-        "image": {
-          "src": "img/github.svg",
-          "width": 100,
-          "height": 100
         }
       },
       "opacity": {
