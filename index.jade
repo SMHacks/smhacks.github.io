@@ -12,7 +12,7 @@ html
     link(rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Cabin')
     link(rel='stylesheet prefetch' href='style.css')
     script.
-      head.load('//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js','//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js','//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js','//rawgit.com/nckprsn/scrollme/master/jquery.scrollme.min.js','main.js')
+      head.load('//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js','//rawgit.com/nckprsn/scrollme/master/jquery.scrollme.min.js','//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js','//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js','main.js')
   body
     .loading
       img#logo(src='logo_2.0_solo.svg')
@@ -23,7 +23,7 @@ html
         .row
           .col-sm-12
             h1#home SM Hacks
-            h3 September 17-18, 2016
+            h3 September 17-18, 2016 @ <a target='_blank' href="https://www.google.com/maps/place/1875+S+Grant+St+%23800,+San+Mateo,+CA+94402/@37.5533826,-122.3024296,17z/data=!3m1!4b1!4m5!3m4!1s0x808f9ef1cda42827:0x1ee074e13be3c0f6!8m2!3d37.5533826!4d-122.3002409">Opera Mediaworks</a>
             p.lead San Mateo's first <b>high school</b> hackathon.
             //a.btn.btn-lg.btn-default Sign up!
             br
@@ -111,23 +111,23 @@ html
           br
           br
           .row.text-center
-            .col-sm-4
-              a(href='https://hackclub.com' target='_blank')
-                img.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000 src='hackclub.png' id='hackclub')
-            .col-sm-4
+            .col-sm-6
               a(href='http://www.justinmind.com' target='_blank')
                 img.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000 src='justinmind.png' id='justinmind')
-            .col-sm-4
+            .col-sm-6
               a(href='http://mlworks.com' target='_blank')
                 img.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000 src='mlw.png' id='mlw')
         hr
         #partners.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatex=-1000)
           h2.text-center Partners
           .row.text-center
-            .col-sm-6
+            .col-sm-4
+              a(href='https://hackclub.com' target='_blank')
+                img.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000 src='hackclub.png' id='hackclub')
+            .col-sm-4
               a(href='http://streameducation.org' target='_blank')
                 img.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000 src='stream.png' id='stream')
-            .col-sm-6
+            .col-sm-4
               a(href='https://mlh.io' target='_blank')
                 img.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000 src='mlh.png' id='mlh')
         hr

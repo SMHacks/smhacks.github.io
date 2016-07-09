@@ -132,7 +132,8 @@ $(window).load(function(){
     $.post('https://smhacks-molarmanful.rhcloud.com/',{email:$('#u').val()},function(x){
       $('#a').text(x).slideDown(100).addClass(x.match(/email/i)?'alert-danger':'alert-success').removeClass(x.match(/email/i)?'alert-success':'alert-danger').promise().done(function(){
         $('#a').hasClass('alert-success')&&$('#u,#s').attr('disabled','true')
-      }).delay(4000).slideUp(200)
+				$('#a').delay(4000).slideUp(200)
+      })
     })
   })
 }).scroll(function(){

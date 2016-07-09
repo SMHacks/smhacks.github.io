@@ -73,6 +73,11 @@ canvas{
     line-height:.5em;
   }
 }
+.cover h3 a{
+  color:#444;
+  text-decoration:underline;
+  pointer-events:all;
+}
 .loading{
   height:100%;
   width:100%;
