@@ -117,8 +117,8 @@ canvas{
   background:none;
 }
 .btn-default,.btn-default:focus,.btn-default:active{
-  background-color:#333;
-  border-color:#333;
+  background-color:#464b4f;
+  border-color:#464b4f;
   color:#ffffff !important;
 }
 .btn-default:hover{
@@ -153,15 +153,32 @@ canvas{
   width:55%;
   text-align:center;
 }
-#hackclub{
-  width:90% !important;
-  margin-top:10%;
+#opera{
+  width:60% !important;
+}
+#vilynx{
+  width:60% !important;
+  margin-top:9%;
+}
+#justinmind{
+  width:50% !important;
 }
 #mlw{
-  width:45% !important;
+  width:40% !important;
+}
+#hackclub{
+  width:85% !important;
+  margin-top:10%;
 }
 #mlh{
   margin-top:5%;
+}
+#hackerearth{
+  width:45% !important;
+}
+#stream{
+  width: 65% !important;
+  margin-top:-2%;
 }
 hr{
   margin-bottom:120px;
