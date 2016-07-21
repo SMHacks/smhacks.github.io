@@ -105,16 +105,16 @@ $(window).load(function(){
     },
     "retina_detect": true
   })
-	$('.circle').delay(500).animate({
-		height:'2000px',
-		width:'2000px',
-		opacity:1
-	},1000).promise().done(function(){
-		scrollTo(0,0)
-		$('.loading').fadeOut(1000).promise().done(function(){
+  $('.circle').delay(500).animate({
+    height:'2000px',
+    width:'2000px',
+    opacity:1
+  },1000).promise().done(function(){
+    scrollTo(0,0)
+    $('.loading').fadeOut(1000).promise().done(function(){
       $('html,body').css('overflow-y','auto')
-		})
-	})
+    })
+  })
   $('a[href*="#"]:not([href="#"])').click(function(){
     if(location.pathname.replace(/^\//,'')==this.pathname.replace(/^\//,'')&&location.hostname==this.hostname){
       $('.navbar-toggle').click()
@@ -136,6 +136,4 @@ $(window).load(function(){
       })
     })
   })
-}).scroll(function(){
-  $('.bg').css('top','-'+(pageYOffset*.1)+'px')
 })

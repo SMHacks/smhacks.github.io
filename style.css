@@ -41,7 +41,7 @@ html,body{
 }
 .bg{
   position:fixed;
-  height:200%;
+  height:100%;
   width:100%;
   top:0;
   left:0;
@@ -73,10 +73,17 @@ canvas{
     line-height:.5em;
   }
 }
-.cover h3 a{
+.cover a{
   color:#444;
-  text-decoration:underline;
   pointer-events:all;
+}
+.cover h3 a{
+  text-decoration:underline;
+}
+.cover .btn,.cover .btn:focus{
+  border:3px solid #444;
+  color:#444 !important;
+  background:transparent;
 }
 .loading{
   height:100%;
@@ -122,8 +129,8 @@ canvas{
   color:#ffffff !important;
 }
 .btn-default:hover{
-  background-color:#555;
-  border-color:#555;
+  background-color:#444;
+  border-color:#444;
   color:#ffffff !important;
 }
 .btn-primary,.btn-primary:focus,.btn-primary:active{
@@ -148,37 +155,51 @@ canvas{
 .content a{
   color:#ff7242 !important;
 }
+.medium{
+  font-size:1.3em;
+}
+.medium a{
+  text-decoration:underline;
+  font-weight:700;
+}
 #partners img, #sponsors img{
   padding:10px;
-  width:55%;
   text-align:center;
 }
 #opera{
-  width:60% !important;
+  width:100%;
 }
 #vilynx{
-  width:60% !important;
-  margin-top:9%;
+  width:100%;
+  margin-top:11%;
 }
 #justinmind{
-  width:50% !important;
+  width:70%;
 }
 #mlw{
-  width:40% !important;
+  width:50%;
 }
 #hackclub{
-  width:85% !important;
+  width:100%;
   margin-top:10%;
 }
 #mlh{
+  width:60%;
   margin-top:5%;
 }
 #hackerearth{
-  width:45% !important;
+  width:50%;
 }
 #stream{
-  width: 65% !important;
+  width:65%;
   margin-top:-2%;
+}
+.btn-info,.btn-info:focus,.btn-info:active{
+  background:none;
+  color:#ff7242;
+}
+.btn-info:hover{
+  color:#ffffff !important;
 }
 hr{
   margin-bottom:120px;
