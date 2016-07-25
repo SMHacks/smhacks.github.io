@@ -73,15 +73,15 @@ canvas{
     line-height:.5em;
   }
 }
-.cover a{
+.cover a, #m a{
   color:#444;
   pointer-events:all;
 }
 .cover h3 a{
   text-decoration:underline;
 }
-.cover .btn,.cover .btn:focus{
-  border:3px solid #444;
+.cover .btn,.cover .btn:focus,#m .btn.btn-default{
+  border:1px solid #444;
   color:#444 !important;
   background:transparent;
 }
@@ -128,7 +128,7 @@ canvas{
   border-color:#464b4f;
   color:#ffffff !important;
 }
-.btn-default:hover{
+.btn-default:hover,#m .btn-default:hover{
   background-color:#444;
   border-color:#444;
   color:#ffffff !important;
@@ -154,13 +154,6 @@ canvas{
 }
 .content a{
   color:#ff7242 !important;
-}
-.medium{
-  font-size:1.3em;
-}
-.medium a{
-  text-decoration:underline;
-  font-weight:700;
 }
 #partners img, #sponsors img{
   padding:10px;

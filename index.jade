@@ -26,12 +26,8 @@ html
             h1#home SM Hacks
             h3 San Mateo's first <b>high school</b> hackathon.
             p.lead September 17-18, 2016 @ <a target='_blank' href='https://goo.gl/maps/H94iydpfHEn'>Opera Mediaworks</a>
-            .btn-group
-              a.btn.btn-default.btn-lg.scrollme.animateme(data-when='exit' data-from=0 data-to=.5 data-opacity=0 data-translatex=-500 href='https://smhacks.typeform.com/to/XokTDO' target='_blank') Register!
+            a.btn.btn-default.btn-lg.scrollme.animateme(data-when='exit' data-from=0 data-to=.5 data-opacity=0 data-translatex=500 data-toggle='modal' data-target='#m') Sign up now!
             br
-            br
-            br
-            p.medium Interested in mentoring or leading a workshop? Sign-up #[a(href='https://smhacks.typeform.com/to/avpXre' target='_blank') here]!
             br
             br
             i.fa.fa-angle-down.fa-5x.scrollme.animateme(data-when='exit' data-from=0 data-to=.5 data-translatey=500 data-rotatez=360 data-opacity=0)
@@ -55,9 +51,9 @@ html
         br
         br
         br
-        #faq.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatex=1000)
+        #faq.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatex=1000)
           h2.text-center FAQ
-          .row.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000)
+          .row.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatey=1000)
             .col-sm-4
               h3 What is SM Hacks?
               p SM Hacks is a 200-person hackathon that will gather the innovators of tomorrow into an amazing experience. SM Hacks 2016 will be hosted at #[a(target='_blank' href='https://goo.gl/maps/H94iydpfHEn') Opera Mediaworks], in San Mateo.
@@ -67,7 +63,7 @@ html
             .col-sm-4
               h3 What if I don't know how to code?
               p No worries! SM Hacks is the perfect time to learn how to code and all students, regardless of skill level and experience, are welcome. There will be plenty of mentors on hand glad to answer any and all questions and workshops specifically designed for those with no prior experience. #[a(href='#update') Stay tuned] for more information about workshops!
-          .row.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000)
+          .row.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatey=1000)
             .col-sm-4
               h3 Do I have to be in high school?
               p Yes, only current high school students will be able to attend. Unfortunately, we are not accepting middle school students. However, college students are welcome to help out. To mentor or lead a workshop, click #[a(target='_blank' href='https://smhacks.typeform.com/to/avpXre') here] or email #[a(target='_blank' href='mailto:volunteer@smhacks.com') volunteer@smhacks.com] for more details.
@@ -77,7 +73,7 @@ html
             .col-sm-4
               h3 How big can teams be?
               p Teams can be up to four people. While you may work as an individual, we highly encourage collaborating with others. If you don't have a team or need help finding one, make sure not to miss our team formation and ideation session on Saturday.
-          .row.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000)
+          .row.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatey=1000)
             .col-sm-4
               h3 What should I bring?
               p Attendees should bring a valid student ID or some other form of identification, as well as a signed and completed waiver. Bring laptops and chargers, along with any other technology that you may want to use! We will have designated sleeping spots so feel free to bring a sleeping bag and pillow. Also it is highly suggested that you bring toiletries so you can feel refreshed and beautiful!
@@ -87,10 +83,13 @@ html
             .col-sm-4
               h3 How can I apply?
               p Just fill out #[a(target='_blank' href='https://smhacks.typeform.com/to/XokTDO') this form]! Applications close Wednesday, August 31 but will be processed on a rolling basis. Make sure to #[a(href='#update') subscribe], follow us on #[a(target='blank' href='https://twitter.com/sanmateohacks') Twitter], and like us on #[a(target='blank' href='https://www.facebook.com/sanmateohacks') Facebook] for the latest updates!
-          .row.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000)
+          .row.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatey=1000)
             .col-sm-4
               h3 What is the schedule like?
               p It will be from Saturday, September 17 through Sunday, September 18, 2016. Be sure to check back for a more specific schedule, but don't worry! There will be plenty of fun activities that will keep you entertained.
+            .col-sm-4
+              h3 Will there be travel reimbursements?
+              p Unfortunately, we will not be offering travel reimbursements this year. Please email us at #[a(href='mailto:hi@smhacks.com') hi@smhacks.com] for additional details.
             .col-sm-4
               h3 What if I have another question?
               p Email us at #[a(href='mailto:hi@smhacks.com') hi@smhacks.com] if you have additional questions. Please email questions about mentoring or leading workshops to #[a(href='mailto:volunteer@smhacks.com') volunteer@smhacks.com] and sponsorship questions to #[a(href='mailto:sponsors@smhacks.com') sponsors@smhacks.com]. We are always happy to help!
@@ -108,7 +107,7 @@ html
                 ul.list-unstyled
                   li TBD
           hr
-        #sponsors.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatex=1000)
+        #sponsors.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatex=1000)
           h2.text-center Sponsors
           .row
             .col-sm-12.text-center
@@ -120,34 +119,34 @@ html
           .row.text-center
             .col-md-3.col-sm-6
               a(href='http://operamediaworks.com/' target='_blank')
-                img.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000 src='opera.png' id='opera')
+                img.animateme(data-when='enter' data-from=.7 data-to=0 data-translatey=500 data-opacity=0 src='opera.png' id='opera')
             .col-md-3.col-sm-6
               a(href='http://www.vilynx.com/' target='_blank')
-                img.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000 src='vilynx.png' id='vilynx')
+                img.animateme(data-when='enter' data-from=.7 data-to=0 data-translatex=500 data-opacity=0 src='vilynx.png' id='vilynx')
             .col-md-3.col-sm-6
               a(href='http://www.justinmind.com' target='_blank')
-                img.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000 src='justinmind.png' id='justinmind')
+                img.animateme(data-when='enter' data-from=.7 data-to=0 data-translatey=500 data-opacity=0 src='justinmind.png' id='justinmind')
             .col-md-3.col-sm-6
               a(href='http://mlworks.com' target='_blank')
-                img.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000 src='mlw.png' id='mlw')
+                img.animateme(data-when='enter' data-from=.7 data-to=0 data-translatex=500 data-opacity=0 src='mlw.png' id='mlw')
         hr
-        #partners.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatex=-1000)
+        #partners.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatex=-1000)
           h2.text-center Partners
           .row.text-center
             .col-md-3.col-sm-6
               a(href='https://hackclub.com' target='_blank')
-                img.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000 src='hackclub.png' id='hackclub')
+                img.animateme(data-when='enter' data-from=.7 data-to=0 data-translatex=-500 data-opacity=0 src='hackclub.png' id='hackclub')
             .col-md-3.col-sm-6
               a(href='https://mlh.io' target='_blank')
-                img.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000 src='mlh.png' id='mlh')
+                img.animateme(data-when='enter' data-from=.7 data-to=0 data-translatey=500 data-opacity=0 src='mlh.png' id='mlh')
             .col-md-3.col-sm-6
               a(href='https://www.hackerearth.com/' target='_blank')
-                img.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000 src='hackerearth.png' id='hackerearth')
+                img.animateme(data-when='enter' data-from=.7 data-to=0 data-translatex=-500 data-opacity=0 src='hackerearth.png' id='hackerearth')
             .col-md-3.col-sm-6
               a(href='http://streameducation.org' target='_blank')
-                img.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000 src='stream.png' id='stream')
+                img.animateme(data-when='enter' data-from=.7 data-to=0 data-translatey=500 data-opacity=0 src='stream.png' id='stream')
         hr
-        #update.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatex=1000)
+        #update.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatex=1000 data-opacity=0)
           h2.text-center Subscribe
           .row
             .col-sm-12.text-center
@@ -156,7 +155,7 @@ html
                 .col-sm-3
                 .col-sm-6
                   .input-group
-                    input.form-control#u.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=200 placeholder='johnsmith@example.com' type='email')
+                    input.form-control#u.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=200 data-opacity=0 placeholder='johnsmith@example.com' type='email')
                     .input-group-btn
                       button.btn.btn-primary#s Submit!
                   .alert.alert-dismissible#a(role='alert')
@@ -166,17 +165,31 @@ html
         br
         br
         br
-        footer.footer.scrollme.animateme(data-when='enter' data-from=1 data-to=0 data-translatey=1000)
+        footer.footer.scrollme.animateme(data-when='enter' data-from=1 data-to=0 data-translatex=1000)
           .container
             .row
-              .col-sm-1.text-center
+              .col-sm-1.col-xs-6.text-center
                 img(src='logo_2.0_solo.svg')
               .col-sm-7.hidden-xs
                 p.text-muted Made with <i class='fa fa-heart' style='color:#ff7242'></i> by SM Hacks.
               .col-sm-2.hidden-xs
-              .col-sm-2.col-xs-12.text-center
+              .col-sm-2.col-xs-6.text-center
                 p
                   a.btn.btn-info(href='https://www.facebook.com/sanmateohacks' target='_blank' style='background-color:transparent; border:none; display:inline-block')
                     i.fa.fa-facebook-square.fa-3x
                   a.btn.btn-info(href='https://twitter.com/sanmateohacks' target='_blank' style='background-color:transparent; border:none; display:inline-block')
                     i.fa.fa-twitter-square.fa-3x
+    .modal.fade#m(tabindex="-1" role="dialog")
+      .modal-dialog
+        .modal-content
+          .modal-header
+            button.close(data-dismiss='modal') &times;
+            h1.modal-title Sign Up
+          .modal-body.text-center
+            h3
+              a.btn.btn-default(href='https://smhacks.typeform.com/to/XokTDO' target='_blank') Hacker
+              |  or 
+              a.btn.btn-default(href='https://smhacks.typeform.com/to/avpXre' target='_blank') Mentor
+              |?
+          .modal-footer
+            button.btn.btn-primary(data-dismiss='modal') Cancel
