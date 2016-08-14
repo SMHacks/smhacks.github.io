@@ -1,5 +1,4 @@
-//output:index.html
-//DESIGNED BY BEN PANG (Github: @molarmanful)
+//output: index.html
 doctype html
 html
   head
@@ -7,6 +6,10 @@ html
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no')
+    meta(name='description' content="San Mateo's first high school hackathon.")
+    meta(name='keywords' content='san mateo hackathon, sm hackathon, san mateo hacks, sm hacks, smhacks, san mateo high school, smhs, smhs hackathon, high school hackathon, hackathon, san mateo')
+    link(rel='author' href='https://plus.google.com/')
+    link(rel='canonical' href='http://smhacks.com')
     title SM Hacks
     link(rel='stylesheet prefetch' href='bootstrap.css')
     link(rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css')
@@ -41,7 +44,7 @@ html
       #collapse.collapse.navbar-collapse
         ul.nav.navbar-nav.navbar-right
           li: a(href='#faq') FAQ
-          //li: a(href='#schedule') Schedule
+          li: a(href='#schedule') Schedule
           li: a(href='#sponsors') Sponsors
           li: a(href='#partners') Partners
           li: a(href='#update') Subscribe
@@ -94,73 +97,89 @@ html
               h3 What if I have another question?
               p Email us at #[a(href='mailto:hi@smhacks.com') hi@smhacks.com] if you have additional questions. Please email questions about mentoring or leading workshops to #[a(href='mailto:volunteer@smhacks.com') volunteer@smhacks.com] and sponsorship questions to #[a(href='mailto:sponsors@smhacks.com') sponsors@smhacks.com]. We are always happy to help!
         hr
-        //
-          #schedule.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatex=-1000)
-            h2.text-center Schedule
-            .row.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000)
-              .col-sm-6.text-center
-                h3 Day 1
-                ul.list-unstyled
-                  li TBD
-              .col-sm-6.text-center
-                h3 Day 2
-                ul.list-unstyled
-                  li TBD
+        #schedule.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatex=-1000)
+          h2.text-center Schedule
+          p.lead Hacking is from noon to noon.
+          .row.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000)
+            .col-sm-3.hidden-xs
+            .col-sm-3.text-center
+              h3 Saturday, Sept. 17
+              ul.list-unstyled
+                li <b>10am</b> - Registration
+                li <b>11am</b> - Opening Ceremony
+                li <b>Noon</b> - Hacking Starts
+                li <b>Noon</b> - Team Mixer
+                li <b>Noon</b> - Lunch
+                li <b>6:30pm</b> - Dinner
+            .col-sm-3.text-center
+              h3 Sunday, Sept. 18
+              ul.list-unstyled
+                li <b>12am</b> - Midnight Snack
+                li <b>8am </b>- Breakfast
+                li <b>11:30am</b> - Lunch
+                li <b>Noon</b> - Hacking Ends
+                li <b>Noon</b> - Judging and Demos
+                li <b>2pm </b>- Closing Ceremony
           hr
-        #sponsors.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatex=1000)
-          h2.text-center Sponsors
-          .row
-            .col-sm-12.text-center
-              p.lead We will be announcing our full list of awesome sponsors soon! Want to get involved?
-              a.btn.btn-primary.btn-lg.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatey=200 href='sponsor.pdf' target='_blank') Get the Sponsorship Packet!
+          #sponsors.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatex=1000)
+            h2.text-center Sponsors
+            .row
+              .col-sm-12.text-center
+                p.lead We will be announcing our full list of awesome sponsors soon! Want to get involved?
+                a.btn.btn-primary.btn-lg.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatey=200 href='sponsor.pdf' target='_blank') Get the Sponsorship Packet!
+            br
+            br
+            br
+            .row.text-center
+              .col-sm-2.hidden-xs
+              .col-sm-4
+                a(href='http://operamediaworks.com/' target='_blank')
+                  img.animateme(data-when='enter' data-from=.7 data-to=0 data-translatex=-500 data-opacity=0 src='opera.png' id='opera')
+              .col-sm-4
+                a(href='http://www.smule.com/' target='_blank')
+                  img.animateme(data-when='enter' data-from=.7 data-to=0 data-translatex=500 data-opacity=0 src='smule.png' id='smule')
+            .row.text-center
+              .col-sm-4
+                a(href='http://www.justinmind.com' target='_blank')
+                  img.animateme(data-when='enter' data-from=1 data-to=0 data-translatex=-500 data-opacity=0 src='justinmind.png' id='justinmind')
+              .col-sm-4
+                a(href='http://www.vilynx.com/' target='_blank')
+                  img.animateme(data-when='enter' data-from=1 data-to=0 data-translatey=-500 data-opacity=0 src='vilynx.png' id='vilynx')
+              .col-sm-4
+                a(href='http://mlworks.com' target='_blank')
+                  img.animateme(data-when='enter' data-from=1 data-to=0 data-translatex=500 data-opacity=0 src='mlw.png' id='mlw')
+          hr
+          #partners.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatex=-1000)
+            h2.text-center Partners
+            .row.text-center
+              .col-md-3.col-sm-6
+                a(href='https://hackclub.com' target='_blank')
+                  img.animateme(data-when='enter' data-from=1 data-to=0 data-translatex=-500 data-opacity=0 src='hackclub.png' id='hackclub')
+              .col-md-3.col-sm-6
+                a(href='https://mlh.io' target='_blank')
+                  img.animateme(data-when='enter' data-from=1 data-to=0 data-translatey=500 data-opacity=0 src='mlh.png' id='mlh')
+              .col-md-3.col-sm-6
+                a(href='https://www.hackerearth.com/' target='_blank')
+                  img.animateme(data-when='enter' data-from=1 data-to=0 data-translatex=-500 data-opacity=0 src='hackerearth.png' id='hackerearth')
+              .col-md-3.col-sm-6
+                a(href='http://streameducation.org' target='_blank')
+                  img.animateme(data-when='enter' data-from=1 data-to=0 data-translatey=500 data-opacity=0 src='stream.png' id='stream')
+          hr
+          #update.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatex=1000 data-opacity=0)
+            h2.text-center Subscribe
+            .row
+              .col-sm-12.text-center
+                p.lead Enter your email here to receive updates from SM Hacks!
+                .row
+                  .col-sm-3
+                  .col-sm-6
+                    .input-group
+                      input.form-control#u.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=200 data-opacity=0 placeholder='johnsmith@example.com' type='email')
+                      .input-group-btn
+                        button.btn.btn-primary#s Submit!
+                    .alert.alert-dismissible#a(role='alert')
           br
-          br
-          br
-          .row.text-center
-            .col-md-3.col-sm-6
-              a(href='http://operamediaworks.com/' target='_blank')
-                img.animateme(data-when='enter' data-from=.7 data-to=0 data-translatey=500 data-opacity=0 src='opera.png' id='opera')
-            .col-md-3.col-sm-6
-              a(href='http://www.vilynx.com/' target='_blank')
-                img.animateme(data-when='enter' data-from=.7 data-to=0 data-translatex=500 data-opacity=0 src='vilynx.png' id='vilynx')
-            .col-md-3.col-sm-6
-              a(href='http://www.justinmind.com' target='_blank')
-                img.animateme(data-when='enter' data-from=.7 data-to=0 data-translatey=500 data-opacity=0 src='justinmind.png' id='justinmind')
-            .col-md-3.col-sm-6
-              a(href='http://mlworks.com' target='_blank')
-                img.animateme(data-when='enter' data-from=.7 data-to=0 data-translatex=500 data-opacity=0 src='mlw.png' id='mlw')
-        hr
-        #partners.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatex=-1000)
-          h2.text-center Partners
-          .row.text-center
-            .col-md-3.col-sm-6
-              a(href='https://hackclub.com' target='_blank')
-                img.animateme(data-when='enter' data-from=.7 data-to=0 data-translatex=-500 data-opacity=0 src='hackclub.png' id='hackclub')
-            .col-md-3.col-sm-6
-              a(href='https://mlh.io' target='_blank')
-                img.animateme(data-when='enter' data-from=.7 data-to=0 data-translatey=500 data-opacity=0 src='mlh.png' id='mlh')
-            .col-md-3.col-sm-6
-              a(href='https://www.hackerearth.com/' target='_blank')
-                img.animateme(data-when='enter' data-from=.7 data-to=0 data-translatex=-500 data-opacity=0 src='hackerearth.png' id='hackerearth')
-            .col-md-3.col-sm-6
-              a(href='http://streameducation.org' target='_blank')
-                img.animateme(data-when='enter' data-from=.7 data-to=0 data-translatey=500 data-opacity=0 src='stream.png' id='stream')
-        hr
-        #update.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatex=1000 data-opacity=0)
-          h2.text-center Subscribe
-          .row
-            .col-sm-12.text-center
-              p.lead Enter your email here to receive updates from SM Hacks!
-              .row
-                .col-sm-3
-                .col-sm-6
-                  .input-group
-                    input.form-control#u.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=200 data-opacity=0 placeholder='johnsmith@example.com' type='email')
-                    .input-group-btn
-                      button.btn.btn-primary#s Submit!
-                  .alert.alert-dismissible#a(role='alert')
-        br
-        hr
+          hr
         br
         br
         br
