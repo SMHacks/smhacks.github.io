@@ -3,17 +3,24 @@ doctype html
 html
   head
     script(src='https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.load.min.js')
+    link(rel='shortcut icon' href='logo_2.0_solo.png' type='image/png')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no')
     meta(name='description' content="San Mateo's first high school hackathon.")
     meta(name='keywords' content='san mateo hackathon, sm hackathon, san mateo hacks, sm hacks, smhacks, san mateo high school, smhs, smhs hackathon, high school hackathon, hackathon, san mateo')
-    link(rel='author' href='https://plus.google.com/')
+    link(rel='author' href='https://plus.google.com/+BenPangMolarmanful')
     link(rel='canonical' href='http://smhacks.com')
+    meta(property='og:site_name' content='SM Hacks')
+    meta(property='og:title' content='SM Hacks')
+    meta(property='og:description' content="San Mateo's first high school hackathon.")
+    meta(property='og:image' content='logo_2.0_solo.png')
+    meta(property='og:url' content="http://smhacks.com")
     title SM Hacks
     link(rel='stylesheet prefetch' href='bootstrap.css')
-    link(rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css')
+    link(rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
     link(rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Cabin')
+    link(rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Raleway')
     link(rel='stylesheet prefetch' href='style.css')
     script.
       head.load('https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js','https://rawgit.com/nckprsn/scrollme/master/jquery.scrollme.min.js','https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js','main.js')
@@ -34,7 +41,7 @@ html
             br
             br
             i.fa.fa-angle-down.fa-5x.scrollme.animateme(data-when='exit' data-from=0 data-to=.5 data-translatey=500 data-rotatez=360 data-opacity=0)
-    nav.navbar.navbar-default(data-spy='affix')
+    nav.navbar.navbar-default.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatex=-2000 data-spy='affix')
       .navbar-header
         b.navbar-brand SM Hacks
         button.navbar-toggle.collapsed(data-toggle='collapse' data-target='#collapse' aria-expanded='false')
@@ -47,6 +54,7 @@ html
           li: a(href='#schedule') Schedule
           li: a(href='#sponsors') Sponsors
           li: a(href='#partners') Partners
+          li: a(href='#team') Team
           li: a(href='#update') Subscribe
     .content
       .container
@@ -85,7 +93,7 @@ html
               p Nothing! Just bring your beautiful self and ideas and we will provide you with the food, Wi-Fi, workspace, and swag!
             .col-sm-4
               h3 How can I apply?
-              p Just fill out #[a(target='_blank' href='https://smhacks.typeform.com/to/XokTDO') this form]! Applications close Wednesday, August 31 but will be processed on a rolling basis. Make sure to #[a(href='#update') subscribe], follow us on #[a(target='blank' href='https://twitter.com/sanmateohacks') Twitter], and like us on #[a(target='blank' href='https://www.facebook.com/sanmateohacks') Facebook] for the latest updates!
+              p Just fill out #[a(target='_blank' href='https://smhacks.typeform.com/to/XokTDO') this form]! Applications close Wednesday, August 31 but will be processed on a rolling basis. Make sure to #[a(href='#update') subscribe], follow us on #[a(target='blank' href='https://twitter.com/sanmateohacks') Twitter], and like us on #[a(target='blank' href='https://facebook.com/sanmateohacks') Facebook] for the latest updates!
           .row.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatey=1000)
             .col-sm-4
               h3 What is the schedule like?
@@ -100,9 +108,9 @@ html
         #schedule.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatex=-1000)
           h2.text-center Schedule
           p.lead Hacking is from noon to noon.
-          .row.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000)
-            .col-sm-3.hidden-xs
-            .col-sm-3.text-center
+          .row.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000)
+            .col-sm-1.hidden-xs
+            .col-sm-5.text-center.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatex=-500)
               h3 Saturday, Sept. 17
               ul.list-unstyled
                 li <b>10am</b> - Registration
@@ -110,14 +118,18 @@ html
                 li <b>Noon</b> - Hacking Starts
                 li <b>Noon</b> - Team Mixer
                 li <b>Noon</b> - Lunch
+                li <b>2pm</b> - Basic Web Development Workshop
+                li <b>4pm</b> - Intro to UX Design Workshop
                 li <b>6:30pm</b> - Dinner
-            .col-sm-3.text-center
+            .col-sm-5.text-center.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatex=500)
               h3 Sunday, Sept. 18
               ul.list-unstyled
                 li <b>12am</b> - Midnight Snack
-                li <b>8am </b>- Breakfast
-                li <b>11:30am</b> - Lunch
+                li <b>8am</b> - Breakfast
+                li <b>11am</b> - Lunch
+                li <b>11am</b> - Project Submissions Open
                 li <b>Noon</b> - Hacking Ends
+                li <b>Noon</b> - Project Submissions Close
                 li <b>Noon</b> - Judging and Demos
                 li <b>2pm </b>- Closing Ceremony
           hr
@@ -130,42 +142,181 @@ html
             br
             br
             br
-            .row.text-center
-              .col-sm-2.hidden-xs
-              .col-sm-4
+            .row.text-center.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatey=1000)
+              .col-sm-6
                 a(href='http://operamediaworks.com/' target='_blank')
-                  img.animateme(data-when='enter' data-from=.7 data-to=0 data-translatex=-500 data-opacity=0 src='opera.png' id='opera')
+                  img(src='opera.png' id='opera')
+              .col-sm-6
+                a(href='http://sie.com/en/index.html' target='_blank')
+                  img(src='sony.png' id='sony')
+            .row.text-center.text-center.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatey=1000)
+              .col-sm-3.hidden-xs
+              .col-sm-6
+                a(href='http://smule.com/' target='_blank')
+                  img(src='smule.png' id='smule')
+            .row.text-center.text-center.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatey=1000)
               .col-sm-4
-                a(href='http://www.smule.com/' target='_blank')
-                  img.animateme(data-when='enter' data-from=.7 data-to=0 data-translatex=500 data-opacity=0 src='smule.png' id='smule')
-            .row.text-center
+                a(href='http://justinmind.com' target='_blank')
+                  img(src='justinmind.png' id='justinmind')
               .col-sm-4
-                a(href='http://www.justinmind.com' target='_blank')
-                  img.animateme(data-when='enter' data-from=1 data-to=0 data-translatex=-500 data-opacity=0 src='justinmind.png' id='justinmind')
-              .col-sm-4
-                a(href='http://www.vilynx.com/' target='_blank')
-                  img.animateme(data-when='enter' data-from=1 data-to=0 data-translatey=-500 data-opacity=0 src='vilynx.png' id='vilynx')
+                a(href='http://mitlaunch.com/' target='_blank')
+                  img(src='mit-launch.png' id='mit-launch')
               .col-sm-4
                 a(href='http://mlworks.com' target='_blank')
-                  img.animateme(data-when='enter' data-from=1 data-to=0 data-translatex=500 data-opacity=0 src='mlw.png' id='mlw')
+                  img(src='mlw.png' id='mlw')
+            br
+            br
+            .row.text-center.text-center.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatey=1000)
+              .col-sm-4
+                a(href='http://balsamiq.com/' target='_blank')
+                  img(data-when='enter' data-from=1 data-to=0 data-translatex=-500 data-opacity=0 src='balsamiq.png' id='balsamiq')
+              .col-sm-4
+                a(href='http://wolfram.com/' target='_blank')
+                  img(data-when='enter' data-from=1 data-to=0 data-translatex=500 data-opacity=0 src='wolfram.png' id='wolfram')
+              .col-sm-4
+                a(href='http://vilynx.com/' target='_blank')
+                  img(data-when='enter' data-from=1 data-to=0 data-translatey=-500 data-opacity=0 src='vilynx.png' id='vilynx')
           hr
           #partners.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatex=-1000)
             h2.text-center Partners
             .row.text-center
               .col-md-3.col-sm-6
                 a(href='https://hackclub.com' target='_blank')
-                  img.animateme(data-when='enter' data-from=1 data-to=0 data-translatex=-500 data-opacity=0 src='hackclub.png' id='hackclub')
+                  img(data-when='enter' data-from=1 data-to=0 data-translatex=-500 data-opacity=0 src='hackclub.png' id='hackclub')
               .col-md-3.col-sm-6
                 a(href='https://mlh.io' target='_blank')
-                  img.animateme(data-when='enter' data-from=1 data-to=0 data-translatey=500 data-opacity=0 src='mlh.png' id='mlh')
+                  img(data-when='enter' data-from=1 data-to=0 data-translatey=500 data-opacity=0 src='mlh.png' id='mlh')
               .col-md-3.col-sm-6
-                a(href='https://www.hackerearth.com/' target='_blank')
-                  img.animateme(data-when='enter' data-from=1 data-to=0 data-translatex=-500 data-opacity=0 src='hackerearth.png' id='hackerearth')
+                a(href='https://hackerearth.com/' target='_blank')
+                  img(data-when='enter' data-from=1 data-to=0 data-translatex=-500 data-opacity=0 src='hackerearth.png' id='hackerearth')
               .col-md-3.col-sm-6
                 a(href='http://streameducation.org' target='_blank')
-                  img.animateme(data-when='enter' data-from=1 data-to=0 data-translatey=500 data-opacity=0 src='stream.png' id='stream')
+                  img(data-when='enter' data-from=1 data-to=0 data-translatey=500 data-opacity=0 src='stream.png' id='stream')
+          br
           hr
-          #update.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatex=1000 data-opacity=0)
+          #team.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatex=1000)
+            h2.text-center SM Hacks Team
+            br
+            br
+            .row.text-center.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatey=1000)
+              .col-sm-3
+                .member
+                  img.img-responsive.img-circle(src='samuel.jpg')
+                  .name Samuel Escapa
+                  .role Sponsorship Director
+                  .social
+                    a(href='http://saescapa.me' target='_blank')
+                      i.fa.fa-globe
+                    a(href='http://twitter.saescapa.me' target='_blank')
+                      i.fa.fa-twitter
+                    a(href='http://linkedin.saescapa.me' target='_blank')
+                      i.fa.fa-linkedin
+                    a(href='http://github.saescapa.me' target='_blank')
+                      i.fa.fa-github
+              .col-sm-3
+                .member
+                  img.img-responsive.img-circle(src='kevinf.jpg')
+                  .name Kevin Fang
+                  .role Operations Director
+                  .social
+                    a(href='https://linkedin.com/m/profile/ACoAABoVZV4B0dLeQcQOztHldvOVmuHnWDiotvM/' target='_blank')
+                      i.fa.fa-linkedin
+                    a(href='https://facebook.com/kevin.fang.35' target='_blank')
+                      i.fa.fa-facebook-official
+                    a(href='https://instagram.com/fangk/' target='_blank')
+                      i.fa.fa-instagram
+              .col-sm-3
+                .member
+                  img.img-responsive.img-circle(src='cindy.png')
+                  .name Cindy Zhang
+                  .role Tech Director
+                  .social
+                    a(href='https://about.me/cindyhzhang' target='_blank')
+                      i.fa.fa-globe
+                    a(href='https://linkedin.com/in/cindyhzhang' target='_blank')
+                      i.fa.fa-linkedin
+                    a(href='https://facebook.com/czhang99' target='_blank')
+                      i.fa.fa-facebook-official
+                    a(href='https://github.com/cindyz8735' target='_blank')
+                      i.fa.fa-github
+              .col-sm-3
+                .member
+                  img.img-responsive.img-circle(src='anna.jpg')
+                  .name Anna Zheng
+                  .role Outreach Director
+                  .social
+                    a(href='https://facebook.com/anna.zheng.716' target='_blank')
+                      i.fa.fa-facebook-official
+            .row.text-center.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatey=1000)
+              .col-sm-3
+                .member
+                  img.img-responsive.img-circle(src='kevinh.jpg')
+                  .name Kevin Huo
+                  .role Operations
+              .col-sm-3
+                .member
+                  img.img-responsive.img-circle(src='kiki.jpg')
+                  .name Kiki Lo
+                  .role Operations
+                  .social
+                    a(href='https://facebook.com/k1k1l0' target='_blank')
+                      i.fa.fa-facebook-official
+              .col-sm-3
+                .member
+                  img.img-responsive.img-circle(src='emanuel.jpg')
+                  .name Emanuel Rew
+                  .role Operations
+              .col-sm-3
+                .member
+                  img.img-responsive.img-circle(src='nikhil.jpg')
+                  .name Nikhil Dodd
+                  .role Outreach
+            .row.text-center.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatey=1000)
+              .col-sm-3
+                .member
+                  img.img-responsive.img-circle(src='maggie.jpg')
+                  .name Maggie Dong
+                  .role Outreach
+                  .social
+                    a(href='https://facebook.com/maggie.dong.79' target='_blank')
+                      i.fa.fa-facebook-official
+              .col-sm-3
+                .member
+                  img.img-responsive.img-circle(src='thomas.jpg')
+                  .name Thomas Weathers
+                  .role Outreach
+                  .social
+                    a(href='https://facebook.com/thomas.weathers.415' target='_blank')
+                      i.fa.fa-facebook-official
+                    a(href='https://twitter.com/storm_weathers1' target='_blank')
+                      i.fa.fa-twitter
+              .col-sm-3
+                .member
+                  img.img-responsive.img-circle(src='anthony.png')
+                  .name Anthony Lam
+                  .role Tech
+                  .social
+                    a(href='https://github.com/99anthonylam' target='_blank')
+                      i.fa.fa-github
+                    a(href='https://facebook.com/anthony.lam.98' target='_blank')
+                      i.fa.fa-facebook-official
+              .col-sm-3
+                .member
+                  img.img-responsive.img-circle(src='ben.png')
+                  .name Benjamin Pang
+                  .role Tech
+                  .social
+                    a(href='https://github.com/molarmanful' target='_blank')
+                      i.fa.fa-github
+                    a(href='https://codegolf.stackexchange.com/users/41247/mama-fun-roll' target='_blank')
+                      i.fa.fa-stack-exchange
+                    a(href='https://reddit.com/u/molarmanful' target='_blank')
+                      i.fa.fa-reddit
+                    a(href='http://molarmanful.com' target='_blank')
+                      i.fa.fa-globe
+          br
+          hr
+          #update.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatex=-1000 data-opacity=0)
             h2.text-center Subscribe
             .row
               .col-sm-12.text-center
@@ -173,8 +324,8 @@ html
                 .row
                   .col-sm-3
                   .col-sm-6
-                    .input-group
-                      input.form-control#u.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=200 data-opacity=0 placeholder='johnsmith@example.com' type='email')
+                    .input-group.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=200 data-opacity=0)
+                      input.form-control#u(placeholder='johnsmith@example.com' type='email')
                       .input-group-btn
                         button.btn.btn-primary#s Submit!
                     .alert.alert-dismissible#a(role='alert')
@@ -194,7 +345,7 @@ html
               .col-sm-2.hidden-xs
               .col-sm-2.col-xs-6.text-center
                 p
-                  a.btn.btn-info(href='https://www.facebook.com/sanmateohacks' target='_blank' style='background-color:transparent; border:none; display:inline-block')
+                  a.btn.btn-info(href='https://facebook.com/sanmateohacks' target='_blank' style='background-color:transparent; border:none; display:inline-block')
                     i.fa.fa-facebook-square.fa-3x
                   a.btn.btn-info(href='https://twitter.com/sanmateohacks' target='_blank' style='background-color:transparent; border:none; display:inline-block')
                     i.fa.fa-twitter-square.fa-3x

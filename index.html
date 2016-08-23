@@ -2,17 +2,24 @@
 <html>
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.load.min.js"></script>
+    <link rel="shortcut icon" href="logo_2.0_solo.png" type="image/png">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="description" content="San Mateo's first high school hackathon.">
     <meta name="keywords" content="san mateo hackathon, sm hackathon, san mateo hacks, sm hacks, smhacks, san mateo high school, smhs, smhs hackathon, high school hackathon, hackathon, san mateo">
-    <link rel="author" href="https://plus.google.com/">
+    <link rel="author" href="https://plus.google.com/+BenPangMolarmanful">
     <link rel="canonical" href="http://smhacks.com">
+    <meta property="og:site_name" content="SM Hacks">
+    <meta property="og:title" content="SM Hacks">
+    <meta property="og:description" content="San Mateo's first high school hackathon.">
+    <meta property="og:image" content="logo_2.0_solo.png">
+    <meta property="og:url" content="http://smhacks.com">
     <title>SM Hacks</title>
     <link rel="stylesheet prefetch" href="bootstrap.css">
-    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Cabin">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet prefetch" href="style.css">
     <script>head.load('https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js','https://rawgit.com/nckprsn/scrollme/master/jquery.scrollme.min.js','https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js','main.js')</script>
   </head>
@@ -32,7 +39,7 @@
         </div>
       </div>
     </div>
-    <nav data-spy="affix" class="navbar navbar-default">
+    <nav data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatex='-2000' data-spy="affix" class="navbar navbar-default scrollme animateme">
       <div class="navbar-header"><b class="navbar-brand">SM Hacks</b>
         <button data-toggle="collapse" data-target="#collapse" aria-expanded="false" class="navbar-toggle collapsed"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
       </div>
@@ -42,6 +49,7 @@
           <li><a href="#schedule">Schedule</a></li>
           <li><a href="#sponsors">Sponsors</a></li>
           <li><a href="#partners">Partners</a></li>
+          <li><a href="#team">Team</a></li>
           <li><a href="#update">Subscribe</a></li>
         </ul>
       </div>
@@ -89,7 +97,7 @@
             </div>
             <div class="col-sm-4">
               <h3>How can I apply?</h3>
-              <p>Just fill out <a target="_blank" href="https://smhacks.typeform.com/to/XokTDO">this form</a>! Applications close Wednesday, August 31 but will be processed on a rolling basis. Make sure to <a href="#update">subscribe</a>, follow us on <a target="blank" href="https://twitter.com/sanmateohacks">Twitter</a>, and like us on <a target="blank" href="https://www.facebook.com/sanmateohacks">Facebook</a> for the latest updates!</p>
+              <p>Just fill out <a target="_blank" href="https://smhacks.typeform.com/to/XokTDO">this form</a>! Applications close Wednesday, August 31 but will be processed on a rolling basis. Make sure to <a href="#update">subscribe</a>, follow us on <a target="blank" href="https://twitter.com/sanmateohacks">Twitter</a>, and like us on <a target="blank" href="https://facebook.com/sanmateohacks">Facebook</a> for the latest updates!</p>
             </div>
           </div>
           <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row scrollme animateme">
@@ -111,9 +119,9 @@
         <div id="schedule" data-when="enter" data-from='0.5' data-to='0' data-translatex='-1000' class="scrollme animateme">
           <h2 class="text-center">Schedule</h2>
           <p class="lead">Hacking is from noon to noon.</p>
-          <div data-when="enter" data-from='0.5' data-to='0' data-translatey='1000' class="row animateme">
-            <div class="col-sm-3 hidden-xs"></div>
-            <div class="col-sm-3 text-center">
+          <div data-when="enter" data-from='0.5' data-to='0' data-translatey='1000' class="row scrollme animateme">
+            <div class="col-sm-1 hidden-xs"></div>
+            <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatex='-500' class="col-sm-5 text-center scrollme animateme">
               <h3>Saturday, Sept. 17</h3>
               <ul class="list-unstyled">
                 <li><b>10am</b> - Registration</li>
@@ -121,16 +129,20 @@
                 <li><b>Noon</b> - Hacking Starts</li>
                 <li><b>Noon</b> - Team Mixer</li>
                 <li><b>Noon</b> - Lunch</li>
+                <li><b>2pm</b> - Basic Web Development Workshop</li>
+                <li><b>4pm</b> - Intro to UX Design Workshop</li>
                 <li><b>6:30pm</b> - Dinner</li>
               </ul>
             </div>
-            <div class="col-sm-3 text-center">
+            <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatex='500' class="col-sm-5 text-center scrollme animateme">
               <h3>Sunday, Sept. 18</h3>
               <ul class="list-unstyled">
                 <li><b>12am</b> - Midnight Snack</li>
-                <li><b>8am </b>- Breakfast</li>
-                <li><b>11:30am</b> - Lunch</li>
+                <li><b>8am</b> - Breakfast</li>
+                <li><b>11am</b> - Lunch</li>
+                <li><b>11am</b> - Project Submissions Open</li>
                 <li><b>Noon</b> - Hacking Ends</li>
+                <li><b>Noon</b> - Project Submissions Close</li>
                 <li><b>Noon</b> - Judging and Demos</li>
                 <li><b>2pm </b>- Closing Ceremony</li>
               </ul>
@@ -144,29 +156,128 @@
                 <p class="lead">We will be announcing our full list of awesome sponsors soon! Want to get involved?</p><a data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='200' href="sponsor.pdf" target="_blank" class="btn btn-primary btn-lg animateme">Get the Sponsorship Packet!</a>
               </div>
             </div><br><br><br>
-            <div class="row text-center">
-              <div class="col-sm-2 hidden-xs"></div>
-              <div class="col-sm-4"><a href="http://operamediaworks.com/" target="_blank"><img data-when="enter" data-from='0.7' data-to='0' data-translatex='-500' data-opacity='0' src="opera.png" id="opera" class="animateme"></a></div>
-              <div class="col-sm-4"><a href="http://www.smule.com/" target="_blank"><img data-when="enter" data-from='0.7' data-to='0' data-translatex='500' data-opacity='0' src="smule.png" id="smule" class="animateme"></a></div>
+            <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center scrollme animateme">
+              <div class="col-sm-6"><a href="http://operamediaworks.com/" target="_blank"><img src="opera.png" id="opera"></a></div>
+              <div class="col-sm-6"><a href="http://sie.com/en/index.html" target="_blank"><img src="sony.png" id="sony"></a></div>
             </div>
-            <div class="row text-center">
-              <div class="col-sm-4"><a href="http://www.justinmind.com" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatex='-500' data-opacity='0' src="justinmind.png" id="justinmind" class="animateme"></a></div>
-              <div class="col-sm-4"><a href="http://www.vilynx.com/" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatey='-500' data-opacity='0' src="vilynx.png" id="vilynx" class="animateme"></a></div>
-              <div class="col-sm-4"><a href="http://mlworks.com" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatex='500' data-opacity='0' src="mlw.png" id="mlw" class="animateme"></a></div>
+            <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center text-center scrollme animateme">
+              <div class="col-sm-3 hidden-xs"></div>
+              <div class="col-sm-6"><a href="http://smule.com/" target="_blank"><img src="smule.png" id="smule"></a></div>
+            </div>
+            <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center text-center scrollme animateme">
+              <div class="col-sm-4"><a href="http://justinmind.com" target="_blank"><img src="justinmind.png" id="justinmind"></a></div>
+              <div class="col-sm-4"><a href="http://mitlaunch.com/" target="_blank"><img src="mit-launch.png" id="mit-launch"></a></div>
+              <div class="col-sm-4"><a href="http://mlworks.com" target="_blank"><img src="mlw.png" id="mlw"></a></div>
+            </div><br><br>
+            <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center text-center scrollme animateme">
+              <div class="col-sm-4"><a href="http://balsamiq.com/" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatex='-500' data-opacity='0' src="balsamiq.png" id="balsamiq"></a></div>
+              <div class="col-sm-4"><a href="http://wolfram.com/" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatex='500' data-opacity='0' src="wolfram.png" id="wolfram"></a></div>
+              <div class="col-sm-4"><a href="http://vilynx.com/" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatey='-500' data-opacity='0' src="vilynx.png" id="vilynx"></a></div>
             </div>
           </div>
           <hr>
           <div id="partners" data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatex='-1000' class="scrollme animateme">
             <h2 class="text-center">Partners</h2>
             <div class="row text-center">
-              <div class="col-md-3 col-sm-6"><a href="https://hackclub.com" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatex='-500' data-opacity='0' src="hackclub.png" id="hackclub" class="animateme"></a></div>
-              <div class="col-md-3 col-sm-6"><a href="https://mlh.io" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatey='500' data-opacity='0' src="mlh.png" id="mlh" class="animateme"></a></div>
-              <div class="col-md-3 col-sm-6"><a href="https://www.hackerearth.com/" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatex='-500' data-opacity='0' src="hackerearth.png" id="hackerearth" class="animateme"></a></div>
-              <div class="col-md-3 col-sm-6"><a href="http://streameducation.org" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatey='500' data-opacity='0' src="stream.png" id="stream" class="animateme"></a></div>
+              <div class="col-md-3 col-sm-6"><a href="https://hackclub.com" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatex='-500' data-opacity='0' src="hackclub.png" id="hackclub"></a></div>
+              <div class="col-md-3 col-sm-6"><a href="https://mlh.io" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatey='500' data-opacity='0' src="mlh.png" id="mlh"></a></div>
+              <div class="col-md-3 col-sm-6"><a href="https://hackerearth.com/" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatex='-500' data-opacity='0' src="hackerearth.png" id="hackerearth"></a></div>
+              <div class="col-md-3 col-sm-6"><a href="http://streameducation.org" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatey='500' data-opacity='0' src="stream.png" id="stream"></a></div>
             </div>
-          </div>
+          </div><br>
           <hr>
-          <div id="update" data-when="enter" data-from='0.5' data-to='0' data-translatex='1000' data-opacity='0' class="scrollme animateme">
+          <div id="team" data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatex='1000' class="scrollme animateme">
+            <h2 class="text-center">SM Hacks Team</h2><br><br>
+            <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center scrollme animateme">
+              <div class="col-sm-3">
+                <div class="member"><img src="samuel.jpg" class="img-responsive img-circle">
+                  <div class="name">Samuel Escapa</div>
+                  <div class="role">Sponsorship Director</div>
+                  <div class="social"><a href="http://saescapa.me" target="_blank"><i class="fa fa-globe"></i></a><a href="http://twitter.saescapa.me" target="_blank"><i class="fa fa-twitter"></i></a><a href="http://linkedin.saescapa.me" target="_blank"><i class="fa fa-linkedin"></i></a><a href="http://github.saescapa.me" target="_blank"><i class="fa fa-github"></i></a></div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="member"><img src="kevinf.jpg" class="img-responsive img-circle">
+                  <div class="name">Kevin Fang</div>
+                  <div class="role">Operations Director</div>
+                  <div class="social"><a href="https://linkedin.com/m/profile/ACoAABoVZV4B0dLeQcQOztHldvOVmuHnWDiotvM/" target="_blank"><i class="fa fa-linkedin"></i></a><a href="https://facebook.com/kevin.fang.35" target="_blank"><i class="fa fa-facebook-official"></i></a><a href="https://instagram.com/fangk/" target="_blank"><i class="fa fa-instagram"></i></a></div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="member"><img src="cindy.png" class="img-responsive img-circle">
+                  <div class="name">Cindy Zhang</div>
+                  <div class="role">Tech Director</div>
+                  <div class="social"><a href="https://about.me/cindyhzhang" target="_blank"><i class="fa fa-globe"></i></a><a href="https://linkedin.com/in/cindyhzhang" target="_blank"><i class="fa fa-linkedin"></i></a><a href="https://facebook.com/czhang99" target="_blank"><i class="fa fa-facebook-official"></i></a><a href="https://github.com/cindyz8735" target="_blank"><i class="fa fa-github"></i></a></div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="member"><img src="anna.jpg" class="img-responsive img-circle">
+                  <div class="name">Anna Zheng</div>
+                  <div class="role">Outreach Director</div>
+                  <div class="social"><a href="https://facebook.com/anna.zheng.716" target="_blank"><i class="fa fa-facebook-official"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center scrollme animateme">
+              <div class="col-sm-3">
+                <div class="member"><img src="kevinh.jpg" class="img-responsive img-circle">
+                  <div class="name">Kevin Huo</div>
+                  <div class="role">Operations</div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="member"><img src="kiki.jpg" class="img-responsive img-circle">
+                  <div class="name">Kiki Lo</div>
+                  <div class="role">Operations</div>
+                  <div class="social"><a href="https://facebook.com/k1k1l0" target="_blank"><i class="fa fa-facebook-official"></i></a></div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="member"><img src="emanuel.jpg" class="img-responsive img-circle">
+                  <div class="name">Emanuel Rew</div>
+                  <div class="role">Operations</div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="member"><img src="nikhil.jpg" class="img-responsive img-circle">
+                  <div class="name">Nikhil Dodd</div>
+                  <div class="role">Outreach</div>
+                </div>
+              </div>
+            </div>
+            <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center scrollme animateme">
+              <div class="col-sm-3">
+                <div class="member"><img src="maggie.jpg" class="img-responsive img-circle">
+                  <div class="name">Maggie Dong</div>
+                  <div class="role">Outreach</div>
+                  <div class="social"><a href="https://facebook.com/maggie.dong.79" target="_blank"><i class="fa fa-facebook-official"></i></a></div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="member"><img src="thomas.jpg" class="img-responsive img-circle">
+                  <div class="name">Thomas Weathers</div>
+                  <div class="role">Outreach</div>
+                  <div class="social"><a href="https://facebook.com/thomas.weathers.415" target="_blank"><i class="fa fa-facebook-official"></i></a><a href="https://twitter.com/storm_weathers1" target="_blank"><i class="fa fa-twitter"></i></a></div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="member"><img src="anthony.png" class="img-responsive img-circle">
+                  <div class="name">Anthony Lam</div>
+                  <div class="role">Tech</div>
+                  <div class="social"><a href="https://github.com/99anthonylam" target="_blank"><i class="fa fa-github"></i></a><a href="https://facebook.com/anthony.lam.98" target="_blank"><i class="fa fa-facebook-official"></i></a></div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="member"><img src="ben.png" class="img-responsive img-circle">
+                  <div class="name">Benjamin Pang</div>
+                  <div class="role">Tech</div>
+                  <div class="social"><a href="https://github.com/molarmanful" target="_blank"><i class="fa fa-github"></i></a><a href="https://codegolf.stackexchange.com/users/41247/mama-fun-roll" target="_blank"><i class="fa fa-stack-exchange"></i></a><a href="https://reddit.com/u/molarmanful" target="_blank"><i class="fa fa-reddit"></i></a><a href="http://molarmanful.com" target="_blank"><i class="fa fa-globe"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <hr>
+          <div id="update" data-when="enter" data-from='0.5' data-to='0' data-translatex='-1000' data-opacity='0' class="scrollme animateme">
             <h2 class="text-center">Subscribe</h2>
             <div class="row">
               <div class="col-sm-12 text-center">
@@ -174,8 +285,8 @@
                 <div class="row">
                   <div class="col-sm-3"></div>
                   <div class="col-sm-6">
-                    <div class="input-group">
-                      <input id="u" data-when="enter" data-from='0.5' data-to='0' data-translatey='200' data-opacity='0' placeholder="johnsmith@example.com" type="email" class="form-control animateme">
+                    <div data-when="enter" data-from='0.5' data-to='0' data-translatey='200' data-opacity='0' class="input-group scrollme animateme">
+                      <input id="u" placeholder="johnsmith@example.com" type="email" class="form-control">
                       <div class="input-group-btn">
                         <button id="s" class="btn btn-primary">Submit!</button>
                       </div>
@@ -197,7 +308,7 @@
               </div>
               <div class="col-sm-2 hidden-xs"></div>
               <div class="col-sm-2 col-xs-6 text-center">
-                <p><a href="https://www.facebook.com/sanmateohacks" target="_blank" style="background-color:transparent; border:none; display:inline-block" class="btn btn-info"><i class="fa fa-facebook-square fa-3x"></i></a><a href="https://twitter.com/sanmateohacks" target="_blank" style="background-color:transparent; border:none; display:inline-block" class="btn btn-info"><i class="fa fa-twitter-square fa-3x"></i></a></p>
+                <p><a href="https://facebook.com/sanmateohacks" target="_blank" style="background-color:transparent; border:none; display:inline-block" class="btn btn-info"><i class="fa fa-facebook-square fa-3x"></i></a><a href="https://twitter.com/sanmateohacks" target="_blank" style="background-color:transparent; border:none; display:inline-block" class="btn btn-info"><i class="fa fa-twitter-square fa-3x"></i></a></p>
               </div>
             </div>
           </div>

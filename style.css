@@ -160,21 +160,35 @@ canvas{
   text-align:center;
 }
 #opera{
+  width:95%;
+}
+#sony{
   width:100%;
+  margin-top:9%;
 }
 #smule{
-  width:100%;
-  margin-top:-13%;
+  width:75%;
+  margin-top:-15%;
 }
 #vilynx{
   width:100%;
-  margin-top:15%;
+  margin-top:5%;
 }
 #justinmind{
   width:70%;
 }
 #mlw{
   width:50%;
+}
+#balsamiq{
+  width:100%;
+  margin-top:2%;
+}
+#mit-launch{
+  width:100%;
+}
+#wolfram{
+  width:100%;
 }
 #hackclub{
   width:100%;
@@ -226,4 +240,58 @@ hr{
 }
 .lead{
   text-align: center;
+}
+.member{
+  max-width:200px;
+  margin:20px auto;
+  padding:10px;
+  border:1px solid transparent;
+  max-height:180px;
+}
+.img-circle{
+  width: 120px;
+  height:120px;
+  display:block;
+  margin:0 auto;
+}
+.social{
+  margin: 3px 0;
+  opacity:.01;
+}
+.social a i{
+  padding:5px;
+  font-size:20px;
+  color:#ff7242;
+}
+.name{
+  padding-top:10px;
+  font-family:'Raleway';
+  font-weight:600;
+}
+@media screen and (min-width:992px){
+  #team .col-md-4{
+    width:26%;
+  }
+  #team .col-md-0{
+    width:11%;
+  }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+  .member .name{
+    font-size:18px;
+  }
+  .member .role{
+    font-size:12px;
+  }
+  #team .col-md-4{
+    width:31%;
+  }
+  #team .col-md-0{
+    width:0%;
+  }
+}
+@media screen and (max-width:767px){
+  .social{
+    opacity:1;
+  }
 }

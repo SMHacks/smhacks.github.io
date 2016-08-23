@@ -3,6 +3,7 @@ $('nav').data('offset-top',$(window).height())
 $('html,body').css('overflow-y','hidden')
 $(window).width()<768&&($('.scrollme').removeClass('scrollme'),$('.animateme').removeClass('animateme'))
 $(window).load(function(){
+  scrollme.init()
   particlesJS("particles-js", {
     "particles": {
       "number": {
@@ -135,5 +136,11 @@ $(window).load(function(){
 				$('#a').delay(4000).slideUp(200)
       })
     })
+  })
+  $('.member').mouseenter(function(){
+    $(this).find('.social').fadeTo(100,1)
+  })
+  $('.member').mouseleave(function(){
+    $(this).find('.social').fadeTo(100,.01)
   })
 })
