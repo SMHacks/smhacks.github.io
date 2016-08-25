@@ -3,6 +3,10 @@
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.load.min.js"></script>
     <link rel="shortcut icon" href="logo_2.0_solo.png" type="image/png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="logo_2.0_solo.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -21,25 +25,30 @@
     <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Cabin">
     <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet prefetch" href="style.css">
-    <script>head.load('https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js','https://rawgit.com/nckprsn/scrollme/master/jquery.scrollme.min.js','https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js','main.js')</script>
+    <noscript>
+      <link rel="stylesheet prefetch" href="noscript.css">
+    </noscript>
+    <script>head.load('https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js','https://code.jquery.com/color/jquery.color.plus-names-2.1.2.min.js','https://rawgit.com/camwiegert/baffle/master/dist/baffle.min.js','https://rawgit.com/nckprsn/scrollme/master/jquery.scrollme.min.js','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js','main.js')</script>
   </head>
   <body>
     <div class="loading"><img id="logo" src="logo_2.0_solo.svg">
       <div class="circle"></div>
     </div>
-    <div id="particles-js" class="bg"></div>
+    <div class="bg change"></div>
     <div class="cover">
       <div class="container text-center">
         <div class="row">
           <div class="col-sm-12">
             <h1 id="home">SM Hacks</h1>
-            <h3>San Mateo's first <b>high school</b> hackathon.</h3>
-            <p class="lead">September 17-18, 2016 @ <a target='_blank' href='https://goo.gl/maps/H94iydpfHEn'>Opera Mediaworks</a></p><a data-when="exit" data-from='0' data-to='0.5' data-opacity='0' data-translatex='500' data-toggle="modal" data-target="#m" class="btn btn-default btn-lg scrollme animateme">Sign up now!</a><br><br><br><i data-when="exit" data-from='0' data-to='0.5' data-translatey='500' data-rotatez='360' data-opacity='0' class="fa fa-angle-down fa-5x scrollme animateme"></i>
+            <div class="slide scrollme">
+              <h3>San Mateo's first <b>high school</b> hackathon.</h3>
+              <p class="lead">September 17-18, 2016 @ <a target='_blank' href='https://goo.gl/maps/H94iydpfHEn'>Opera Mediaworks</a></p><a data-when="exit" data-from='0' data-to='0.5' data-opacity='0' data-translatex='500' data-toggle="modal" data-target="#m" class="btn btn-default btn-lg scrollme animateme">Sign up now!</a><br><br><br><i data-when="exit" data-from='0' data-to='0.5' data-translatey='500' data-rotatez='360' data-opacity='0' class="fa fa-angle-down fa-5x scrollme animateme"></i>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <nav data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatex='-2000' data-spy="affix" class="navbar navbar-default scrollme animateme">
+    <nav data-spy="affix" class="navbar navbar-default change">
       <div class="navbar-header"><b class="navbar-brand">SM Hacks</b>
         <button data-toggle="collapse" data-target="#collapse" aria-expanded="false" class="navbar-toggle collapsed"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
       </div>
@@ -114,8 +123,8 @@
               <p>Email us at <a href="mailto:hi@smhacks.com">hi@smhacks.com</a> if you have additional questions. Please email questions about mentoring or leading workshops to <a href="mailto:volunteer@smhacks.com">volunteer@smhacks.com</a> and sponsorship questions to <a href="mailto:sponsors@smhacks.com">sponsors@smhacks.com</a>. We are always happy to help!</p>
             </div>
           </div>
+          <hr>
         </div>
-        <hr>
         <div id="schedule" data-when="enter" data-from='0.5' data-to='0' data-translatex='-1000' class="scrollme animateme">
           <h2 class="text-center">Schedule</h2>
           <p class="lead">Hacking is from noon to noon.</p>
@@ -149,156 +158,156 @@
             </div>
           </div>
           <hr>
-          <div id="sponsors" data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatex='1000' class="scrollme animateme">
-            <h2 class="text-center">Sponsors</h2>
-            <div class="row">
-              <div class="col-sm-12 text-center">
-                <p class="lead">We will be announcing our full list of awesome sponsors soon! Want to get involved?</p><a data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='200' href="sponsor.pdf" target="_blank" class="btn btn-primary btn-lg animateme">Get the Sponsorship Packet!</a>
-              </div>
-            </div><br><br><br>
-            <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center scrollme animateme">
-              <div class="col-sm-6"><a href="http://operamediaworks.com/" target="_blank"><img src="opera.png" id="opera"></a></div>
-              <div class="col-sm-6"><a href="http://sie.com/en/index.html" target="_blank"><img src="sony.png" id="sony"></a></div>
+        </div>
+        <div id="sponsors" data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatex='1000' class="scrollme animateme">
+          <h2 class="text-center">Sponsors</h2>
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <p class="lead">We will be announcing our full list of awesome sponsors soon! Want to get involved?</p><a data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='200' href="sponsor.pdf" target="_blank" class="btn btn-primary btn-lg animateme">Get the Sponsorship Packet!</a>
             </div>
-            <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center text-center scrollme animateme">
-              <div class="col-sm-3 hidden-xs"></div>
-              <div class="col-sm-6"><a href="http://smule.com/" target="_blank"><img src="smule.png" id="smule"></a></div>
-            </div>
-            <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center text-center scrollme animateme">
-              <div class="col-sm-4"><a href="http://justinmind.com" target="_blank"><img src="justinmind.png" id="justinmind"></a></div>
-              <div class="col-sm-4"><a href="http://mitlaunch.com/" target="_blank"><img src="mit-launch.png" id="mit-launch"></a></div>
-              <div class="col-sm-4"><a href="http://mlworks.com" target="_blank"><img src="mlw.png" id="mlw"></a></div>
-            </div><br><br>
-            <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center text-center scrollme animateme">
-              <div class="col-sm-4"><a href="http://balsamiq.com/" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatex='-500' data-opacity='0' src="balsamiq.png" id="balsamiq"></a></div>
-              <div class="col-sm-4"><a href="http://wolfram.com/" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatex='500' data-opacity='0' src="wolfram.png" id="wolfram"></a></div>
-              <div class="col-sm-4"><a href="http://vilynx.com/" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatey='-500' data-opacity='0' src="vilynx.png" id="vilynx"></a></div>
-            </div>
+          </div><br><br><br>
+          <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center scrollme animateme">
+            <div class="col-sm-6"><a href="http://operamediaworks.com/" target="_blank"><img src="opera.png" id="opera"></a></div>
+            <div class="col-sm-6"><a href="http://sie.com/en/index.html" target="_blank"><img src="sony.png" id="sony"></a></div>
+          </div>
+          <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center text-center scrollme animateme">
+            <div class="col-sm-3 hidden-xs"></div>
+            <div class="col-sm-6"><a href="http://smule.com/" target="_blank"><img src="smule.png" id="smule"></a></div>
+          </div>
+          <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center text-center scrollme animateme">
+            <div class="col-sm-4"><a href="http://justinmind.com" target="_blank"><img src="justinmind.png" id="justinmind"></a></div>
+            <div class="col-sm-4"><a href="http://mitlaunch.com/" target="_blank"><img src="mit-launch.png" id="mit-launch"></a></div>
+            <div class="col-sm-4"><a href="http://mlworks.com" target="_blank"><img src="mlw.png" id="mlw"></a></div>
+          </div><br><br>
+          <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center text-center scrollme animateme">
+            <div class="col-sm-4"><a href="http://balsamiq.com/" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatex='-500' data-opacity='0' src="balsamiq.png" id="balsamiq"></a></div>
+            <div class="col-sm-4"><a href="http://wolfram.com/" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatex='500' data-opacity='0' src="wolfram.png" id="wolfram"></a></div>
+            <div class="col-sm-4"><a href="http://vilynx.com/" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatey='-500' data-opacity='0' src="vilynx.png" id="vilynx"></a></div>
           </div>
           <hr>
-          <div id="partners" data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatex='-1000' class="scrollme animateme">
-            <h2 class="text-center">Partners</h2>
-            <div class="row text-center">
-              <div class="col-md-3 col-sm-6"><a href="https://hackclub.com" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatex='-500' data-opacity='0' src="hackclub.png" id="hackclub"></a></div>
-              <div class="col-md-3 col-sm-6"><a href="https://mlh.io" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatey='500' data-opacity='0' src="mlh.png" id="mlh"></a></div>
-              <div class="col-md-3 col-sm-6"><a href="https://hackerearth.com/" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatex='-500' data-opacity='0' src="hackerearth.png" id="hackerearth"></a></div>
-              <div class="col-md-3 col-sm-6"><a href="http://streameducation.org" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatey='500' data-opacity='0' src="stream.png" id="stream"></a></div>
+        </div>
+        <div id="partners" data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatex='-1000' class="scrollme animateme">
+          <h2 class="text-center">Partners</h2>
+          <div class="row text-center">
+            <div class="col-md-3 col-sm-6"><a href="https://hackclub.com" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatex='-500' data-opacity='0' src="hackclub.png" id="hackclub"></a></div>
+            <div class="col-md-3 col-sm-6"><a href="https://mlh.io" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatey='500' data-opacity='0' src="mlh.png" id="mlh"></a></div>
+            <div class="col-md-3 col-sm-6"><a href="https://hackerearth.com/" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatex='-500' data-opacity='0' src="hackerearth.png" id="hackerearth"></a></div>
+            <div class="col-md-3 col-sm-6"><a href="http://streameducation.org" target="_blank"><img data-when="enter" data-from='1' data-to='0' data-translatey='500' data-opacity='0' src="stream.png" id="stream"></a></div>
+          </div><br>
+          <hr>
+        </div>
+        <div id="team" data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatex='1000' class="scrollme animateme">
+          <h2 class="text-center">SM Hacks Team</h2><br><br>
+          <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center scrollme animateme">
+            <div class="col-sm-3">
+              <div class="member"><img src="samuel.jpg" class="img-responsive img-circle">
+                <div class="name">Samuel Escapa</div>
+                <div class="role">Sponsorship Director</div>
+                <div class="social"><a href="http://saescapa.me" target="_blank"><i class="fa fa-globe"></i></a><a href="http://twitter.saescapa.me" target="_blank"><i class="fa fa-twitter"></i></a><a href="http://linkedin.saescapa.me" target="_blank"><i class="fa fa-linkedin"></i></a><a href="http://github.saescapa.me" target="_blank"><i class="fa fa-github"></i></a></div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="member kevinf"><img src="kevinf.jpg" class="img-responsive img-circle">
+                <div class="name">Kevin Fang</div>
+                <div class="role">Operations Director</div>
+                <div class="social"><a href="https://linkedin.com/m/profile/ACoAABoVZV4B0dLeQcQOztHldvOVmuHnWDiotvM/" target="_blank"><i class="fa fa-linkedin"></i></a><a href="https://facebook.com/kevin.fang.35" target="_blank"><i class="fa fa-facebook-official"></i></a><a href="https://instagram.com/fangk/" target="_blank"><i class="fa fa-instagram"></i></a></div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="member"><img src="cindy.png" class="img-responsive img-circle">
+                <div class="name">Cindy Zhang</div>
+                <div class="role">Tech Director</div>
+                <div class="social"><a href="https://about.me/cindyhzhang" target="_blank"><i class="fa fa-globe"></i></a><a href="https://linkedin.com/in/cindyhzhang" target="_blank"><i class="fa fa-linkedin"></i></a><a href="https://facebook.com/czhang99" target="_blank"><i class="fa fa-facebook-official"></i></a><a href="https://github.com/cindyz8735" target="_blank"><i class="fa fa-github"></i></a></div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="member"><img src="anna.jpg" class="img-responsive img-circle">
+                <div class="name">Anna Zheng</div>
+                <div class="role">Outreach Director</div>
+                <div class="social"><a href="https://facebook.com/anna.zheng.716" target="_blank"><i class="fa fa-facebook-official"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center scrollme animateme">
+            <div class="col-sm-3">
+              <div class="member"><img src="kevinh.jpg" class="img-responsive img-circle">
+                <div class="name">Kevin Huo</div>
+                <div class="role">Operations</div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="member"><img src="kiki.jpg" class="img-responsive img-circle">
+                <div class="name">Kiki Lo</div>
+                <div class="role">Operations</div>
+                <div class="social"><a href="https://facebook.com/k1k1l0" target="_blank"><i class="fa fa-facebook-official"></i></a></div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="member"><img src="emanuel.jpg" class="img-responsive img-circle">
+                <div class="name">Emanuel Rew</div>
+                <div class="role">Operations</div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="member"><img src="nikhil.jpg" class="img-responsive img-circle">
+                <div class="name">Nikhil Dodd</div>
+                <div class="role">Outreach</div>
+              </div>
+            </div>
+          </div>
+          <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center scrollme animateme">
+            <div class="col-sm-3">
+              <div class="member"><img src="maggie.jpg" class="img-responsive img-circle">
+                <div class="name">Maggie Dong</div>
+                <div class="role">Outreach</div>
+                <div class="social"><a href="https://facebook.com/maggie.dong.79" target="_blank"><i class="fa fa-facebook-official"></i></a></div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="member"><img src="thomas.jpg" class="img-responsive img-circle">
+                <div class="name">Thomas Weathers</div>
+                <div class="role">Outreach</div>
+                <div class="social"><a href="https://facebook.com/thomas.weathers.415" target="_blank"><i class="fa fa-facebook-official"></i></a><a href="https://twitter.com/storm_weathers1" target="_blank"><i class="fa fa-twitter"></i></a></div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="member anthony"><img src="anthony.png" class="img-responsive img-circle">
+                <div class="name">Anthony Lam</div>
+                <div class="role">Tech</div>
+                <div class="social"><a href="https://github.com/99anthonylam" target="_blank"><i class="fa fa-github"></i></a><a href="https://facebook.com/anthony.lam.98" target="_blank"><i class="fa fa-facebook-official"></i></a></div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="member"><img src="ben.png" class="img-responsive img-circle">
+                <div class="name">Benjamin Pang</div>
+                <div class="role">Tech</div>
+                <div class="social"><a href="https://github.com/molarmanful" target="_blank"><i class="fa fa-github"></i></a><a href="https://codegolf.stackexchange.com/users/41247/mama-fun-roll" target="_blank"><i class="fa fa-stack-exchange"></i></a><a href="https://reddit.com/u/molarmanful" target="_blank"><i class="fa fa-reddit"></i></a><a href="http://molarmanful.com" target="_blank"><i class="fa fa-globe"></i></a></div>
+              </div>
             </div>
           </div><br>
           <hr>
-          <div id="team" data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatex='1000' class="scrollme animateme">
-            <h2 class="text-center">SM Hacks Team</h2><br><br>
-            <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center scrollme animateme">
-              <div class="col-sm-3">
-                <div class="member"><img src="samuel.jpg" class="img-responsive img-circle">
-                  <div class="name">Samuel Escapa</div>
-                  <div class="role">Sponsorship Director</div>
-                  <div class="social"><a href="http://saescapa.me" target="_blank"><i class="fa fa-globe"></i></a><a href="http://twitter.saescapa.me" target="_blank"><i class="fa fa-twitter"></i></a><a href="http://linkedin.saescapa.me" target="_blank"><i class="fa fa-linkedin"></i></a><a href="http://github.saescapa.me" target="_blank"><i class="fa fa-github"></i></a></div>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="member"><img src="kevinf.jpg" class="img-responsive img-circle">
-                  <div class="name">Kevin Fang</div>
-                  <div class="role">Operations Director</div>
-                  <div class="social"><a href="https://linkedin.com/m/profile/ACoAABoVZV4B0dLeQcQOztHldvOVmuHnWDiotvM/" target="_blank"><i class="fa fa-linkedin"></i></a><a href="https://facebook.com/kevin.fang.35" target="_blank"><i class="fa fa-facebook-official"></i></a><a href="https://instagram.com/fangk/" target="_blank"><i class="fa fa-instagram"></i></a></div>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="member"><img src="cindy.png" class="img-responsive img-circle">
-                  <div class="name">Cindy Zhang</div>
-                  <div class="role">Tech Director</div>
-                  <div class="social"><a href="https://about.me/cindyhzhang" target="_blank"><i class="fa fa-globe"></i></a><a href="https://linkedin.com/in/cindyhzhang" target="_blank"><i class="fa fa-linkedin"></i></a><a href="https://facebook.com/czhang99" target="_blank"><i class="fa fa-facebook-official"></i></a><a href="https://github.com/cindyz8735" target="_blank"><i class="fa fa-github"></i></a></div>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="member"><img src="anna.jpg" class="img-responsive img-circle">
-                  <div class="name">Anna Zheng</div>
-                  <div class="role">Outreach Director</div>
-                  <div class="social"><a href="https://facebook.com/anna.zheng.716" target="_blank"><i class="fa fa-facebook-official"></i></a></div>
-                </div>
-              </div>
-            </div>
-            <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center scrollme animateme">
-              <div class="col-sm-3">
-                <div class="member"><img src="kevinh.jpg" class="img-responsive img-circle">
-                  <div class="name">Kevin Huo</div>
-                  <div class="role">Operations</div>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="member"><img src="kiki.jpg" class="img-responsive img-circle">
-                  <div class="name">Kiki Lo</div>
-                  <div class="role">Operations</div>
-                  <div class="social"><a href="https://facebook.com/k1k1l0" target="_blank"><i class="fa fa-facebook-official"></i></a></div>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="member"><img src="emanuel.jpg" class="img-responsive img-circle">
-                  <div class="name">Emanuel Rew</div>
-                  <div class="role">Operations</div>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="member"><img src="nikhil.jpg" class="img-responsive img-circle">
-                  <div class="name">Nikhil Dodd</div>
-                  <div class="role">Outreach</div>
-                </div>
-              </div>
-            </div>
-            <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center scrollme animateme">
-              <div class="col-sm-3">
-                <div class="member"><img src="maggie.jpg" class="img-responsive img-circle">
-                  <div class="name">Maggie Dong</div>
-                  <div class="role">Outreach</div>
-                  <div class="social"><a href="https://facebook.com/maggie.dong.79" target="_blank"><i class="fa fa-facebook-official"></i></a></div>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="member"><img src="thomas.jpg" class="img-responsive img-circle">
-                  <div class="name">Thomas Weathers</div>
-                  <div class="role">Outreach</div>
-                  <div class="social"><a href="https://facebook.com/thomas.weathers.415" target="_blank"><i class="fa fa-facebook-official"></i></a><a href="https://twitter.com/storm_weathers1" target="_blank"><i class="fa fa-twitter"></i></a></div>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="member"><img src="anthony.png" class="img-responsive img-circle">
-                  <div class="name">Anthony Lam</div>
-                  <div class="role">Tech</div>
-                  <div class="social"><a href="https://github.com/99anthonylam" target="_blank"><i class="fa fa-github"></i></a><a href="https://facebook.com/anthony.lam.98" target="_blank"><i class="fa fa-facebook-official"></i></a></div>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="member"><img src="ben.png" class="img-responsive img-circle">
-                  <div class="name">Benjamin Pang</div>
-                  <div class="role">Tech</div>
-                  <div class="social"><a href="https://github.com/molarmanful" target="_blank"><i class="fa fa-github"></i></a><a href="https://codegolf.stackexchange.com/users/41247/mama-fun-roll" target="_blank"><i class="fa fa-stack-exchange"></i></a><a href="https://reddit.com/u/molarmanful" target="_blank"><i class="fa fa-reddit"></i></a><a href="http://molarmanful.com" target="_blank"><i class="fa fa-globe"></i></a></div>
-                </div>
-              </div>
-            </div>
-          </div><br>
-          <hr>
-          <div id="update" data-when="enter" data-from='0.5' data-to='0' data-translatex='-1000' data-opacity='0' class="scrollme animateme">
-            <h2 class="text-center">Subscribe</h2>
-            <div class="row">
-              <div class="col-sm-12 text-center">
-                <p class="lead">Enter your email here to receive updates from SM Hacks!</p>
-                <div class="row">
-                  <div class="col-sm-3"></div>
-                  <div class="col-sm-6">
-                    <div data-when="enter" data-from='0.5' data-to='0' data-translatey='200' data-opacity='0' class="input-group scrollme animateme">
-                      <input id="u" placeholder="johnsmith@example.com" type="email" class="form-control">
-                      <div class="input-group-btn">
-                        <button id="s" class="btn btn-primary">Submit!</button>
-                      </div>
+        </div>
+        <div id="update" data-when="enter" data-from='0.5' data-to='0' data-translatex='-1000' data-opacity='0' class="scrollme animateme">
+          <h2 class="text-center">Subscribe</h2>
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <p class="lead">Enter your email here to receive updates from SM Hacks!</p>
+              <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                  <div data-when="enter" data-from='0.5' data-to='0' data-translatey='200' data-opacity='0' class="input-group scrollme animateme">
+                    <input id="u" placeholder="johnsmith@example.com" type="email" class="form-control">
+                    <div class="input-group-btn">
+                      <button id="s" class="btn btn-primary">Submit!</button>
                     </div>
-                    <div id="a" role="alert" class="alert alert-dismissible"></div>
                   </div>
+                  <div id="a" role="alert" class="alert alert-dismissible"></div>
                 </div>
               </div>
             </div>
           </div><br>
           <hr>
-        </div><br><br><br><br>
+        </div>
         <footer data-when="enter" data-from='1' data-to='0' data-translatex='1000' class="footer scrollme animateme">
           <div class="container">
             <div class="row">
