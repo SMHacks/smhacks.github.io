@@ -205,16 +205,15 @@ canvas{
   width:100%;
   margin-top:10%;
 }
-#mlh{
-  width:60%;
-  margin-top:5%;
+#hackerfund{
+  margin-top:3%;
 }
 #hackerearth{
-  width:50%;
+  width:45%;
 }
 #stream{
   width:65%;
-  margin-top:-2%;
+  margin-top:-5%;
 }
 .btn-info,.btn-info:focus,.btn-info:active{
   background:none;
