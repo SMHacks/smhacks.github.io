@@ -42,11 +42,9 @@ html
             h1#home SM Hacks
             .slide.scrollme
               h3 San Mateo's first <b>high school</b> hackathon.
-              br
-              p.lead SM Hacks has been postponed until further notice.
-              br
-              p To stay updated, please #[a(target='_blank' href='#update') subscribe]!
-              // a.btn.btn-default.btn-lg.scrollme.animateme(data-when='exit' data-from=0 data-to=.5 data-opacity=0 data-translatex=500 data-toggle='modal' data-target='#m') Sign up now!
+              p.lead January 2017
+              a.btn.btn-default.btn-lg.scrollme.animateme(data-when='exit' data-from=0 data-to=.5 data-opacity=0 data-translatex=500 href='#update' target='_blank') Subscribe!
+              //a.btn.btn-default.btn-lg.scrollme.animateme(data-when='exit' data-from=0 data-to=.5 data-opacity=0 data-translatex=500 data-toggle='modal' data-target='#m') Sign up now!
               br
               br
               br
@@ -121,7 +119,7 @@ html
           .row.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000)
             .col-sm-1.hidden-xs
             .col-sm-5.text-center.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatex=-500)
-              h3 Saturday, Sept. 17
+              h3 Saturday, Sept. 13
               ul.list-unstyled
                 li <b>10am</b> - Registration
                 li <b>11am</b> - Opening Ceremony
@@ -132,7 +130,7 @@ html
                 li <b>4pm</b> - Intro to UX Design Workshop
                 li <b>6:30pm</b> - Dinner
             .col-sm-5.text-center.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatex=500)
-              h3 Sunday, Sept. 18
+              h3 Sunday, Sept. 14
               ul.list-unstyled
                 li <b>12am</b> - Midnight Snack
                 li <b>8am</b> - Breakfast
@@ -153,10 +151,7 @@ html
           br
           br
           .row.text-center.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatey=1000)
-            .col-sm-6
-              a(href='http://operamediaworks.com/' target='_blank')
-                img(src='opera.png' id='opera')
-            .col-sm-6
+            .col-sm-12
               a(href='http://sie.com/en/index.html' target='_blank')
                 img(src='sony.png' id='sony')
           .row.text-center.text-center.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatey=1000)
@@ -355,7 +350,7 @@ html
                     i.fa.fa-facebook-square.fa-3x
                   a.btn.btn-info(href='https://twitter.com/sanmateohacks' target='_blank' style='background-color:transparent; border:none; display:inline-block')
                     i.fa.fa-twitter-square.fa-3x
-    //.modal.fade#m(tabindex="-1" role="dialog")
+    .modal.fade#m(tabindex="-1" role="dialog")
       .modal-dialog
         .modal-content
           .modal-header

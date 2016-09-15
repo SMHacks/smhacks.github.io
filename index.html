@@ -41,10 +41,9 @@
           <div class="col-sm-12">
             <h1 id="home">SM Hacks</h1>
             <div class="slide scrollme">
-              <h3>San Mateo's first <b>high school</b> hackathon.</h3><br>
-              <p class="lead">SM Hacks has been postponed until further notice.</p><br>
-              <p>To stay updated, please <a target="_blank" href="#update">subscribe</a>!</p>
-              <!-- a.btn.btn-default.btn-lg.scrollme.animateme(data-when='exit' data-from=0 data-to=.5 data-opacity=0 data-translatex=500 data-toggle='modal' data-target='#m') Sign up now!--><br><br><br><i data-when="exit" data-from='0' data-to='0.5' data-translatey='500' data-rotatez='360' data-opacity='0' class="fa fa-angle-down fa-5x scrollme animateme"></i>
+              <h3>San Mateo's first <b>high school</b> hackathon.</h3>
+              <p class="lead">January 2017</p><a data-when="exit" data-from='0' data-to='0.5' data-opacity='0' data-translatex='500' href="#update" target="_blank" class="btn btn-default btn-lg scrollme animateme">Subscribe!</a>
+              <!--a.btn.btn-default.btn-lg.scrollme.animateme(data-when='exit' data-from=0 data-to=.5 data-opacity=0 data-translatex=500 data-toggle='modal' data-target='#m') Sign up now!--><br><br><br><i data-when="exit" data-from='0' data-to='0.5' data-translatey='500' data-rotatez='360' data-opacity='0' class="fa fa-angle-down fa-5x scrollme animateme"></i>
             </div>
           </div>
         </div>
@@ -133,7 +132,7 @@
         .row.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatey=1000)
           .col-sm-1.hidden-xs
           .col-sm-5.text-center.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatex=-500)
-            h3 Saturday, Sept. 17
+            h3 Saturday, Sept. 13
             ul.list-unstyled
               li <b>10am</b> - Registration
               li <b>11am</b> - Opening Ceremony
@@ -144,7 +143,7 @@
               li <b>4pm</b> - Intro to UX Design Workshop
               li <b>6:30pm</b> - Dinner
           .col-sm-5.text-center.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatex=500)
-            h3 Sunday, Sept. 18
+            h3 Sunday, Sept. 14
             ul.list-unstyled
               li <b>12am</b> - Midnight Snack
               li <b>8am</b> - Breakfast
@@ -164,8 +163,7 @@
             </div>
           </div><br><br><br>
           <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center scrollme animateme">
-            <div class="col-sm-6"><a href="http://operamediaworks.com/" target="_blank"><img src="opera.png" id="opera"></a></div>
-            <div class="col-sm-6"><a href="http://sie.com/en/index.html" target="_blank"><img src="sony.png" id="sony"></a></div>
+            <div class="col-sm-12"><a href="http://sie.com/en/index.html" target="_blank"><img src="sony.png" id="sony"></a></div>
           </div>
           <div data-when="enter" data-from='0.5' data-to='0' data-opacity='0' data-translatey='1000' class="row text-center text-center scrollme animateme">
             <div class="col-sm-6"><a href="http://smule.com/" target="_blank"><img src="smule.png" id="smule"></a></div>
@@ -316,20 +314,21 @@
         </footer>
       </div>
     </div>
-    <!--.modal.fade#m(tabindex="-1" role="dialog")
-    .modal-dialog
-      .modal-content
-        .modal-header
-          button.close(data-dismiss='modal') &times;
-          h1.modal-title Sign Up
-        .modal-body.text-center
-          h3
-            a.btn.btn-default(href='https://smhacks.typeform.com/to/XokTDO' target='_blank') Hacker
-            |  or
-            a.btn.btn-default(href='https://smhacks.typeform.com/to/avpXre' target='_blank') Mentor
-            |?
-        .modal-footer
-          button.btn.btn-primary(data-dismiss='modal') Cancel
-    -->
+    <div id="m" tabindex="-1" role="dialog" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button data-dismiss="modal" class="close">&times;</button>
+            <h1 class="modal-title">Sign Up</h1>
+          </div>
+          <div class="modal-body text-center">
+            <h3><a href="https://smhacks.typeform.com/to/XokTDO" target="_blank" class="btn btn-default">Hacker</a> or <a href="https://smhacks.typeform.com/to/avpXre" target="_blank" class="btn btn-default">Mentor</a>?</h3>
+          </div>
+          <div class="modal-footer">
+            <button data-dismiss="modal" class="btn btn-primary">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
