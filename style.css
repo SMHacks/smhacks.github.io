@@ -105,15 +105,6 @@ canvas{
   -webkit-transform:translate(-50%,-50%);
   transform:translate(-50%,-50%);
 }
-#logo{
-  height:50%;
-  width:auto;
-  position:fixed;
-  top:50%;
-  left:50%;
-  -webkit-transform:translate(-50%,-50%);
-          transform:translate(-50%,-50%);
-}
 .cover .container{
   display:table-cell;
   vertical-align:middle;
