@@ -1,49 +1,18 @@
-$('nav').data('offset-top',$(window).height())
-$('html,body').css('overflow-y','hidden')
-b=baffle('#home')
-matchMedia('(hover:hover)').matches||($('.scrollme').removeClass('scrollme'),$('.animateme').removeClass('animateme'))
-$(window).load(function(){
-  $('.circle').delay(500).animate({
-    height:'2000px',
-    width:'2000px',
-    opacity:1
-  },1000).promise().done(function(){
-    scrollTo(0,0)
-      b.start()
-    $('.loading').fadeOut(1000).promise().done(function(){
-      b.reveal(1000)
-      $('.slide').delay(1500).slideToggle().promise().done(function(){
-        $('html,body').css('overflow-y','auto')
-      })
-      scrollme.init()
-    })
+$(function(){
+  scrollTo(0,0)
+  $('.rest').delay(1000).slideToggle(500,function(){
+    $('.navbar-default').fadeIn(500)
   })
-  $('a[href*="#"]:not([href="#"])').click(function(){
-    if(location.pathname.replace(/^\//,'')==this.pathname.replace(/^\//,'')&&location.hostname==this.hostname){
-      $('.navbar-toggle').click()
-      target=$(this.hash)
-      target=target.length?target:$('[name='+this.hash.slice(1)+']')
-      if(target.length){
-        $('html,body').animate({
-          scrollTop:target.offset().top-70
-        },1000)
-        return false
-      }
-    }
-  })
-  $(window).scroll(function(){
-    /*ch=$(window).scrollTop()>=$('#faq').offset().top-500&&$(window).scrollTop()<$('#schedule').offset().top-500?'#EE6352'
-      :$(window).scrollTop()>=$('#schedule').offset().top-500&&$(window).scrollTop()<$('#sponsors').offset().top-500?'#59CD90'
-      :$(window).scrollTop()>=$('#sponsors').offset().top-500&&$(window).scrollTop()<$('#partners').offset().top-500?'#3FA7D6'
-      :$(window).scrollTop()>=$('#partners').offset().top-500&&$(window).scrollTop()<$('#team').offset().top-500?'#FAC05E'
-      :$(window).scrollTop()>=$('#team').offset().top-500&&$(window).scrollTop()<$('#update').offset().top-500&&$(window).scrollTop()!=$(document).height()-$(window).height()?'#F79D84'
-      :'#ff7242'*/
-    ch=$(window).scrollTop()>=$('#faq').offset().top-500&&$(window).scrollTop()<$('#sponsors').offset().top-500?'#EE6352'
-      :$(window).scrollTop()>=$('#sponsors').offset().top-500&&$(window).scrollTop()<$('#partners').offset().top-500?'#3FA7D6'
-      :$(window).scrollTop()>=$('#partners').offset().top-500&&$(window).scrollTop()<$('#team').offset().top-500?'#FAC05E'
-      :$(window).scrollTop()>=$('#team').offset().top-500&&$(window).scrollTop()<$('#update').offset().top-500&&$(window).scrollTop()!=$(document).height()-$(window).height()?'#F79D84'
-      :'#ff7242'
-    $('.change').stop().animate({backgroundColor:ch},50)
+  cur=''
+  $('a[href^="#"]').click(function(e){
+    e.preventDefault()
+    $(this).blur()
+    $(cur).fadeOut()
+    $(cur=$(this).attr('href')).show().scrollTop(0)
+    $('html,body').animate({
+      scrollTop:$($(this).attr('href')).offset().top,
+      scrollLeft:$($(this).attr('href')).offset().left
+    },500)
   })
   $('#s').click(function(){
     $.post('https://smhacks-molarmanful.rhcloud.com/',{email:$('#u').val()},function(x){

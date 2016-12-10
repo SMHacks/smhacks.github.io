@@ -1,7 +1,13 @@
+@font-face{
+  font-family:'smhacks';
+  src:url('smhacks.ttf') format('truetype')
+}
 html,body{
   background-color:#fefefe;
-  font-family:'Cabin';
-  overflow-x:hidden;
+  font-family:'Quicksand';
+  background-color:#ff7242;
+  overflow:hidden;
+  height:100%;
 }
 .navbar{
   background-color:#ff7242;
@@ -9,13 +15,16 @@ html,body{
   color:#ccc;
   z-index:50;
   width:100%;
-  border-radius:0;
 }
 .navbar-brand{
   color:#fefefe !important;
+  line-height:50px;
 }
 .nav a{
   color:#fefefe !important;
+}
+.rest,.navbar-default,.content{
+  display:none;
 }
 .nav a:hover{
   border:none !important;
@@ -34,18 +43,6 @@ html,body{
 .affix{
   top:0;
 }
-.bg{
-  position:fixed;
-  height:100%;
-  width:100%;
-  top:0;
-  left:0;
-  background-color:#ff7242;
-  background-image:url('');
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position:50% 50%;
-}
 canvas{
   display:block;
   vertical-align:bottom;
@@ -57,23 +54,13 @@ canvas{
   width:100%;
   min-height:100%;
   color:#333;
-  pointer-events:none;
+  background-color:#ff7242;
 }
 .slide{
   display:none;
 }
-.cover h1{
-  line-height:.1em;
-}
-@media(min-width:768px){
-  .cover h1{
-    font-size:5em;
-    line-height:.5em;
-  }
-}
 .cover a, #m a{
   color:#444;
-  pointer-events:all;
 }
 .cover h3 a{
   text-decoration:underline;
@@ -82,28 +69,6 @@ canvas{
   border:1px solid #444;
   color:#444 !important;
   background:transparent;
-}
-.loading{
-  height:100%;
-  width:100%;
-  position:fixed;
-  top:0;
-  left:0;
-  background-color:#333;
-  z-index:100;
-  display:inline-block;
-}
-.circle{
-  border-radius:50%;
-  height:0;
-  width:0;
-  background-color:#ff7242;
-  position:fixed;
-  top:50%;
-  left:50%;
-  opacity:0;
-  -webkit-transform:translate(-50%,-50%);
-  transform:translate(-50%,-50%);
 }
 .cover .container{
   display:table-cell;
@@ -132,27 +97,39 @@ canvas{
   border-color:#ff7242;
   color:#ffffff !important;
 }
-#sponsors .btn-primary,#sponsors .btn-primary:focus,#sponsors .btn-primary:active{
-  background:none;
-  color:#3FA7D6 !important;
-  border-color:#3FA7D6;
-}
-#sponsors .btn-primary:hover{
-  background-color:#3FA7D6;
-  border-color:#3FA7D6;
-  color:#ffffff !important;
-}
 .content{
   position:absolute;
-  display:table;
   width:100%;
-  top:100%;
-  bottom:0;
+  height:100%;
+  max-height:100%;
   color:#444444;
   background-color:rgba(254,254,254,.7);
+  overflow-y:scroll;
+  padding-bottom:100px;
+  padding-top:100px;
 }
 .content a{
   color:#ff7242 !important;
+}
+#faq{
+  top:0%;
+  left:100%;
+}
+#schedule{
+  top:100%;
+  left:100%;
+}
+#sponsors{
+  top:100%;
+  left:0%;
+}
+#team{
+  top:200%;
+  left:0%;
+}
+#update{
+  top:200%;
+  left:100%;
 }
 #faq a{
   color:#EE6352 !important;
@@ -217,10 +194,6 @@ canvas{
 .btn-info:hover{
   color:#ffffff !important;
 }
-hr{
-  margin-bottom:400px;
-  border-bottom-color:#444;
-}
 .footer{
   position:absolute;
   width:100%;
@@ -271,8 +244,17 @@ hr{
 }
 .name{
   padding-top:10px;
-  font-family:'Raleway';
+  font-family:'Cabin';
   font-weight:600;
+}
+.navbar img{
+  width:15%;
+  padding-top:15px;
+}
+.footer img{
+  padding-top:18px;
+  width:100%;
+  height:auto;
 }
 @media screen and (min-width:992px){
   #team .col-md-4{
@@ -297,6 +279,25 @@ hr{
   }
 }
 @media screen and (max-width:767px){
+  #top{
+    font-size:1rem
+  }
+  #faq{
+    top:100%;
+    left:0;
+  }
+  #sponsors{
+    top:200%;
+    left:0;
+  }
+  #team{
+    top:300%;
+    left:0;
+  }
+  #update{
+    top:400%;
+    left:0;
+  }
   .social{
     opacity:1;
   }
