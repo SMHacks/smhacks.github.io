@@ -279,24 +279,25 @@ canvas{
   }
 }
 @media screen and (max-width:767px){
-  #top{
-    font-size:1rem
-  }
   #faq{
     top:100%;
-    left:0;
+    left:0%;
+  }
+  #schedule{
+    top:200%;
+    left:0%;
   }
   #sponsors{
-    top:200%;
-    left:0;
+    top:300%;
+    left:0%;
   }
   #team{
-    top:300%;
-    left:0;
+    top:400%;
+    left:0%;
   }
   #update{
-    top:400%;
-    left:0;
+    top:500%;
+    left:0%;
   }
   .social{
     opacity:1;
