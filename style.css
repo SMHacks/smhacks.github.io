@@ -138,50 +138,83 @@ canvas{
   padding:10px;
   text-align:center;
 }
-#opera{
-  width:95%;
-}
-#sony{
+#informatica{
   width:100%;
-  margin-top:9%;
+  margin-top:15%;
 }
 #google{
   width:100%;
   margin-top:9%;
 }
+#sony{
+  width:50%;
+  margin-top:0%;
+}
 #smule{
   width:75%;
-  margin-top:-15%;
+  margin-top:-7%;
 }
-#vilynx{
-  width:100%;
-  margin-top:5%;
+#brandmakers{
+  width:110%;
+  margin-top:10%;
+}
+#ibm{
+  width:80%;
 }
 #justinmind{
   width:70%;
 }
+#mit-launch{
+  width:100%;
+}
 #mlw{
   width:50%;
+  margin-top:6%;
 }
 #balsamiq{
   width:100%;
   margin-top:2%;
 }
-#mit-launch{
-  width:100%;
-}
 #wolfram{
   width:100%;
+}
+#vilynx{
+  width:100%;
+  margin-top:5%;
+}
+#makeschool{
+  width:100%;
+  margin-top:5%;
+}
+#marketo{
+  width:100%;
+  margin-top:-12%;
+}
+#dualaperture{
+  width:100%;
+  margin-top:10%;
+}
+#github{
+  width:100%;
+}
+#lattice{
+  width:105%;
+  margin-top:3%;
+}
+#a16z{
+  width:87%;
+  margin-top:-2%;
+}
+#tech{
+  width:90%;
+  margin-top:-5%;
 }
 #hackclub{
   width:100%;
   margin-top:10%;
 }
 #hackerfund{
-  margin-top:3%;
-}
-#hackerearth{
-  width:45%;
+  margin-top:10%;
 }
 #stream{
   width:65%;
@@ -301,5 +334,8 @@ canvas{
   }
   .social{
     opacity:1;
+  }
+  .sp{
+    margin-top:5% !important;
   }
 }
