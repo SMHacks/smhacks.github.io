@@ -161,6 +161,13 @@ canvas{
 #ibm{
   width:80%;
 }
+#pubnub{
+  width:90%;
+  margin-top:5%;
+}
+#twilio{
+  width:90%;
+}
 #justinmind{
   width:70%;
 }
