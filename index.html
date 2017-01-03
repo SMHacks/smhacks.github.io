@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--output: index.html--><!DOCTYPE html>
 <html>
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.load.min.js"></script>
@@ -17,7 +17,7 @@
     <meta property="og:site_name" content="SM Hacks">
     <meta property="og:title" content="SM Hacks">
     <meta property="og:description" content="San Mateo's first high school hackathon.">
-    <meta property="og:image" content="logo.png">
+    <meta property="og:image" content="cover.png">
     <meta property="og:url" content="http://smhacks.com">
     <title>SM Hacks</title>
     <link rel="stylesheet prefetch" href="bootstrap.css">
@@ -53,7 +53,6 @@
           <li><a href="#schedule">Schedule</a></li>
           <li><a href="#sponsors">Sponsors / Partners</a></li>
           <li><a href="#team">Team</a></li>
-          <li><a href="#update">Subscribe</a></li>
         </ul>
       </div>
     </nav>
@@ -71,7 +70,7 @@
           </div>
           <div class="col-sm-4">
             <h3>What if I don't know how to code?</h3>
-            <p>No worries! SM Hacks is the perfect time to learn how to code and all students, regardless of skill level and experience, are welcome. There will be plenty of mentors on hand glad to answer any and all questions and workshops specifically designed for those with no prior experience. <a href="#update">Stay tuned</a> for more information about workshops!</p>
+            <p>No worries! SM Hacks is the perfect time to learn how to code and all students, regardless of skill level and experience, are welcome. There will be plenty of mentors on hand glad to answer any and all questions and workshops specifically designed for those with no prior experience. Stay tuned for more information about workshops!</p>
           </div>
         </div>
         <div class="row">
@@ -99,7 +98,7 @@
           </div>
           <div class="col-sm-4">
             <h3>How can I apply?</h3>
-            <p>For attendees, just fill out <a href="https://smhacks.typeform.com/to/SZPVdt">this form</a>. Mentors, be sure to <a href="#update">subscribe</a> for the latest updates!</p>
+            <p>For attendees, just fill out <a href="https://smhacks.typeform.com/to/SZPVdt">this form</a>. Mentors, fill out <a href="https://smhacks.typeform.com/to/XCtApy">this form</a> for the latest updates!</p>
           </div>
         </div>
         <div class="row">
@@ -130,9 +129,12 @@
               <li><b>10:00 AM</b> - Mentor/Sponsors Check In</li>
               <li><b>10:30 AM</b> - Hacker Check In</li>
               <li><b>11:30 AM</b> - Opening Ceremony </li>
-              <li><b>12:30 PM</b> - Hacking Starts</li>
-              <li><b>12:30 PM</b> - Team-mixer</li>
-              <li><b>12:30 PM</b> - Lunch </li>
+              <li><b>12:00 PM</b> - Hacking Starts</li>
+              <li><b>12:00 PM</b> - Team-mixer</li>
+              <li><b>12:00 PM</b> - Lunch</li>
+              <li><b>1:00 PM</b> - Intro to iOS Workshop</li>
+              <li><b>2:30 PM</b> - Intermediate iOS Workshop</li>
+              <li><b>3:00 PM</b> - Intro to Git Workshop</li>
               <li><b>6:30 PM</b> - Dinner</li>
             </ul>
           </div>
@@ -143,7 +145,7 @@
               <li><b>8:00 AM</b> - Breakfast </li>
               <li><b>11AM to 12 PM</b> - Submissions</li>
               <li><b>12:00 PM</b> - Hacking Ends</li>
-              <li><b>11 AM to 11:45 AM</b> - Lunch </li>
+              <li><b>12:00 PM</b> - Lunch </li>
               <li><b>12:30 PM to 1:15 PM</b> - Judging Expo</li>
               <li><b>1:45 PM</b> - Closing Ceremony</li>
             </ul>
@@ -291,28 +293,21 @@
         </div>
       </div>
     </div>
-    <div id="update" class="content">
-      <div class="container">
-        <h2 class="text-center">Subscribe</h2>
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <p class="lead">Enter your email here to receive updates from SM Hacks!</p>
-            <div class="row">
-              <div class="col-sm-3"></div>
-              <div class="col-sm-6">
-                <div class="input-group">
-                  <input id="u" placeholder="johnsmith@example.com" type="email" class="form-control">
-                  <div class="input-group-btn">
-                    <button id="s" class="btn btn-primary">Submit!</button>
-                  </div>
-                </div>
-                <div id="a" role="alert" class="alert alert-dismissible"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!--#update.content
+    .container
+      h2.text-center Subscribe
+      .row
+        .col-sm-12.text-center
+          p.lead Enter your email here to receive updates from SM Hacks!
+          .row
+            .col-sm-3
+            .col-sm-6
+              .input-group
+                input.form-control#u(placeholder='johnsmith@example.com' type='email')
+                .input-group-btn
+                  button.btn.btn-primary#s Submit!
+              .alert.alert-dismissible#a(role='alert')
+    -->
     <!--footer.footer
     .container
       .row
