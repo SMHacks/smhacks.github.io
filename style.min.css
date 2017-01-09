@@ -1,1 +1,370 @@
-@font-face{font-family:'smhacks';src:url('smhacks.ttf') format('truetype')}html,body{background-color:#fefefe;font-family:'Quicksand';background-color:#ff7242;overflow:hidden;height:100%}.navbar{background-color:#ff7242;border:0;color:#ccc;z-index:50;width:100%}.navbar-brand{color:#fefefe!important;line-height:50px}.nav a{color:#fefefe!important}.rest,.navbar-default,.content{display:none}.nav a:hover{border:none!important}.navbar-toggle,.navbar-toggle:focus,.navbar-toggle:active{border:0;background:none!important}.icon-bar,.navbar-toggle:focus .icon-bar,.navbar-toggle:active .icon-bar{background-color:#fefefe!important}.affix-top{top:100%;position:absolute}.affix{top:0}canvas{display:block;vertical-align:bottom}.cover{display:table;position:absolute;height:100%;width:100%;min-height:100%;color:#333;background-color:#ff7242}.slide{display:none}.cover a,#m a{color:#444}.cover h3 a{text-decoration:underline}.cover .btn,.cover .btn:focus,#m .btn.btn-default{border:1px solid #444;color:#444!important;background:transparent}.cover .container{display:table-cell;vertical-align:middle}.btn{background:0}.btn-default,.btn-default:focus,.btn-default:active{background-color:#464b4f;border-color:#464b4f;color:#fff!important}.btn-default:hover,#m .btn-default:hover{background-color:#444;border-color:#444;color:#fff!important}.btn-primary,.btn-primary:focus,.btn-primary:active{background:0;color:#ff7242;border-color:#ff7242}.btn-primary:hover{background-color:#ff7242;border-color:#ff7242;color:#fff!important}.content{position:absolute;width:100%;height:100%;max-height:100%;color:#444;background-color:rgba(254,254,254,.7);overflow-y:scroll;padding-bottom:100px;padding-top:100px}.content a{color:#ff7242!important}#faq{top:0;left:100%}#schedule{top:100%;left:100%}#sponsors{top:100%;left:0}#team{top:200%;left:0}#update{top:200%;left:100%}#faq a{color:#ee6352!important}#partners img,#sponsors img{padding:10px;text-align:center}#informatica{width:100%;margin-top:15%}#google{width:95%;margin-top:-7%}#sony{width:50%;margin-top:0}#smule{width:75%;margin-top:-7%}#brandmakers{width:110%;margin-top:10%}#ibm{width:80%}#pubnub{width:90%;margin-top:5%}#twilio{width:90%}#justinmind{width:70%}#mit-launch{width:100%}#mlw{width:50%;margin-top:6%}#balsamiq{width:100%;margin-top:2%}#wolfram{width:100%}#vilynx{width:100%;margin-top:5%}#makeschool{width:100%;margin-top:15%}#marketo{width:100%;margin-top:-2%}#scenera{width:85%;margin-top:-5%}#github{width:100%}#lattice{width:105%;margin-top:3%}#a16z{width:87%;margin-top:-2%}#tech{width:90%;margin-top:-5%}#hackclub{width:100%;margin-top:10%}#hackerfund{margin-top:10%}#stream{width:65%;margin-top:-5%}.btn-info,.btn-info:focus,.btn-info:active{background:0;color:#ff7242}.btn-info:hover{color:#fff!important}.footer{position:absolute;width:100%;height:120px;margin-bottom:0;left:0;background:#333}.footer .row p{height:120px;margin:0}.footer img{margin-top:18px;height:80px}.footer p{line-height:120px}#a{display:none;width:100%}.lead{text-align:center}.member{max-width:200px;margin:20px auto;padding:10px;border:1px solid transparent;max-height:180px}.img-circle{width:120px;height:120px;display:block;margin:0 auto}.social{margin:3px 0;opacity:.01}.social a i{padding:5px;font-size:20px;color:#f79d84}.name{padding-top:10px;font-family:'Cabin';font-weight:600}.navbar img{width:15%;padding-top:15px}.footer img{padding-top:18px;width:100%;height:auto}@media screen and (min-width:992px){#team .col-md-4{width:26%}#team .col-md-0{width:11%}}@media screen and (min-width:768px) and (max-width:991px){.member .name{font-size:18px}.member .role{font-size:12px}#team .col-md-4{width:31%}#team .col-md-0{width:0}}@media screen and (max-width:767px){#faq{top:100%;left:0}#schedule{top:200%;left:0}#sponsors{top:300%;left:0}#team{top:400%;left:0}#update{top:500%;left:0}.social{opacity:1}.sp{margin-top:5%!important}}
+st@font-face {
+    font-family: 'smhacks';
+    src: url('smhacks.ttf') format('truetype')
+}
+html,
+body {
+    background-color: #fefefe;
+    font-family: 'Quicksand';
+    background-color: #ff7242;
+    overflow: hidden;
+    height: 100%
+}
+.navbar {
+    background-color: #ff7242;
+    border: 0;
+    color: #ccc;
+    z-index: 50;
+    width: 100%
+}
+.navbar-brand {
+    color: #fefefe!important;
+    line-height: 50px
+}
+.nav a {
+    color: #fefefe!important
+}
+.rest,
+.navbar-default,
+.content {
+    display: none
+}
+.nav a: hover {
+    border: none!important
+}
+.navbar-toggle,
+.navbar-toggle: focus, .navbar-toggle: active {
+    border: 0;
+    background: none!important
+}
+.icon-bar,
+.navbar-toggle: focus .icon-bar, .navbar-toggle: active .icon-bar {
+    background-color: #fefefe!important
+}
+.affix-top {
+    top: 100%;
+    position: absolute
+}
+.affix {
+    top: 0
+}
+canvas {
+    display: block;
+    vertical-align: bottom
+}
+.cover {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    color: #333;
+    background-color: #ff7242
+}
+.slide {
+    display: none
+}
+.cover a,
+#m a {
+    color: #444
+}
+.cover h3 a {
+    text-decoration: underline
+}
+.cover .btn,
+.cover .btn: focus, #m .btn.btn-default {
+    border: 1px solid #444;
+    color: #444!important;
+    background: transparent
+}
+.cover .container {
+    display: table-cell;
+    vertical-align: middle
+}
+.btn {
+    background: 0
+}
+.btn-default,
+.btn-default: focus, .btn-default: active {
+    background-color: #464b4f;
+    border-color: #464b4f;
+    color: #fff!important
+}
+.btn-default: hover, #m .btn-default: hover {
+    background-color: #444;
+    border-color: #444;
+    color: #fff!important
+}
+.btn-primary,
+.btn-primary: focus, .btn-primary: active {
+    background: 0;
+    color: #ff7242;
+    border-color: #ff7242
+}
+.btn-primary: hover {
+    background-color: #ff7242;
+    border-color: #ff7242;
+    color: #fff!important
+}
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    color: #444;
+    background-color: rgba(254, 254, 254, .7);
+    overflow-y: scroll;
+    padding-bottom: 100px;
+    padding-top: 100px
+}
+.content a {
+    color: #ff7242!important
+}
+#faq {
+    top: 0;
+    left: 100%
+}
+#schedule {
+    top: 100%;
+    left: 100%
+}
+#sponsors {
+    top: 100%;
+    left: 0
+}
+#team {
+    top: 200%;
+    left: 0
+}
+#update {
+    top: 200%;
+    left: 100%
+}
+#faq a {
+    color: #ee6352!important
+}
+.table td{
+  border-top: none !important;
+  text-align: left !important;
+}
+#partners img,
+#sponsors img {
+    padding: 10px;
+    text-align: center
+}
+#informatica {
+    width: 100%;
+    margin-top: 15%
+}
+#google {
+    width: 95%;
+    margin-top: -7%
+}
+#sony {
+    width: 50%;
+    margin-top: 0
+}
+#smule {
+    width: 75%;
+    margin-top: -7%
+}
+#brandmakers {
+    width: 110%;
+    margin-top: 10%
+}
+#ibm {
+    width: 80%
+}
+#pubnub {
+    width: 90%;
+    margin-top: 5%
+}
+#twilio {
+    width: 90%
+}
+#justinmind {
+    width: 70%
+}
+#mit-launch {
+    width: 100%
+}
+#upsurf {
+    width: 100%;
+    margin-top: 15%
+}
+#balsamiq {
+    width: 100%;
+    margin-top: 2%
+}
+#wolfram {
+    width: 100%
+}
+#vilynx {
+    width: 100%;
+    margin-top: 5%
+}
+#makeschool {
+    width: 100%;
+    margin-top: 15%
+}
+#marketo {
+    width: 100%;
+    margin-top: -2%
+}
+#scenera {
+    width: 85%;
+    margin-top: -5%
+}
+#github {
+    width: 100%
+}
+#lattice {
+    width: 105%;
+    margin-top: 3%
+}
+#a16z {
+    width: 87%;
+    margin-top: -2%
+}
+#tech {
+    width: 90%;
+    margin-top: -5%
+}
+#stickermule{
+  width:110%;
+  margin-top:5%;
+}
+#particle{
+  width:100%
+}
+#hackclub {
+    width: 100%;
+    margin-top: 10%
+}
+#hackerfund {
+    margin-top: 10%
+}
+#stream {
+    width: 65%;
+    margin-top: -5%
+}
+.btn-info,
+.btn-info: focus, .btn-info: active {
+    background: 0;
+    color: #ff7242
+}
+.btn-info: hover {
+    color: #fff!important
+}
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 0;
+    left: 0;
+    background: #333
+}
+.footer .row p {
+    height: 120px;
+    margin: 0
+}
+.footer img {
+    margin-top: 18px;
+    height: 80px
+}
+.footer p {
+    line-height: 120px
+}
+#a {
+    display: none;
+    width: 100%
+}
+.lead {
+    text-align: center
+}
+.member {
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid transparent;
+    max-height: 180px
+}
+.img-circle {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 0 auto
+}
+.social {
+    margin: 3px 0;
+    opacity: .01
+}
+.social a i {
+    padding: 5px;
+    font-size: 20px;
+    color: #f79d84
+}
+.name {
+    padding-top: 10px;
+    font-family: 'Cabin';
+    font-weight: 600
+}
+.navbar img {
+    width: 15%;
+    padding-top: 15px
+}
+.footer img {
+    padding-top: 18px;
+    width: 100%;
+    height: auto
+}
+@media screen and (min-width: 992px) {
+    #team .col-md-4 {
+        width: 26%
+    }
+    #team .col-md-0 {
+        width: 11%
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .member .name {
+        font-size: 18px
+    }
+    .member .role {
+        font-size: 12px
+    }
+    #team .col-md-4 {
+        width: 31%
+    }
+    #team .col-md-0 {
+        width: 0
+    }
+}
+@media screen and (max-width: 767px) {
+    #faq {
+        top: 100%;
+        left: 0
+    }
+    #schedule {
+        top: 200%;
+        left: 0
+    }
+    #sponsors {
+        top: 300%;
+        left: 0
+    }
+    #team {
+        top: 400%;
+        left: 0
+    }
+    #update {
+        top: 500%;
+        left: 0
+    }
+    .social {
+        opacity: 1
+    }
+    .sp {
+        margin-top: 5%!important
+    }
+}
