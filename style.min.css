@@ -172,6 +172,9 @@ canvas {
     width: 110%;
     margin-top: 10%
 }
+#skillflow {
+    width: 30%;
+}
 #ibm {
     width: 80%
 }
