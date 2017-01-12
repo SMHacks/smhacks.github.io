@@ -54,6 +54,8 @@ html
         ul.nav.navbar-nav.navbar-right
           li: a(href='#faq') FAQ
           li: a(href='#schedule') Schedule
+          // li: a(href='#judges') Judges
+          li: a(href='#prizes') Prizes
           li: a(href='#sponsors') Sponsors / Partners
           li: a(href='#team') Team
     #faq.content
@@ -132,13 +134,22 @@ html
                   td Intro to Programming Workshop
                 tr
                   td 2:00 PM
-                  td Intermediate iOS Workshop
+                  td Intro to Web Development Workshop
                 tr
                   td 2:00 PM
-                  td Particle Workshop
+                  td Intermediate iOS Workshop
                 tr
                   td 3:00 PM
                   td Intro to Git Workshop
+                tr
+                  td 4:00 PM
+                  td Particle.io Workshop
+                tr
+                  td 4:00 PM
+                  td Realtime Data Visualization Workshop
+                tr
+                  td 5:00 PM
+                  td Scenera Workshop
                 tr
                   td 6:30 PM
                   td Dinner
@@ -156,9 +167,6 @@ html
                   td 8:00 AM
                   td Breakfast
                 tr
-                  td 9:00 AM
-                  td Realtime Data Visualization Workshop
-                tr
                   td 11:00 AM - 12:00 PM
                   td #[a(href='https://smhacks.devpost.com/') Project Submissions]
                 tr
@@ -173,6 +181,83 @@ html
                 tr
                   td 1:45 PM
                   td Closing Ceremony
+    // #judges.content
+      .container
+        h2.text-center Judges
+        .row.text-center
+          .col-sm-4
+            .judge
+              img.img-responsive.img-circle(src='zach-latta.jpeg')
+              .name Zach Latta
+              .role Executive Director, Hack Club
+          .col-sm-4
+            .judge
+              img.img-responsive.img-circle(src='tom.png')
+              .name Tom Preston-Werner
+              .role Co-Founder, Github
+          .col-sm-4
+            .judge
+              img.img-responsive.img-circle(src='maegan.jpeg')
+              .name Maegan Clawges
+              .role Software Engineer, YouTube
+        br
+        br
+        br
+        .row.text-center
+          .col-sm-4
+            .judge
+              img.img-responsive.img-circle(src='claire.jpeg')
+              .name Claire Wang
+              .role Student, Cornell University
+          .col-sm-4
+            .judge
+              img.img-responsive.img-circle(src='')
+              .name Michael Huang
+              .role Software Engineer, Uber
+          .col-sm-4
+            .judge
+              img.img-responsive.img-circle(src='lizzie.jpg')
+              .name Lizzie Siegle
+              .role Student, Bryn Mawr College
+    #prizes.content
+      .container
+        h2.text-center Prizes
+        .row
+          .col-sm-12.text-center
+            p.lead We will be announcing our full list of prizes soon!
+        .row
+          .col-sm-4
+            h3 1st Place
+            p GoPro - HERO Session HD and a #[a(href='https://www.justinmind.com/') Justinmind] perpetual license, one for each team member.
+          .col-sm-4
+            h3 2nd Place
+            p Bose Soundlink Color Bluetooth Speaker and a #[a(href='https://www.justinmind.com/') Justinmind] perpetual license, one for each team member.
+          .col-sm-4
+            h3 3rd Place
+            p Syma X5C Explorers 2.4Ghz 6-Axis Gyro RC quadcopter Drone w/ 2MP HD Camera, one for each team member.
+        .row
+          .col-sm-4
+            h3 Best iOS App
+            p Google Chromecast and Amazon Echo Dot, one for each team member.
+          .col-sm-4
+            h3 Best Android App
+            p Partial scholarship to Make School Summer Academy, Particle Kit and Amazon Echo Dot, one for each team member.
+          .col-sm-4
+            h3 Best .tech Domain Name
+            p $50 Amazon gift card, one for each team member. 
+        .row
+          .col-sm-4
+            h3 Best with Wolfram Tech
+            p 1 year of #[a(href='http://www.wolfram.com/development-platform') Wolfram Development Platform], 1 year of #[a(href='http://www.wolfram.com/solutions/education/students') Wolfram Mathematica Student Edition] and 1 year of #[a(href='http://www.wolframalpha.com/pro/') Wolfram|Alpha Pro], one for each team member. Two teams can win this award.
+          // .col-sm-4
+            h3 Top 10 Teams
+            p 1 year subscription to #[a(href='http://www.wolframalpha.com/pro/') Wolfram|Alpha Pro], one for each team member. Winners of the Best with Wolfram Tech Award are not eligible for this award. 
+          .col-sm-4
+            h3 Raffle Prizes
+            p One iPad Mini 4, one Roku 3 Streaming Player and two Justinmind perpetual licenses.
+          .col-sm-4
+            h1 $8,165
+            p#cash Total cash value of prizes
     #sponsors.content
       .container
         h2.text-center Sponsors

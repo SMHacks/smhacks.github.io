@@ -128,6 +128,14 @@ canvas {
     top: 100%;
     left: 100%
 }
+#judges {
+    top: 0%;
+    left: 200%;
+}
+#prizes {
+    top: 200%;
+    left: 200%
+}
 #sponsors {
     top: 100%;
     left: 0
@@ -136,16 +144,19 @@ canvas {
     top: 200%;
     left: 0
 }
-#update {
-    top: 200%;
-    left: 100%
-}
 #faq a {
     color: #ee6352!important
 }
 .table td{
   border-top: none !important;
   text-align: left !important;
+}
+h1 {
+  text-align: center;
+  font-size: 4.5em;
+}
+#cash {
+  text-align: center;
 }
 #partners img,
 #sponsors img {
@@ -293,6 +304,17 @@ canvas {
     border: 1px solid transparent;
     max-height: 180px
 }
+.judge {
+    max-width: 270px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid transparent;
+    max-height: 180px
+}
+.judge .img-circle {
+    width: 170px;
+    height: 170px;
+}
 .img-circle {
     width: 120px;
     height: 120px;
@@ -315,7 +337,8 @@ canvas {
 }
 .navbar img {
     width: 15%;
-    padding-top: 15px
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 .footer img {
     padding-top: 18px;
