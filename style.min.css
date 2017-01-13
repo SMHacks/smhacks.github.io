@@ -153,7 +153,7 @@ canvas {
 }
 h1 {
   text-align: center;
-  font-size: 4.5em;
+  font-size: 4em;
 }
 #cash {
   text-align: center;
@@ -310,6 +310,9 @@ h1 {
     padding: 10px;
     border: 1px solid transparent;
     max-height: 180px
+}
+#judges .name {
+    font-size:1.3em;
 }
 .judge .img-circle {
     width: 170px;

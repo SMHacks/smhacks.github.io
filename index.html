@@ -35,8 +35,9 @@
           <div class="col-sm-12"><img src="logo.png" class="logo">
             <div class="rest">
               <h3>San Mateo's first <b>high school</b> hackathon!</h3>
-              <p class="lead">January 14-15, 2017 @ <a href='https://www.google.com/maps/place/Informatica+Corporation/@37.5111227,-122.2051784,15z/data=!4m5!3m4!1s0x0:0xc479e59839708591!8m2!3d37.5111227!4d-122.2051784' target='_blank'>Informatica</a></p><a data-toggle="modal" data-target="#m" class="btn btn-default btn-lg">Sign up now!</a><br><br>
-              <p>Applications close January 12, 2017</p>
+              <p class="lead">January 14-15, 2017 @ <a href='https://www.google.com/maps/place/Informatica+Corporation/@37.5111227,-122.2051784,15z/data=!4m5!3m4!1s0x0:0xc479e59839708591!8m2!3d37.5111227!4d-122.2051784' target='_blank'>Informatica</a></p>
+              <!-- a.btn.btn-default.btn-lg(data-toggle='modal' data-target='#m') Sign up now!--><a href="https://slack.smhacks.com" target="_blank" class="btn btn-default btn-lg">Join our Slack!</a><br><br>
+              <p>Attendees must complete <a href="https://www.hellosign.com/s/bf714f6b">this waiver</a> before arriving</p>
             </div>
           </div>
         </div>
@@ -50,7 +51,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#schedule">Schedule</a></li>
-          <!-- li: a(href='#judges') Judges-->
+          <li><a href="#judges">Judges</a></li>
           <li><a href="#prizes">Prizes</a></li>
           <li><a href="#sponsors">Sponsors / Partners</a></li>
           <li><a href="#team">Team</a></li>
@@ -229,45 +230,64 @@
         </div>
       </div>
     </div>
-    <!-- #judges.content
-    .container
-      h2.text-center Judges
-      .row.text-center
-        .col-sm-4
-          .judge
-            img.img-responsive.img-circle(src='zach-latta.jpeg')
-            .name Zach Latta
-            .role Executive Director, Hack Club
-        .col-sm-4
-          .judge
-            img.img-responsive.img-circle(src='tom.png')
-            .name Tom Preston-Werner
-            .role Co-Founder, Github
-        .col-sm-4
-          .judge
-            img.img-responsive.img-circle(src='maegan.jpeg')
-            .name Maegan Clawges
-            .role Software Engineer, YouTube
-      br
-      br
-      br
-      .row.text-center
-        .col-sm-4
-          .judge
-            img.img-responsive.img-circle(src='claire.jpeg')
-            .name Claire Wang
-            .role Student, Cornell University
-        .col-sm-4
-          .judge
-            img.img-responsive.img-circle(src='')
-            .name Michael Huang
-            .role Software Engineer, Uber
-        .col-sm-4
-          .judge
-            img.img-responsive.img-circle(src='lizzie.jpg')
-            .name Lizzie Siegle
-            .role Student, Bryn Mawr College
-    -->
+    <div id="judges" class="content">
+      <div class="container">
+        <h2 class="text-center">Judges</h2><br>
+        <div class="row text-center">
+          <div class="col-sm-4">
+            <div class="name">Zach Latta</div>
+            <div class="role">Executive Director, Hack Club</div>
+          </div>
+          <div class="col-sm-4">
+            <div class="name">Tom Preston-Werner</div>
+            <div class="role">Co-Founder, Github</div>
+          </div>
+          <div class="col-sm-4">
+            <div class="name">Oliver Belanger</div>
+            <div class="role">Hackathon Coordinator, 42 University</div>
+          </div>
+        </div><br><br>
+        <div class="row text-center">
+          <div class="col-sm-4">
+            <div class="name">Selynna Sun</div>
+            <div class="role">Founder, Los Altos Hacks</div>
+          </div>
+          <div class="col-sm-4">
+            <div class="name">Raymond Chan</div>
+            <div class="role">Student, Stanford University</div>
+          </div>
+          <div class="col-sm-4">
+            <div class="name">Doug Stevenson</div>
+            <div class="role">Developer Advocate, Google</div>
+          </div>
+        </div><br><br>
+        <div class="row text-center">
+          <div class="col-sm-4">
+            <div class="name">Claire Wang</div>
+            <div class="role">Student, Cornell University</div>
+          </div>
+          <div class="col-sm-4">
+            <div class="name">Michael Huang</div>
+            <div class="role">Software Engineer, Uber</div>
+          </div>
+          <div class="col-sm-4">
+            <div class="name">Lizzie Siegle</div>
+            <div class="role">Student, Bryn Mawr College</div>
+          </div>
+        </div><br><br>
+        <div class="row text-center">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-4">
+            <div class="name">Giovanni Tenorio</div>
+            <div class="role">Software Engineer, Hewlett Packard</div>
+          </div>
+          <div class="col-sm-4">
+            <div class="name">Mike McDonald</div>
+            <div class="role">Product Manager, Google</div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="prizes" class="content">
       <div class="container">
         <h2 class="text-center">Prizes</h2>
@@ -279,15 +299,15 @@
         <div class="row">
           <div class="col-sm-4">
             <h3>1st Place</h3>
-            <p>GoPro - HERO Session HD and a <a href="https://www.justinmind.com/">Justinmind</a> perpetual license, one for each team member.</p>
+            <p>GoPro - HERO Session HD, 1 year of <a href="http://www.wolfram.com/development-platform">Wolfram Development Platform</a>, 1 year of <a href="http://www.wolfram.com/solutions/education/students">Wolfram Mathematica Student Edition</a>, 1 year of <a href="http://www.wolframalpha.com/pro/">Wolfram|Alpha Pro</a> and a <a href="https://www.justinmind.com/">Justinmind</a> perpetual license, one for each team member.</p>
           </div>
           <div class="col-sm-4">
             <h3>2nd Place</h3>
-            <p>Bose Soundlink Color Bluetooth Speaker and a <a href="https://www.justinmind.com/">Justinmind</a> perpetual license, one for each team member.</p>
+            <p>Bose Soundlink Color Bluetooth Speaker, 1 year of <a href="http://www.wolfram.com/development-platform">Wolfram Development Platform</a>, 1 year of <a href="http://www.wolfram.com/solutions/education/students">Wolfram Mathematica Student Edition</a>, 1 year of <a href="http://www.wolframalpha.com/pro/">Wolfram|Alpha Pro</a> and a <a href="https://www.justinmind.com/">Justinmind</a> perpetual license, one for each team member.</p>
           </div>
           <div class="col-sm-4">
             <h3>3rd Place</h3>
-            <p>Syma X5C Explorers 2.4Ghz 6-Axis Gyro RC quadcopter Drone w/ 2MP HD Camera, one for each team member.</p>
+            <p>Syma X5C Explorers 2.4Ghz 6-Axis Gyro RC quadcopter Drone w/ 2MP HD Camera, 1 year of <a href="http://www.wolfram.com/development-platform">Wolfram Development Platform</a>, 1 year of <a href="http://www.wolfram.com/solutions/education/students">Wolfram Mathematica Student Edition</a> and 1 year of <a href="http://www.wolframalpha.com/pro/">Wolfram|Alpha Pro</a>, one for each team member.</p>
           </div>
         </div>
         <div class="row">
@@ -297,28 +317,24 @@
           </div>
           <div class="col-sm-4">
             <h3>Best Android App</h3>
-            <p>Partial scholarship to Make School Summer Academy, Particle Kit and Amazon Echo Dot, one for each team member.</p>
+            <p>Partial scholarship to <a href="https://www.makeschool.com/">Make School Summer Academy</a>, Particle Kit and Amazon Echo Dot, one for each team member.</p>
           </div>
           <div class="col-sm-4">
-            <h3>Best .tech Domain Name</h3>
+            <h3>Best <a href="http://get.tech/">.tech</a> Domain Name</h3>
             <p>$50 Amazon gift card, one for each team member. </p>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-4">
-            <h3>Best with Wolfram Tech</h3>
-            <p>1 year of <a href="http://www.wolfram.com/development-platform">Wolfram Development Platform</a>, 1 year of <a href="http://www.wolfram.com/solutions/education/students">Wolfram Mathematica Student Edition</a> and 1 year of <a href="http://www.wolframalpha.com/pro/">Wolfram|Alpha Pro</a>, one for each team member. Two teams can win this award.</p>
+            <h3>Top 10 Teams</h3>
+            <p>1 year subscription to <a href="http://www.wolframalpha.com/pro/">Wolfram|Alpha Pro</a>, one for each team member. First, second and third place winners are not eligible for this award. </p>
           </div>
-          <!-- .col-sm-4
-          h3 Top 10 Teams
-          p 1 year subscription to <a href="http://www.wolframalpha.com/pro/">Wolfram|Alpha Pro</a>, one for each team member. Winners of the Best with Wolfram Tech Award are not eligible for this award.
-          -->
           <div class="col-sm-4">
             <h3>Raffle Prizes</h3>
-            <p>One iPad Mini 4, one Roku 3 Streaming Player and two Justinmind perpetual licenses.</p>
+            <p>One iPad Mini 4, one Roku 3 Streaming Player and two <a href="https://www.justinmind.com/">Justinmind</a> perpetual licenses.</p>
           </div>
           <div class="col-sm-4">
-            <h1>$8,165</h1>
+            <h1>$12,153</h1>
             <p id="cash">Total cash value of prizes</p>
           </div>
         </div>
@@ -326,12 +342,7 @@
     </div>
     <div id="sponsors" class="content">
       <div class="container">
-        <h2 class="text-center">Sponsors</h2>
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <p class="lead">We will be announcing our full list of awesome sponsors soon! Want to get involved?</p><a href="sponsor.pdf" target="_blank" class="btn btn-primary btn-lg">Sponsorship Packet</a>
-          </div>
-        </div>
+        <h2 class="text-center">Sponsors</h2><br>
         <div class="row text-center">
           <div class="col-sm-6"><a href="https://www.informatica.com/" target="_blank"><img src="informatica.png" id="informatica" class="sp"></a></div>
           <div class="col-sm-6"><a href="https://developers.google.com/" target="_blank"><img src="google.png" id="google" class="sp"></a></div>
@@ -503,21 +514,20 @@
             a.btn.btn-info(href='https://twitter.com/sanmateohacks' target='_blank' style='background-color:transparent; border:none; display:inline-block')
               i.fa.fa-twitter-square.fa-3x
     -->
-    <div id="m" tabindex="-1" role="dialog" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button data-dismiss="modal" class="close">&times;</button>
-            <h1 class="modal-title">Sign Up</h1>
-          </div>
-          <div class="modal-body text-center">
-            <h3><a href="https://smhacks.typeform.com/to/SZPVdt" target="_blank" class="btn btn-default">Hacker</a> or <a href="https://smhacks.typeform.com/to/XCtApy" target="_blank" class="btn btn-default">Mentor</a>?</h3>
-          </div>
-          <div class="modal-footer">
-            <button data-dismiss="modal" class="btn btn-primary">Cancel</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- .modal.fade#m(tabindex="-1" role="dialog")
+    .modal-dialog
+      .modal-content
+        .modal-header
+          button.close(data-dismiss='modal') &times;
+          h1.modal-title Sign Up
+        .modal-body.text-center
+          h3
+            a.btn.btn-default(href='https://smhacks.typeform.com/to/SZPVdt' target='_blank') Hacker
+            |  or
+            a.btn.btn-default(href='https://smhacks.typeform.com/to/XCtApy' target='_blank') Mentor
+            |?
+        .modal-footer
+          button.btn.btn-primary(data-dismiss='modal') Cancel
+    -->
   </body>
 </html>

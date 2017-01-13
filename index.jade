@@ -38,10 +38,11 @@ html
             .rest
               h3 San Mateo's first <b>high school</b> hackathon!
               p.lead January 14-15, 2017 @ <a href='https://www.google.com/maps/place/Informatica+Corporation/@37.5111227,-122.2051784,15z/data=!4m5!3m4!1s0x0:0xc479e59839708591!8m2!3d37.5111227!4d-122.2051784' target='_blank'>Informatica</a>
-              a.btn.btn-default.btn-lg(data-toggle='modal' data-target='#m') Sign up now!
+              // a.btn.btn-default.btn-lg(data-toggle='modal' data-target='#m') Sign up now!
+              a.btn.btn-default.btn-lg(href='https://slack.smhacks.com' target='_blank') Join our Slack!
               br
               br
-              p Applications close January 12, 2017
+              p Attendees must complete #[a(href='https://www.hellosign.com/s/bf714f6b') this waiver] before arriving
             
     nav.navbar.navbar-default.navbar-fixed-bottom
       .navbar-header
@@ -54,7 +55,7 @@ html
         ul.nav.navbar-nav.navbar-right
           li: a(href='#faq') FAQ
           li: a(href='#schedule') Schedule
-          // li: a(href='#judges') Judges
+          li: a(href='#judges') Judges
           li: a(href='#prizes') Prizes
           li: a(href='#sponsors') Sponsors / Partners
           li: a(href='#team') Team
@@ -181,44 +182,54 @@ html
                 tr
                   td 1:45 PM
                   td Closing Ceremony
-    // #judges.content
+    #judges.content
       .container
         h2.text-center Judges
+        br
         .row.text-center
           .col-sm-4
-            .judge
-              img.img-responsive.img-circle(src='zach-latta.jpeg')
               .name Zach Latta
               .role Executive Director, Hack Club
           .col-sm-4
-            .judge
-              img.img-responsive.img-circle(src='tom.png')
               .name Tom Preston-Werner
               .role Co-Founder, Github
           .col-sm-4
-            .judge
-              img.img-responsive.img-circle(src='maegan.jpeg')
-              .name Maegan Clawges
-              .role Software Engineer, YouTube
-        br
+              .name Oliver Belanger
+              .role Hackathon Coordinator, 42 University
         br
         br
         .row.text-center
           .col-sm-4
-            .judge
-              img.img-responsive.img-circle(src='claire.jpeg')
+              .name Selynna Sun
+              .role Founder, Los Altos Hacks
+          .col-sm-4
+              .name Raymond Chan
+              .role Student, Stanford University
+          .col-sm-4
+              .name Doug Stevenson
+              .role Developer Advocate, Google
+        br
+        br
+        .row.text-center
+          .col-sm-4
               .name Claire Wang
               .role Student, Cornell University
           .col-sm-4
-            .judge
-              img.img-responsive.img-circle(src='')
               .name Michael Huang
               .role Software Engineer, Uber
           .col-sm-4
-            .judge
-              img.img-responsive.img-circle(src='lizzie.jpg')
               .name Lizzie Siegle
               .role Student, Bryn Mawr College
+        br
+        br
+        .row.text-center
+          .col-sm-2
+          .col-sm-4
+              .name Giovanni Tenorio
+              .role Software Engineer, Hewlett Packard
+          .col-sm-4
+              .name Mike McDonald
+              .role Product Manager, Google
     #prizes.content
       .container
         h2.text-center Prizes
@@ -228,43 +239,37 @@ html
         .row
           .col-sm-4
             h3 1st Place
-            p GoPro - HERO Session HD and a #[a(href='https://www.justinmind.com/') Justinmind] perpetual license, one for each team member.
+            p GoPro - HERO Session HD, 1 year of #[a(href='http://www.wolfram.com/development-platform') Wolfram Development Platform], 1 year of #[a(href='http://www.wolfram.com/solutions/education/students') Wolfram Mathematica Student Edition], 1 year of #[a(href='http://www.wolframalpha.com/pro/') Wolfram|Alpha Pro] and a #[a(href='https://www.justinmind.com/') Justinmind] perpetual license, one for each team member.
           .col-sm-4
             h3 2nd Place
-            p Bose Soundlink Color Bluetooth Speaker and a #[a(href='https://www.justinmind.com/') Justinmind] perpetual license, one for each team member.
+            p Bose Soundlink Color Bluetooth Speaker, 1 year of #[a(href='http://www.wolfram.com/development-platform') Wolfram Development Platform], 1 year of #[a(href='http://www.wolfram.com/solutions/education/students') Wolfram Mathematica Student Edition], 1 year of #[a(href='http://www.wolframalpha.com/pro/') Wolfram|Alpha Pro] and a #[a(href='https://www.justinmind.com/') Justinmind] perpetual license, one for each team member.
           .col-sm-4
             h3 3rd Place
-            p Syma X5C Explorers 2.4Ghz 6-Axis Gyro RC quadcopter Drone w/ 2MP HD Camera, one for each team member.
+            p Syma X5C Explorers 2.4Ghz 6-Axis Gyro RC quadcopter Drone w/ 2MP HD Camera, 1 year of #[a(href='http://www.wolfram.com/development-platform') Wolfram Development Platform], 1 year of #[a(href='http://www.wolfram.com/solutions/education/students') Wolfram Mathematica Student Edition] and 1 year of #[a(href='http://www.wolframalpha.com/pro/') Wolfram|Alpha Pro], one for each team member.
         .row
           .col-sm-4
             h3 Best iOS App
             p Google Chromecast and Amazon Echo Dot, one for each team member.
           .col-sm-4
             h3 Best Android App
-            p Partial scholarship to Make School Summer Academy, Particle Kit and Amazon Echo Dot, one for each team member.
+            p Partial scholarship to #[a(href='https://www.makeschool.com/') Make School Summer Academy], Particle Kit and Amazon Echo Dot, one for each team member.
           .col-sm-4
-            h3 Best .tech Domain Name
+            h3 Best #[a(href='http://get.tech/') .tech] Domain Name
             p $50 Amazon gift card, one for each team member. 
         .row
           .col-sm-4
-            h3 Best with Wolfram Tech
-            p 1 year of #[a(href='http://www.wolfram.com/development-platform') Wolfram Development Platform], 1 year of #[a(href='http://www.wolfram.com/solutions/education/students') Wolfram Mathematica Student Edition] and 1 year of #[a(href='http://www.wolframalpha.com/pro/') Wolfram|Alpha Pro], one for each team member. Two teams can win this award.
-          // .col-sm-4
             h3 Top 10 Teams
-            p 1 year subscription to #[a(href='http://www.wolframalpha.com/pro/') Wolfram|Alpha Pro], one for each team member. Winners of the Best with Wolfram Tech Award are not eligible for this award. 
+            p 1 year subscription to #[a(href='http://www.wolframalpha.com/pro/') Wolfram|Alpha Pro], one for each team member. First, second and third place winners are not eligible for this award. 
           .col-sm-4
             h3 Raffle Prizes
-            p One iPad Mini 4, one Roku 3 Streaming Player and two Justinmind perpetual licenses.
+            p One iPad Mini 4, one Roku 3 Streaming Player and two #[a(href='https://www.justinmind.com/') Justinmind] perpetual licenses.
           .col-sm-4
-            h1 $8,165
+            h1 $12,153
             p#cash Total cash value of prizes
     #sponsors.content
       .container
         h2.text-center Sponsors
-        .row
-          .col-sm-12.text-center
-            p.lead We will be announcing our full list of awesome sponsors soon! Want to get involved?
-            a.btn.btn-primary.btn-lg(href='sponsor.pdf' target='_blank') Sponsorship Packet
+        br
         .row.text-center
           .col-sm-6
             a(href='https://www.informatica.com/' target='_blank')
@@ -526,7 +531,7 @@ html
                 i.fa.fa-facebook-square.fa-3x
               a.btn.btn-info(href='https://twitter.com/sanmateohacks' target='_blank' style='background-color:transparent; border:none; display:inline-block')
                 i.fa.fa-twitter-square.fa-3x
-    .modal.fade#m(tabindex="-1" role="dialog")
+    // .modal.fade#m(tabindex="-1" role="dialog")
       .modal-dialog
         .modal-content
           .modal-header
