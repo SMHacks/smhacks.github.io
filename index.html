@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.load.min.js"></script>
     <link rel="shortcut icon" href="logo.png" type="image/png">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -9,7 +8,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="San Mateo's first high school hackathon.">
     <meta name="keywords" content="san mateo hackathon, sm hackathon, san mateo hacks, sm hacks, smhacks, san mateo high school, smhs, smhs hackathon, high school hackathon, hackathon, san mateo">
     <link rel="author" href="https://plus.google.com/+BenPangMolarmanful">
@@ -21,517 +20,67 @@
     <meta property="og:url" content="http://www.smhacks.com">
     <meta property="twitter:image" content="http://www.smhacks.com/social-media-logo.png">
     <title>SM Hacks</title>
-    <link rel="stylesheet prefetch" href="bootstrap.css">
-    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Quicksand">
-    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Cabin:400,700">
-    <link rel="stylesheet prefetch" href="style.min.css">
-    <script>head.load('https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js','main.js')</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.4/css/uikit.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .uk-tab>.uk-active>a{
+        border-color:#ff8300;
+      }
+      a,a:hover,#winners h2{
+        color:#ff8300;
+      }
+    </style>
   </head>
   <body>
-    <div id="top" class="cover">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-sm-12"><img src="logo.png" class="logo">
-            <div class="rest">
-              <h3>San Mateo's first <b>high school</b> hackathon!</h3>
-              <p class="lead">January 14-15, 2017 @ <a href='https://www.google.com/maps/place/Informatica+Corporation/@37.5111227,-122.2051784,15z/data=!4m5!3m4!1s0x0:0xc479e59839708591!8m2!3d37.5111227!4d-122.2051784' target='_blank'>Informatica</a></p>
-              <!-- a.btn.btn-default.btn-lg(data-toggle='modal' data-target='#m') Sign up now!--><a href="http://slack.smhacks.com" target="_blank" class="btn btn-default btn-lg">Join our Slack!</a><br><br>
-              <p>Attendees must complete <a href="https://www.hellosign.com/s/bf714f6b">this waiver</a> before arriving</p>
-            </div>
-          </div>
-        </div>
+    <div id="cover" style="background-color:black" class="uk-cover-container"><img src="team.jpg" style="opacity:.7" class="uk-responsive-width">
+      <div class="uk-overlay uk-light uk-position-center uk-text-center">
+        <h1 class="uk-heading-divider">Thank you.</h1>
+        <p class="uk-text-lead">We, the SM Hacks Team, would like to thank all participating sponsors, mentors, and – most of all – hackers for supporting us to make SM Hacks as great as it was.</p>
       </div>
     </div>
-    <nav class="navbar navbar-default navbar-fixed-bottom">
-      <div class="navbar-header"><a href="#top" class="navbar-brand"><img src="logo.png" style="height:110%;width:auto"></a>
-        <button data-toggle="collapse" data-target="#collapse" aria-expanded="false" class="navbar-toggle collapsed"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-      </div>
-      <div id="collapse" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#schedule">Schedule</a></li>
-          <li><a href="#judges">Judges</a></li>
-          <li><a href="#prizes">Prizes</a></li>
-          <li><a href="#sponsors">Sponsors / Partners</a></li>
-          <li><a href="#team">Team</a></li>
+    <div id="winners" class="uk-section">
+      <div class="uk-container uk-container-small">
+        <h2 class="uk-text-center">Winners</h2>
+        <hr class="uk-divider-small uk-text-center">
+        <p class="uk-text-center uk-text-lead">See all submissions <a href='https://smhacks.devpost.com/submissions' target='_blank'>here</a>.</p>
+        <ul uk-tab="animation:uk-animation-slide-bottom-small" class="uk-tab">
+          <li class="uk-active"><a>First</a></li>
+          <li><a>Second</a></li>
+          <li><a>Third</a></li>
+          <li><a>Best iOS App</a></li>
+          <li><a>Best Web App</a></li>
+          <li><a>Best Android App</a></li>
         </ul>
-      </div>
-    </nav>
-    <div id="faq" class="content">
-      <div class="container">
-        <h2 class="text-center">FAQ</h2>
-        <div class="row">
-          <div class="col-sm-4">
-            <h3>What is SM Hacks?</h3>
-            <p>SM Hacks is a 200-person hackathon that will gather the innovators of tomorrow into an amazing experience. It will be held Saturday, Jan. 14 to Sunday, Jan. 15 at <a href='https://www.google.com/maps/place/Informatica+Corporation/@37.5111227,-122.2051784,15z/data=!4m5!3m4!1s0x0:0xc479e59839708591!8m2!3d37.5111227!4d-122.2051784' target='_blank'>Informatica</a>.</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>What is a hackathon?</h3>
-            <p>A hackathon is a 24-hour programming marathon where your ideas come to life. Over the course of the weekend, students from all backgrounds and all skill levels collaborate in teams of up to four to build something awesome.</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>What if I don't know how to code?</h3>
-            <p>No worries! SM Hacks is the perfect time to learn how to code and all students, regardless of skill level and experience, are welcome. There will be plenty of mentors on hand glad to answer any and all questions and workshops specifically designed for those with no prior experience. Stay tuned for more information about workshops!</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <h3>Do I have to be in high school?</h3>
-            <p>Yes, only current high school students will be able to attend. Unfortunately, we are not accepting middle school students. However, college students are welcome to help out. To mentor or lead a workshop, email <a target="_blank" href="mailto:volunteer@smhacks.com">volunteer@smhacks.com</a> for more details.</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>What if I don't have a team or an idea?</h3>
-            <p>No worries! It is not uncommon for people to come into the hackathon without an already-formed group, but we'll make sure you're matched with the right people. We will have a team formation and ideation session the first night so everyone can find the perfect team and come up with awesome ideas, so don't you worry first-time hackers!</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>How big can teams be?</h3>
-            <p>Teams can be up to four people. While you may work as an individual, we highly encourage collaborating with others. If you don't have a team or need help finding one, make sure not to miss our team formation and ideation session on Saturday.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <h3>What should I bring?</h3>
-            <p>Attendees should bring a valid student ID or some other form of identification. ALL attendees must have completed a signed <a href="https://www.hellosign.com/s/bf714f6b">waiver</a> online. Bring laptops and chargers, along with any other technology that you may want to use! We will have designated sleeping spots so feel free to bring a sleeping bag and pillow. Also it is highly suggested that you bring toiletries so you can feel refreshed and beautiful!</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>How much does it cost to attend?</h3>
-            <p>Nothing! Just bring your beautiful self and ideas and we will provide you with the food, Wi-Fi, workspace, and swag!</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>How can I apply?</h3>
-            <p>For attendees, just fill out <a href="https://smhacks.typeform.com/to/SZPVdt">this form</a>. Applications close Jan. 12, 2017. Mentors, fill out <a href="https://smhacks.typeform.com/to/XCtApy">this form</a> for the latest updates!</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <h3>What is the schedule like?</h3>
-            <p>The tentative schedule can be found <a href="#schedule">here</a>. There will be plenty of fun activities that will keep you entertained.</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>Will there be travel reimbursements?</h3>
-            <p>Unfortunately, we will not be offering travel reimbursements this year. Please email us at <a href="mailto:hi@smhacks.com">hi@smhacks.com</a> for additional details.</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>What if I have another question?</h3>
-            <p>Email us at <a href="mailto:hi@smhacks.com">hi@smhacks.com</a> if you have additional questions. Please email questions about mentoring or leading workshops to <a href="mailto:volunteer@smhacks.com">volunteer@smhacks.com</a> and sponsorship questions to <a href="mailto:sponsors@smhacks.com">sponsors@smhacks.com</a>. We are always happy to help!</p>
-          </div>
-        </div>
+        <ul class="uk-switcher">
+          <li>
+            <h1><a href="https://devpost.com/software/motivate-d6oyx1" target="_blank">DMS</a></h1><img src="https://scontent.xx.fbcdn.net/v/t31.0-8/15994477_10210434998864393_5063806027654789355_o.jpg?oh=f87db90fbc07f88150711cce49ef84ce&amp;oe=590529B2" class="uk-responsive-width">
+          </li>
+          <li>
+            <h1><a href="https://devpost.com/software/opensource-keyboard" target="_blank">Open Source Keyboard</a></h1><img src="https://scontent.xx.fbcdn.net/v/t31.0-8/16113322_10210435002264478_5050933991982571490_o.jpg?oh=058c993720ab238bf121f4bf6d72f407&amp;oe=59101DBD" class="uk-responsive-width">
+          </li>
+          <li>
+            <h1><a href="https://devpost.com/software/the-gift-of-food" target="_blank">The Gift of Food</a></h1><img src="https://scontent.xx.fbcdn.net/v/t31.0-8/15994710_10210434998304379_5037434943124658669_o.jpg?oh=255942a86af0441f495d54a585b357af&amp;oe=590EC874" class="uk-responsive-width">
+          </li>
+          <li>
+            <h1><a href="https://devpost.com/software/foodtracker" target="_blank">FoodTracker</a></h1><img src="https://scontent.xx.fbcdn.net/v/t31.0-8/15972380_10210434996664338_5952968470052570404_o.jpg?oh=8ad738e3f418f47c2dee8a932886d0db&amp;oe=590A00D2" class="uk-responsive-width">
+          </li>
+          <li>
+            <h1><a href="https://devpost.com/software/pseudo-code" target="_blank">Pseudo Code</a></h1><img src="https://scontent.xx.fbcdn.net/v/t31.0-8/15995202_10210434996544335_8620510239992132387_o.jpg?oh=3bc9108ddc49851ec290446f6f175d25&amp;oe=590FBE8C" class="uk-responsive-width">
+          </li>
+          <li>
+            <h1><a href="https://devpost.com/software/pinpoint-o92qis" target="_blank">Pinpoint</a></h1><img src="https://scontent.fsnc1-2.fna.fbcdn.net/v/t31.0-8/16107108_10210434996704339_6693373703389521719_o.jpg?oh=ab851df0630028547aac1d3534514ff6&amp;oe=59125C36">
+          </li>
+        </ul>
+        <hr>
       </div>
     </div>
-    <div id="schedule" class="content">
-      <div class="container">
-        <h2 class="text-center">Schedule</h2>
-        <p class="lead">Hacking is from noon to noon.</p>
-        <div class="row">
-          <div class="col-sm-1 hidden-xs"></div>
-          <div class="col-sm-5 text-center">
-            <h3>Saturday, Jan. 14</h3>
-            <table class="table table-condensed">
-              <tbody>
-                <tr>
-                  <td>10:00 AM</td>
-                  <td>Mentor/Sponsors Check In</td>
-                </tr>
-                <tr>
-                  <td>10:30 AM</td>
-                  <td>Hacker Check In</td>
-                </tr>
-                <tr>
-                  <td>11:15 AM</td>
-                  <td>Opening Ceremony</td>
-                </tr>
-                <tr>
-                  <td>12:00 PM</td>
-                  <td>Hacking Starts</td>
-                </tr>
-                <tr>
-                  <td>12:00 PM</td>
-                  <td>Team Mixer</td>
-                </tr>
-                <tr>
-                  <td>12:00 PM</td>
-                  <td>Lunch</td>
-                </tr>
-                <tr>
-                  <td>12:30 PM</td>
-                  <td>Intro to Programming Workshop</td>
-                </tr>
-                <tr>
-                  <td>2:00 PM</td>
-                  <td>Intro to Web Development Workshop</td>
-                </tr>
-                <tr>
-                  <td>2:00 PM</td>
-                  <td>Intermediate iOS Workshop</td>
-                </tr>
-                <tr>
-                  <td>3:00 PM</td>
-                  <td>Intro to Git Workshop</td>
-                </tr>
-                <tr>
-                  <td>3:30 PM</td>
-                  <td>Realtime Data Visualization Workshop</td>
-                </tr>
-                <tr>
-                  <td>4:00 PM</td>
-                  <td>Particle.io Workshop</td>
-                </tr>
-                <tr>
-                  <td>5:00 PM</td>
-                  <td>Scenera Workshop</td>
-                </tr>
-                <tr>
-                  <td>5:00 PM</td>
-                  <td>Data Visualization with JavaScript Workshop</td>
-                </tr>
-                <tr>
-                  <td>6:30 PM</td>
-                  <td>Dinner</td>
-                </tr>
-                <tr>
-                  <td>9:00 PM</td>
-                  <td>Cup Stacking Tournament</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="col-sm-5 text-center">
-            <h3>Sunday, Jan. 15</h3>
-            <table class="table table-condensed">
-              <tbody>
-                <tr>
-                  <td>12:00 AM</td>
-                  <td>Midnight Snack</td>
-                </tr>
-                <tr>
-                  <td>8:00 AM</td>
-                  <td>Breakfast</td>
-                </tr>
-                <tr>
-                  <td>11:00 AM - 12:00 PM</td>
-                  <td><a href="https://smhacks.devpost.com/">Project Submissions</a></td>
-                </tr>
-                <tr>
-                  <td>12:00 PM</td>
-                  <td>Hacking Ends</td>
-                </tr>
-                <tr>
-                  <td>12:00 PM</td>
-                  <td>Lunch</td>
-                </tr>
-                <tr>
-                  <td>12:30 PM - 1:15 PM</td>
-                  <td>Judging and Demos</td>
-                </tr>
-                <tr>
-                  <td>1:45 PM</td>
-                  <td>Closing Ceremony</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+    <div id="smt" class="uk-section">
+      <div class="uk-container uk-container-small">
+        <h1>Coming to a Bay Area location near you.</h1><img src="brushlogo.png">
+        <p class="uk-text-lead uk-text-right">Fall 2017</p>
       </div>
     </div>
-    <div id="judges" class="content">
-      <div class="container">
-        <h2 class="text-center">Judges</h2><br>
-        <div class="row text-center">
-          <div class="col-sm-4">
-            <div class="name">Zach Latta</div>
-            <div class="role">Executive Director, Hack Club</div>
-          </div>
-          <div class="col-sm-4">
-            <div class="name">Mike McDonald</div>
-            <div class="role">Product Manager, Google</div>
-          </div>
-          <div class="col-sm-4">
-            <div class="name">Oliver Belanger</div>
-            <div class="role">Hackathon Coordinator, 42 University</div>
-          </div>
-        </div><br><br>
-        <div class="row text-center">
-          <div class="col-sm-4">
-            <div class="name">Selynna Sun</div>
-            <div class="role">Founder, Los Altos Hacks</div>
-          </div>
-          <div class="col-sm-4">
-            <div class="name">Raymond Chan</div>
-            <div class="role">Student, Stanford University</div>
-          </div>
-          <div class="col-sm-4">
-            <div class="name">Doug Stevenson</div>
-            <div class="role">Developer Advocate, Google</div>
-          </div>
-        </div><br><br>
-        <div class="row text-center">
-          <div class="col-sm-4">
-            <div class="name">Claire Wang</div>
-            <div class="role">Student, Cornell University</div>
-          </div>
-          <div class="col-sm-4">
-            <div class="name">Michael Huang</div>
-            <div class="role">Software Engineer, Uber</div>
-          </div>
-          <div class="col-sm-4">
-            <div class="name">Lizzie Siegle</div>
-            <div class="role">Developer Evangelist, PubNub</div>
-          </div>
-        </div><br><br>
-        <div class="row text-center">
-          <div class="col-sm-2"></div>
-          <div class="col-sm-4">
-            <div class="name">Giovanni Tenorio</div>
-            <div class="role">Software Engineer, Hewlett Packard</div>
-          </div>
-          <div class="col-sm-4">
-            <div class="name">Vivian Shen</div>
-            <div class="role">Student, Columbia University</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="prizes" class="content">
-      <div class="container">
-        <h2 class="text-center">Prizes</h2>
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <p class="lead">We will be announcing our full list of prizes soon!</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <h3>1st Place</h3>
-            <p>GoPro - HERO Session HD, 1 year of <a href="http://www.wolfram.com/development-platform">Wolfram Development Platform</a>, 1 year of <a href="http://www.wolfram.com/solutions/education/students">Wolfram Mathematica Student Edition</a>, 1 year of <a href="http://www.wolframalpha.com/pro/">Wolfram|Alpha Pro</a> and a <a href="https://www.justinmind.com/">Justinmind</a> perpetual license, one for each team member.</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>2nd Place</h3>
-            <p>Google Home, 1 year of <a href="http://www.wolfram.com/development-platform">Wolfram Development Platform</a>, 1 year of <a href="http://www.wolfram.com/solutions/education/students">Wolfram Mathematica Student Edition</a>, 1 year of <a href="http://www.wolframalpha.com/pro/">Wolfram|Alpha Pro</a> and a <a href="https://www.justinmind.com/">Justinmind</a> perpetual license, one for each team member.</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>3rd Place</h3>
-            <p>Bose Soundlink Color Bluetooth Speaker, 1 year of <a href="http://www.wolfram.com/development-platform">Wolfram Development Platform</a>, 1 year of <a href="http://www.wolfram.com/solutions/education/students">Wolfram Mathematica Student Edition</a> and 1 year of <a href="http://www.wolframalpha.com/pro/">Wolfram|Alpha Pro</a>, one for each team member.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <h3>Best iOS App</h3>
-            <p>Google Chromecast and Amazon Echo Dot, one for each team member.</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>Best Android App</h3>
-            <p>Partial scholarship to <a href="https://www.makeschool.com/">Make School Summer Academy</a>, Particle Kit and Amazon Echo Dot, one for each team member.</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>Best Web App</h3>
-            <p>Insignia Bluetooth Speaker, one for each team member. </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <h3>Top 10 Teams</h3>
-            <p>1 year subscription to <a href="http://www.wolframalpha.com/pro/">Wolfram|Alpha Pro</a>, one for each team member. First, second and third place winners are not eligible for this award. </p>
-          </div>
-          <div class="col-sm-4">
-            <h3>Raffle/Other Prizes</h3>
-            <p>One iPad Mini 4, one Roku 3 Streaming Player, four Syma X5C Explorers 2.4Ghz 6-Axis Gyro RC quadcopter Drones with 2MP HD Camera and two <a href="https://www.justinmind.com/">Justinmind</a> perpetual licenses.</p>
-          </div>
-          <div class="col-sm-4">
-            <h1>$15,457</h1>
-            <p id="cash">Total cash value of prizes</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="sponsors" class="content">
-      <div class="container">
-        <h2 class="text-center">Sponsors</h2><br>
-        <div class="row text-center">
-          <div class="col-sm-6"><a href="https://www.informatica.com/" target="_blank"><img src="informatica.png" id="informatica" class="sp"></a></div>
-          <div class="col-sm-6"><a href="https://developers.google.com/" target="_blank"><img src="google.png" id="google" class="sp"></a></div>
-        </div>
-        <div class="row text-center text-center">
-          <div class="col-sm-6"><a href="http://sie.com/en" target="_blank"><img src="playstation.png" id="sony" class="sp"></a></div>
-          <div class="col-sm-6"><a href="http://smule.com/" target="_blank"><img src="smule.png" id="smule" class="sp"></a></div>
-        </div><br><br>
-        <div class="row text-center text-center">
-          <div class="col-sm-6"><a href="http://www.brandmakers.com/" target="_blank"><img src="brandmakers.png" id="brandmakers" class="sp"></a></div>
-          <div class="col-sm-6"><a href="https://skillflow.io/" target="_blank"><img src="skillflow.png" id="skillflow"></a></div>
-        </div><br><br>
-        <div class="row text-center text-center">
-          <div class="col-sm-6"><a href="https://www.pubnub.com/" target="_blank"><img src="pubnub.png" id="pubnub" class="sp"></a></div>
-          <div class="col-sm-6"><a href="https://www.twilio.com/" target="_blank"><img src="twilio.png" id="twilio" class="sp"></a></div>
-        </div><br><br>
-        <div class="row tex-center text-center">
-          <div class="col-sm-3"></div>
-          <div class="col-sm-6"><a href="https://ibm.com/" target="_blank"><img src="ibm.png" id="ibm" class="sp"></a><br><small style="font-size:8px">IBM and the IBM logo are trademarks of International Business Machines Corp., registered in many jurisdictions worldwide.</small></div>
-        </div><br><br>
-        <div class="row text-center text-center">
-          <div class="col-sm-4"><a href="http://justinmind.com" target="_blank"><img src="justinmind.png" id="justinmind" class="sp"></a></div>
-          <div class="col-sm-4"><a href="http://mitlaunch.com/" target="_blank"><img src="mit-launch.png" id="mit-launch" class="sp"></a></div>
-          <div class="col-sm-4"><a href="http://upsurf.com" target="_blank"><img src="upsurf.png" id="upsurf" class="sp"></a></div>
-        </div><br><br><br><br>
-        <div class="row text-center text-center">
-          <div class="col-sm-4"><a href="http://balsamiq.com/" target="_blank"><img src="balsamiq.png" id="balsamiq" class="sp"></a></div>
-          <div class="col-sm-4"><a href="http://wolfram.com/" target="_blank"><img src="wolfram.png" id="wolfram" class="sp"></a></div>
-          <div class="col-sm-4"><a href="http://vilynx.com/" target="_blank"><img src="vilynx.png" id="vilynx" class="sp"></a></div>
-        </div><br><br><br>
-        <div class="row text-center text-center">
-          <div class="col-sm-4"><a href="https://www.makeschool.com/" target="_blank"><img src="makeschool.png" id="makeschool" class="sp"></a></div>
-          <div class="col-sm-4"><a href="http://www.dual-aperture.com/" target="_blank"><img src="scenera.png" id="scenera" class="sp"></a></div>
-          <div class="col-sm-4"><a href="https://www.marketo.com/" target="_blank"><img src="marketo.png" id="marketo" class="sp"></a></div>
-        </div><br><br><br>
-        <div class="row text-center">
-          <div class="col-md-3 col-sm-6"><a href="https://github.com/" target="_blank"><img src="github.png" id="github" class="sp"></a></div>
-          <div class="col-md-3 col-sm-6"><a href="http://lattice-engines.com/" target="_blank"><img src="lattice.png" id="lattice" class="sp"></a></div>
-          <div class="col-md-3 col-sm-6"><a href="http://a16z.com/" target="_blank"><img src="a16z.png" id="a16z" class="sp"></a></div>
-          <div class="col-md-3 col-sm-6"><a href="http://get.tech/" target="_blank"><img src="tech.png" id="tech" class="sp"></a></div>
-        </div><br><br>
-        <div class="row text-center">
-          <div class="col-md-3 col-sm-6"></div>
-          <div class="col-md-3 col-sm-6"><a href="https://www.stickermule.com/" target="_blank"><img src="stickermule.png" id="stickermule" class="sp"></a></div>
-          <div class="col-md-3 col-sm-6"><a href="https://www.particle.io/" target="_blank"><img src="particle.png" id="particle" class="sp"></a></div>
-        </div><br>
-        <h2 class="text-center">Partners</h2>
-        <div class="row text-center">
-          <div class="col-sm-4 col-sm-4"><a href="https://hackclub.com" target="_blank"><img src="hackclub.png" id="hackclub" class="sp"></a></div>
-          <div class="col-sm-4"><a href="http://streameducation.org" target="_blank"><img src="stream.png" id="stream" class="sp"></a></div>
-          <div class="col-sm-4"><a href="http://www.hacker.fund/" target="_blank"><img src="hackerfund.png" id="hackerfund" class="sp"></a></div>
-        </div>
-      </div>
-    </div>
-    <div id="team" class="content">
-      <div class="container">
-        <h2 class="text-center">SM Hacks Team</h2>
-        <div class="row text-center">
-          <div class="col-sm-3">
-            <div class="member"><img src="samuel.jpg" class="img-responsive img-circle">
-              <div class="name">Samuel Escapa</div>
-              <div class="role">Sponsorship Director</div>
-              <div class="social"><a href="http://saescapa.tech" target="_blank"><i class="fa fa-globe"></i></a><a href="http://twitter.saescapa.tech" target="_blank"><i class="fa fa-twitter"></i></a><a href="http://linkedin.saescapa.tech" target="_blank"><i class="fa fa-linkedin"></i></a><a href="http://github.saescapa.tech" target="_blank"><i class="fa fa-github"></i></a></div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="member kevinf"><img src="kevinf.jpg" class="img-responsive img-circle">
-              <div class="name">Kevin Fang</div>
-              <div class="role">Operations Director</div>
-              <div class="social"><a href="https://linkedin.com/m/profile/ACoAABoVZV4B0dLeQcQOztHldvOVmuHnWDiotvM/" target="_blank"><i class="fa fa-linkedin"></i></a><a href="https://facebook.com/kevin.fang.35" target="_blank"><i class="fa fa-facebook-official"></i></a><a href="https://instagram.com/fangk/" target="_blank"><i class="fa fa-instagram"></i></a></div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="member"><img src="cindy.png" class="img-responsive img-circle">
-              <div class="name">Cindy Zhang</div>
-              <div class="role">Tech Director</div>
-              <div class="social"><a href="https://about.me/cindyhzhang" target="_blank"><i class="fa fa-globe"></i></a><a href="https://linkedin.com/in/cindyhzhang" target="_blank"><i class="fa fa-linkedin"></i></a><a href="https://facebook.com/czhang99" target="_blank"><i class="fa fa-facebook-official"></i></a><a href="https://github.com/cindyz8735" target="_blank"><i class="fa fa-github"></i></a></div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="member"><img src="anna.jpg" class="img-responsive img-circle">
-              <div class="name">Anna Zheng</div>
-              <div class="role">Outreach Director</div>
-              <div class="social"><a href="https://facebook.com/anna.zheng.716" target="_blank"><i class="fa fa-facebook-official"></i></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-sm-3">
-            <div class="member"><img src="kevinh.jpg" class="img-responsive img-circle">
-              <div class="name">Kevin Huo</div>
-              <div class="role">Operations</div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="member"><img src="kiki.jpg" class="img-responsive img-circle">
-              <div class="name">Kiki Lo</div>
-              <div class="role">Operations</div>
-              <div class="social"><a href="https://facebook.com/k1k1l0" target="_blank"><i class="fa fa-facebook-official"></i></a></div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="member"><img src="emanuel.jpg" class="img-responsive img-circle">
-              <div class="name">Emanuel Rew</div>
-              <div class="role">Operations</div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="member"><img src="maggie.jpg" class="img-responsive img-circle">
-              <div class="name">Maggie Dong</div>
-              <div class="role">Outreach</div>
-              <div class="social"><a href="https://facebook.com/maggie.dong.79" target="_blank"><i class="fa fa-facebook-official"></i></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div style="width:12.499999995%" class="col-sm-3 col-xs-hidden"></div>
-          <div class="col-sm-3">
-            <div class="member"><img src="thomas.jpg" class="img-responsive img-circle">
-              <div class="name">Thomas Weathers</div>
-              <div class="role">Outreach</div>
-              <div class="social"><a href="https://facebook.com/thomas.weathers.415" target="_blank"><i class="fa fa-facebook-official"></i></a><a href="https://twitter.com/storm_weathers1" target="_blank"><i class="fa fa-twitter"></i></a></div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="member anthony"><img src="anthony.png" class="img-responsive img-circle">
-              <div class="name">Anthony Lam</div>
-              <div class="role">Tech</div>
-              <div class="social"><a href="https://github.com/99anthonylam" target="_blank"><i class="fa fa-github"></i></a><a href="https://facebook.com/anthony.lam.98" target="_blank"><i class="fa fa-facebook-official"></i></a></div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="member"><img src="ben.png" class="img-responsive img-circle">
-              <div class="name">Benjamin Pang</div>
-              <div class="role">Tech</div>
-              <div class="social"><a href="https://github.com/molarmanful" target="_blank"><i class="fa fa-github"></i></a><a href="https://codegolf.stackexchange.com/users/41247/mama-fun-roll" target="_blank"><i class="fa fa-stack-exchange"></i></a><a href="https://reddit.com/u/molarmanful" target="_blank"><i class="fa fa-reddit"></i></a><a href="http://molarmanful.com" target="_blank"><i class="fa fa-globe"></i></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--#update.content
-    .container
-      h2.text-center Subscribe
-      .row
-        .col-sm-12.text-center
-          p.lead Enter your email here to receive updates from SM Hacks!
-          .row
-            .col-sm-3
-            .col-sm-6
-              .input-group
-                input.form-control#u(placeholder='johnsmith@example.com' type='email')
-                .input-group-btn
-                  button.btn.btn-primary#s Submit!
-              .alert.alert-dismissible#a(role='alert')
-    -->
-    <!--footer.footer
-    .container
-      .row
-        .col-sm-1.col-xs-6.text-center
-          img(src='logo.png')
-        .col-sm-7.hidden-xs
-          p.text-muted Made with <i class='fa fa-heart' style='color:#ff7242'></i> by SM Hacks.
-        .col-sm-2.hidden-xs
-        .col-sm-2.col-xs-6.text-center
-          p
-            a.btn.btn-info(href='https://facebook.com/sanmateohacks' target='_blank' style='background-color:transparent; border:none; display:inline-block')
-              i.fa.fa-facebook-square.fa-3x
-            a.btn.btn-info(href='https://twitter.com/sanmateohacks' target='_blank' style='background-color:transparent; border:none; display:inline-block')
-              i.fa.fa-twitter-square.fa-3x
-    -->
-    <!-- .modal.fade#m(tabindex="-1" role="dialog")
-    .modal-dialog
-      .modal-content
-        .modal-header
-          button.close(data-dismiss='modal') &times;
-          h1.modal-title Sign Up
-        .modal-body.text-center
-          h3
-            a.btn.btn-default(href='https://smhacks.typeform.com/to/SZPVdt' target='_blank') Hacker
-            |  or
-            a.btn.btn-default(href='https://smhacks.typeform.com/to/XCtApy' target='_blank') Mentor
-            |?
-        .modal-footer
-          button.btn.btn-primary(data-dismiss='modal') Cancel
-    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.4/js/uikit.min.js"></script>
   </body>
 </html>

@@ -2,7 +2,6 @@
 doctype html
 html
   head
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.load.min.js')
     link(rel='shortcut icon' href='logo.png' type='image/png')
     meta(name='mobile-web-app-capable' content='yes')
     meta(name='apple-mobile-web-app-capable' content='yes')
@@ -10,7 +9,7 @@ html
     meta(name='apple-mobile-web-app-status-bar-style' content='black-translucent')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
-    meta(name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no')
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
     meta(name='description' content="San Mateo's first high school hackathon.")
     meta(name='keywords' content='san mateo hackathon, sm hackathon, san mateo hacks, sm hacks, smhacks, san mateo high school, smhs, smhs hackathon, high school hackathon, hackathon, san mateo')
     link(rel='author' href='https://plus.google.com/+BenPangMolarmanful')
@@ -22,529 +21,55 @@ html
     meta(property='og:url' content="http://www.smhacks.com")
     meta(property='twitter:image' content='http://www.smhacks.com/social-media-logo.png')
     title SM Hacks
-    link(rel='stylesheet prefetch' href='bootstrap.css')
-    link(rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
-    link(rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Quicksand')
-    link(rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Cabin:400,700')
-    link(rel='stylesheet prefetch' href='style.min.css')
-    script.
-      head.load('https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js','main.js')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.4/css/uikit.min.css')
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    style.
+      .uk-tab>.uk-active>a{
+        border-color:#ff8300;
+      }
+      a,a:hover,#winners h2{
+        color:#ff8300;
+      }
   body
-    .cover#top
-      .container.text-center
-        .row
-          .col-sm-12
-            img.logo(src='logo.png')
-            .rest
-              h3 San Mateo's first <b>high school</b> hackathon!
-              p.lead January 14-15, 2017 @ <a href='https://www.google.com/maps/place/Informatica+Corporation/@37.5111227,-122.2051784,15z/data=!4m5!3m4!1s0x0:0xc479e59839708591!8m2!3d37.5111227!4d-122.2051784' target='_blank'>Informatica</a>
-              // a.btn.btn-default.btn-lg(data-toggle='modal' data-target='#m') Sign up now!
-              a.btn.btn-default.btn-lg(href='http://slack.smhacks.com' target='_blank') Join our Slack!
-              br
-              br
-              p Attendees must complete #[a(href='https://www.hellosign.com/s/bf714f6b') this waiver] before arriving
-            
-    nav.navbar.navbar-default.navbar-fixed-bottom
-      .navbar-header
-        a.navbar-brand(href='#top'): img(src='logo.png' style='height:110%;width:auto')
-        button.navbar-toggle.collapsed(data-toggle='collapse' data-target='#collapse' aria-expanded='false')
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-      #collapse.collapse.navbar-collapse
-        ul.nav.navbar-nav.navbar-right
-          li: a(href='#faq') FAQ
-          li: a(href='#schedule') Schedule
-          li: a(href='#judges') Judges
-          li: a(href='#prizes') Prizes
-          li: a(href='#sponsors') Sponsors / Partners
-          li: a(href='#team') Team
-    #faq.content
-      .container
-        h2.text-center FAQ
-        .row
-          .col-sm-4
-            h3 What is SM Hacks?
-            p SM Hacks is a 200-person hackathon that will gather the innovators of tomorrow into an amazing experience. It will be held Saturday, Jan. 14 to Sunday, Jan. 15 at <a href='https://www.google.com/maps/place/Informatica+Corporation/@37.5111227,-122.2051784,15z/data=!4m5!3m4!1s0x0:0xc479e59839708591!8m2!3d37.5111227!4d-122.2051784' target='_blank'>Informatica</a>.
-          .col-sm-4
-            h3 What is a hackathon?
-            p A hackathon is a 24-hour programming marathon where your ideas come to life. Over the course of the weekend, students from all backgrounds and all skill levels collaborate in teams of up to four to build something awesome.
-          .col-sm-4
-            h3 What if I don't know how to code?
-            p No worries! SM Hacks is the perfect time to learn how to code and all students, regardless of skill level and experience, are welcome. There will be plenty of mentors on hand glad to answer any and all questions and workshops specifically designed for those with no prior experience. Stay tuned for more information about workshops!
-        .row
-          .col-sm-4
-            h3 Do I have to be in high school?
-            p Yes, only current high school students will be able to attend. Unfortunately, we are not accepting middle school students. However, college students are welcome to help out. To mentor or lead a workshop, email #[a(target='_blank' href='mailto:volunteer@smhacks.com') volunteer@smhacks.com] for more details.
-          .col-sm-4
-            h3 What if I don't have a team or an idea?
-            p No worries! It is not uncommon for people to come into the hackathon without an already-formed group, but we'll make sure you're matched with the right people. We will have a team formation and ideation session the first night so everyone can find the perfect team and come up with awesome ideas, so don't you worry first-time hackers!
-          .col-sm-4
-            h3 How big can teams be?
-            p Teams can be up to four people. While you may work as an individual, we highly encourage collaborating with others. If you don't have a team or need help finding one, make sure not to miss our team formation and ideation session on Saturday.
-        .row
-          .col-sm-4
-            h3 What should I bring?
-            p Attendees should bring a valid student ID or some other form of identification. ALL attendees must have completed a signed #[a(href='https://www.hellosign.com/s/bf714f6b') waiver] online. Bring laptops and chargers, along with any other technology that you may want to use! We will have designated sleeping spots so feel free to bring a sleeping bag and pillow. Also it is highly suggested that you bring toiletries so you can feel refreshed and beautiful!
-          .col-sm-4
-            h3 How much does it cost to attend?
-            p Nothing! Just bring your beautiful self and ideas and we will provide you with the food, Wi-Fi, workspace, and swag!
-          .col-sm-4
-            h3 How can I apply?
-            p For attendees, just fill out #[a(href='https://smhacks.typeform.com/to/SZPVdt') this form]. Applications close Jan. 12, 2017. Mentors, fill out #[a(href='https://smhacks.typeform.com/to/XCtApy') this form] for the latest updates!
-        .row
-          .col-sm-4
-            h3 What is the schedule like?
-            p The tentative schedule can be found #[a(href='#schedule') here]. There will be plenty of fun activities that will keep you entertained.
-          .col-sm-4
-            h3 Will there be travel reimbursements?
-            p Unfortunately, we will not be offering travel reimbursements this year. Please email us at #[a(href='mailto:hi@smhacks.com') hi@smhacks.com] for additional details.
-          .col-sm-4
-            h3 What if I have another question?
-            p Email us at #[a(href='mailto:hi@smhacks.com') hi@smhacks.com] if you have additional questions. Please email questions about mentoring or leading workshops to #[a(href='mailto:volunteer@smhacks.com') volunteer@smhacks.com] and sponsorship questions to #[a(href='mailto:sponsors@smhacks.com') sponsors@smhacks.com]. We are always happy to help!
-    #schedule.content
-      .container
-        h2.text-center Schedule
-        p.lead Hacking is from noon to noon.
-        .row
-          .col-sm-1.hidden-xs
-          .col-sm-5.text-center
-            h3 Saturday, Jan. 14
-            table.table.table-condensed
-              tbody
-                tr
-                  td 10:00 AM
-                  td Mentor/Sponsors Check In
-                tr
-                  td 10:30 AM
-                  td Hacker Check In
-                tr
-                  td 11:15 AM
-                  td Opening Ceremony
-                tr
-                  td 12:00 PM
-                  td Hacking Starts
-                tr
-                  td 12:00 PM
-                  td Team Mixer
-                tr
-                  td 12:00 PM
-                  td Lunch
-                tr
-                  td 12:30 PM
-                  td Intro to Programming Workshop
-                tr
-                  td 2:00 PM
-                  td Intro to Web Development Workshop
-                tr
-                  td 2:00 PM
-                  td Intermediate iOS Workshop
-                tr
-                  td 3:00 PM
-                  td Intro to Git Workshop
-                tr
-                  td 3:30 PM
-                  td Realtime Data Visualization Workshop
-                tr
-                  td 4:00 PM
-                  td Particle.io Workshop
-                tr
-                  td 5:00 PM
-                  td Scenera Workshop
-                tr
-                  td 5:00 PM
-                  td Data Visualization with JavaScript Workshop
-                tr
-                  td 6:30 PM
-                  td Dinner
-                tr
-                  td 9:00 PM
-                  td Cup Stacking Tournament
-          .col-sm-5.text-center
-            h3 Sunday, Jan. 15
-            table.table.table-condensed
-              tbody
-                tr
-                  td 12:00 AM
-                  td Midnight Snack
-                tr
-                  td 8:00 AM
-                  td Breakfast
-                tr
-                  td 11:00 AM - 12:00 PM
-                  td #[a(href='https://smhacks.devpost.com/') Project Submissions]
-                tr
-                  td 12:00 PM
-                  td Hacking Ends
-                tr
-                  td 12:00 PM
-                  td Lunch
-                tr
-                  td 12:30 PM - 1:15 PM
-                  td Judging and Demos
-                tr
-                  td 1:45 PM
-                  td Closing Ceremony
-    #judges.content
-      .container
-        h2.text-center Judges
-        br
-        .row.text-center
-          .col-sm-4
-              .name Zach Latta
-              .role Executive Director, Hack Club
-          .col-sm-4
-              .name Mike McDonald
-              .role Product Manager, Google
-          .col-sm-4
-              .name Oliver Belanger
-              .role Hackathon Coordinator, 42 University
-        br
-        br
-        .row.text-center
-          .col-sm-4
-              .name Selynna Sun
-              .role Founder, Los Altos Hacks
-          .col-sm-4
-              .name Raymond Chan
-              .role Student, Stanford University
-          .col-sm-4
-              .name Doug Stevenson
-              .role Developer Advocate, Google
-        br
-        br
-        .row.text-center
-          .col-sm-4
-              .name Claire Wang
-              .role Student, Cornell University
-          .col-sm-4
-              .name Michael Huang
-              .role Software Engineer, Uber
-          .col-sm-4
-              .name Lizzie Siegle
-              .role Developer Evangelist, PubNub
-        br
-        br
-        .row.text-center
-          .col-sm-2
-          .col-sm-4
-              .name Giovanni Tenorio
-              .role Software Engineer, Hewlett Packard
-          .col-sm-4
-              .name Vivian Shen
-              .role Student, Columbia University
-    #prizes.content
-      .container
-        h2.text-center Prizes
-        .row
-          .col-sm-12.text-center
-            p.lead We will be announcing our full list of prizes soon!
-        .row
-          .col-sm-4
-            h3 1st Place
-            p GoPro - HERO Session HD, 1 year of #[a(href='http://www.wolfram.com/development-platform') Wolfram Development Platform], 1 year of #[a(href='http://www.wolfram.com/solutions/education/students') Wolfram Mathematica Student Edition], 1 year of #[a(href='http://www.wolframalpha.com/pro/') Wolfram|Alpha Pro] and a #[a(href='https://www.justinmind.com/') Justinmind] perpetual license, one for each team member.
-          .col-sm-4
-            h3 2nd Place
-            p Google Home, 1 year of #[a(href='http://www.wolfram.com/development-platform') Wolfram Development Platform], 1 year of #[a(href='http://www.wolfram.com/solutions/education/students') Wolfram Mathematica Student Edition], 1 year of #[a(href='http://www.wolframalpha.com/pro/') Wolfram|Alpha Pro] and a #[a(href='https://www.justinmind.com/') Justinmind] perpetual license, one for each team member.
-          .col-sm-4
-            h3 3rd Place
-            p Bose Soundlink Color Bluetooth Speaker, 1 year of #[a(href='http://www.wolfram.com/development-platform') Wolfram Development Platform], 1 year of #[a(href='http://www.wolfram.com/solutions/education/students') Wolfram Mathematica Student Edition] and 1 year of #[a(href='http://www.wolframalpha.com/pro/') Wolfram|Alpha Pro], one for each team member.
-        .row
-          .col-sm-4
-            h3 Best iOS App
-            p Google Chromecast and Amazon Echo Dot, one for each team member.
-          .col-sm-4
-            h3 Best Android App
-            p Partial scholarship to #[a(href='https://www.makeschool.com/') Make School Summer Academy], Particle Kit and Amazon Echo Dot, one for each team member.
-          .col-sm-4
-            h3 Best Web App
-            p Insignia Bluetooth Speaker, one for each team member. 
-        .row
-          .col-sm-4
-            h3 Top 10 Teams
-            p 1 year subscription to #[a(href='http://www.wolframalpha.com/pro/') Wolfram|Alpha Pro], one for each team member. First, second and third place winners are not eligible for this award. 
-          .col-sm-4
-            h3 Raffle/Other Prizes
-            p One iPad Mini 4, one Roku 3 Streaming Player, four Syma X5C Explorers 2.4Ghz 6-Axis Gyro RC quadcopter Drones with 2MP HD Camera and two #[a(href='https://www.justinmind.com/') Justinmind] perpetual licenses.
-          .col-sm-4
-            h1 $15,457
-            p#cash Total cash value of prizes
-    #sponsors.content
-      .container
-        h2.text-center Sponsors
-        br
-        .row.text-center
-          .col-sm-6
-            a(href='https://www.informatica.com/' target='_blank')
-              img(src='informatica.png' id='informatica' class='sp')
-          .col-sm-6
-            a(href='https://developers.google.com/' target='_blank')
-              img(src='google.png' id='google' class='sp') 
-        .row.text-center.text-center
-          .col-sm-6
-            a(href='http://sie.com/en' target='_blank')
-              img(src='playstation.png' id='sony' class='sp')
-          .col-sm-6
-            a(href='http://smule.com/' target='_blank')
-              img(src='smule.png' id='smule' class='sp')
-        br
-        br
-        .row.text-center.text-center
-          .col-sm-6
-            a(href='http://www.brandmakers.com/' target='_blank')
-              img(src='brandmakers.png' id='brandmakers' class='sp')
-          .col-sm-6
-            a(href='https://skillflow.io/' target='_blank')
-              img(src='skillflow.png' id='skillflow')
-        br
-        br
-        .row.text-center.text-center
-          .col-sm-6
-            a(href='https://www.pubnub.com/' target='_blank')
-              img(src='pubnub.png' id='pubnub' class='sp')
-          .col-sm-6
-            a(href='https://www.twilio.com/' target='_blank')
-              img(src='twilio.png' id='twilio' class='sp')
-        br
-        br
-        .row.tex-center.text-center
-          .col-sm-3
-          .col-sm-6
-            a(href='https://ibm.com/' target='_blank')
-              img(src='ibm.png' id='ibm' class='sp')
-            br
-            small(style='font-size:8px') IBM and the IBM logo are trademarks of International Business Machines Corp., registered in many jurisdictions worldwide.
-        br
-        br
-        .row.text-center.text-center
-          .col-sm-4
-            a(href='http://justinmind.com' target='_blank')
-              img(src='justinmind.png' id='justinmind' class='sp')
-          .col-sm-4
-            a(href='http://mitlaunch.com/' target='_blank')
-              img(src='mit-launch.png' id='mit-launch' class='sp')
-          .col-sm-4
-            a(href='http://upsurf.com' target='_blank')
-              img(src='upsurf.png' id='upsurf' class='sp')
-        br
-        br
-        br
-        br
-        .row.text-center.text-center
-          .col-sm-4
-            a(href='http://balsamiq.com/' target='_blank')
-              img(src='balsamiq.png' id='balsamiq' class='sp')
-          .col-sm-4
-            a(href='http://wolfram.com/' target='_blank')
-              img(src='wolfram.png' id='wolfram' class='sp')
-          .col-sm-4
-            a(href='http://vilynx.com/' target='_blank')
-              img(src='vilynx.png' id='vilynx' class='sp')
-        br
-        br
-        br
-        .row.text-center.text-center
-          .col-sm-4
-            a(href='https://www.makeschool.com/' target='_blank')
-              img(src='makeschool.png' id='makeschool' class='sp')
-          .col-sm-4
-            a(href='http://www.dual-aperture.com/' target='_blank')
-              img(src='scenera.png' id='scenera' class='sp')
-          .col-sm-4
-            a(href='https://www.marketo.com/' target='_blank')
-              img(src='marketo.png' id='marketo' class='sp')
-        br
-        br
-        br
-        .row.text-center
-          .col-md-3.col-sm-6
-            a(href='https://github.com/' target='_blank')
-              img(src='github.png' id='github' class='sp')
-          .col-md-3.col-sm-6
-            a(href='http://lattice-engines.com/' target='_blank')
-              img(src='lattice.png' id='lattice' class='sp')
-          .col-md-3.col-sm-6
-            a(href='http://a16z.com/' target='_blank')
-              img(src='a16z.png' id='a16z' class='sp')
-          .col-md-3.col-sm-6
-            a(href='http://get.tech/' target='_blank')
-              img(src='tech.png' id='tech' class='sp')
-        br
-        br
-        .row.text-center
-          .col-md-3.col-sm-6
-          .col-md-3.col-sm-6
-            a(href='https://www.stickermule.com/' target='_blank')
-              img(src='stickermule.png' id='stickermule' class='sp')
-          .col-md-3.col-sm-6
-            a(href='https://www.particle.io/' target='_blank')
-              img(src='particle.png' id='particle' class='sp')
-        br
-        h2.text-center Partners
-        .row.text-center
-          .col-sm-4.col-sm-4
-            a(href='https://hackclub.com' target='_blank')
-              img(src='hackclub.png' id='hackclub' class='sp')
-          .col-sm-4
-            a(href='http://streameducation.org' target='_blank')
-              img(src='stream.png' id='stream' class='sp')
-          .col-sm-4
-            a(href='http://www.hacker.fund/' target='_blank')
-              img(src='hackerfund.png' id='hackerfund' class='sp')
-    #team.content
-      .container
-        h2.text-center SM Hacks Team
-        .row.text-center
-          .col-sm-3
-            .member
-              img.img-responsive.img-circle(src='samuel.jpg')
-              .name Samuel Escapa
-              .role Sponsorship Director
-              .social
-                a(href='http://saescapa.tech' target='_blank')
-                  i.fa.fa-globe
-                a(href='http://twitter.saescapa.tech' target='_blank')
-                  i.fa.fa-twitter
-                a(href='http://linkedin.saescapa.tech' target='_blank')
-                  i.fa.fa-linkedin
-                a(href='http://github.saescapa.tech' target='_blank')
-                  i.fa.fa-github
-          .col-sm-3
-            .member.kevinf
-              img.img-responsive.img-circle(src='kevinf.jpg')
-              .name Kevin Fang
-              .role Operations Director
-              .social
-                a(href='https://linkedin.com/m/profile/ACoAABoVZV4B0dLeQcQOztHldvOVmuHnWDiotvM/' target='_blank')
-                  i.fa.fa-linkedin
-                a(href='https://facebook.com/kevin.fang.35' target='_blank')
-                  i.fa.fa-facebook-official
-                a(href='https://instagram.com/fangk/' target='_blank')
-                  i.fa.fa-instagram
-          .col-sm-3
-            .member
-              img.img-responsive.img-circle(src='cindy.png')
-              .name Cindy Zhang
-              .role Tech Director
-              .social
-                a(href='https://about.me/cindyhzhang' target='_blank')
-                  i.fa.fa-globe
-                a(href='https://linkedin.com/in/cindyhzhang' target='_blank')
-                  i.fa.fa-linkedin
-                a(href='https://facebook.com/czhang99' target='_blank')
-                  i.fa.fa-facebook-official
-                a(href='https://github.com/cindyz8735' target='_blank')
-                  i.fa.fa-github
-          .col-sm-3
-            .member
-              img.img-responsive.img-circle(src='anna.jpg')
-              .name Anna Zheng
-              .role Outreach Director
-              .social
-                a(href='https://facebook.com/anna.zheng.716' target='_blank')
-                  i.fa.fa-facebook-official
-        .row.text-center
-          .col-sm-3
-            .member
-              img.img-responsive.img-circle(src='kevinh.jpg')
-              .name Kevin Huo
-              .role Operations
-          .col-sm-3
-            .member
-              img.img-responsive.img-circle(src='kiki.jpg')
-              .name Kiki Lo
-              .role Operations
-              .social
-                a(href='https://facebook.com/k1k1l0' target='_blank')
-                  i.fa.fa-facebook-official
-          .col-sm-3
-            .member
-              img.img-responsive.img-circle(src='emanuel.jpg')
-              .name Emanuel Rew
-              .role Operations
-          .col-sm-3
-            .member
-              img.img-responsive.img-circle(src='maggie.jpg')
-              .name Maggie Dong
-              .role Outreach
-              .social
-                a(href='https://facebook.com/maggie.dong.79' target='_blank')
-                  i.fa.fa-facebook-official
-        .row.text-center
-          .col-sm-3.col-xs-hidden(style='width:12.499999995%')
-          .col-sm-3
-            .member
-              img.img-responsive.img-circle(src='thomas.jpg')
-              .name Thomas Weathers
-              .role Outreach
-              .social
-                a(href='https://facebook.com/thomas.weathers.415' target='_blank')
-                  i.fa.fa-facebook-official
-                a(href='https://twitter.com/storm_weathers1' target='_blank')
-                  i.fa.fa-twitter
-          .col-sm-3
-            .member.anthony
-              img.img-responsive.img-circle(src='anthony.png')
-              .name Anthony Lam
-              .role Tech
-              .social
-                a(href='https://github.com/99anthonylam' target='_blank')
-                  i.fa.fa-github
-                a(href='https://facebook.com/anthony.lam.98' target='_blank')
-                  i.fa.fa-facebook-official
-          .col-sm-3
-            .member
-              img.img-responsive.img-circle(src='ben.png')
-              .name Benjamin Pang
-              .role Tech
-              .social
-                a(href='https://github.com/molarmanful' target='_blank')
-                  i.fa.fa-github
-                a(href='https://codegolf.stackexchange.com/users/41247/mama-fun-roll' target='_blank')
-                  i.fa.fa-stack-exchange
-                a(href='https://reddit.com/u/molarmanful' target='_blank')
-                  i.fa.fa-reddit
-                a(href='http://molarmanful.com' target='_blank')
-                  i.fa.fa-globe
-    //#update.content
-      .container
-        h2.text-center Subscribe
-        .row
-          .col-sm-12.text-center
-            p.lead Enter your email here to receive updates from SM Hacks!
-            .row
-              .col-sm-3
-              .col-sm-6
-                .input-group
-                  input.form-control#u(placeholder='johnsmith@example.com' type='email')
-                  .input-group-btn
-                    button.btn.btn-primary#s Submit!
-                .alert.alert-dismissible#a(role='alert')
-    //footer.footer
-      .container
-        .row
-          .col-sm-1.col-xs-6.text-center
-            img(src='logo.png')
-          .col-sm-7.hidden-xs
-            p.text-muted Made with <i class='fa fa-heart' style='color:#ff7242'></i> by SM Hacks.
-          .col-sm-2.hidden-xs
-          .col-sm-2.col-xs-6.text-center
-            p
-              a.btn.btn-info(href='https://facebook.com/sanmateohacks' target='_blank' style='background-color:transparent; border:none; display:inline-block')
-                i.fa.fa-facebook-square.fa-3x
-              a.btn.btn-info(href='https://twitter.com/sanmateohacks' target='_blank' style='background-color:transparent; border:none; display:inline-block')
-                i.fa.fa-twitter-square.fa-3x
-    // .modal.fade#m(tabindex="-1" role="dialog")
-      .modal-dialog
-        .modal-content
-          .modal-header
-            button.close(data-dismiss='modal') &times;
-            h1.modal-title Sign Up
-          .modal-body.text-center
-            h3
-              a.btn.btn-default(href='https://smhacks.typeform.com/to/SZPVdt' target='_blank') Hacker
-              |  or 
-              a.btn.btn-default(href='https://smhacks.typeform.com/to/XCtApy' target='_blank') Mentor
-              |?
-          .modal-footer
-            button.btn.btn-primary(data-dismiss='modal') Cancel
+    .uk-cover-container#cover(style='background-color:black')
+      img.uk-responsive-width(src='team.jpg' style='opacity:.7')
+      .uk-overlay.uk-light.uk-position-center.uk-text-center
+        h1.uk-heading-divider Thank you.
+        p.uk-text-lead We, the SM Hacks Team, would like to thank all participating sponsors, mentors, and – most of all – hackers for supporting us to make SM Hacks as great as it was.
+    .uk-section#winners: .uk-container.uk-container-small
+      h2.uk-text-center Winners
+      hr.uk-divider-small.uk-text-center
+      p.uk-text-center.uk-text-lead See all submissions <a href='https://smhacks.devpost.com/submissions' target='_blank'>here</a>.
+      ul.uk-tab(uk-tab='animation:uk-animation-slide-bottom-small')
+        li.uk-active: a First
+        li: a Second
+        li: a Third
+        li: a Best iOS App
+        li: a Best Web App
+        li: a Best Android App
+      ul.uk-switcher
+        li
+          h1: a(href='https://devpost.com/software/motivate-d6oyx1' target='_blank') DMS
+          img.uk-responsive-width(src='https://scontent.xx.fbcdn.net/v/t31.0-8/15994477_10210434998864393_5063806027654789355_o.jpg?oh=f87db90fbc07f88150711cce49ef84ce&oe=590529B2')
+        li
+          h1: a(href='https://devpost.com/software/opensource-keyboard' target='_blank') Open Source Keyboard
+          img.uk-responsive-width(src='https://scontent.xx.fbcdn.net/v/t31.0-8/16113322_10210435002264478_5050933991982571490_o.jpg?oh=058c993720ab238bf121f4bf6d72f407&oe=59101DBD')
+        li
+          h1: a(href='https://devpost.com/software/the-gift-of-food' target='_blank') The Gift of Food
+          img.uk-responsive-width(src='https://scontent.xx.fbcdn.net/v/t31.0-8/15994710_10210434998304379_5037434943124658669_o.jpg?oh=255942a86af0441f495d54a585b357af&oe=590EC874')
+        li
+          h1: a(href='https://devpost.com/software/foodtracker' target='_blank') FoodTracker
+          img.uk-responsive-width(src='https://scontent.xx.fbcdn.net/v/t31.0-8/15972380_10210434996664338_5952968470052570404_o.jpg?oh=8ad738e3f418f47c2dee8a932886d0db&oe=590A00D2')
+        li
+          h1: a(href='https://devpost.com/software/pseudo-code' target='_blank') Pseudo Code
+          img.uk-responsive-width(src='https://scontent.xx.fbcdn.net/v/t31.0-8/15995202_10210434996544335_8620510239992132387_o.jpg?oh=3bc9108ddc49851ec290446f6f175d25&oe=590FBE8C')
+        li
+          h1: a(href='https://devpost.com/software/pinpoint-o92qis' target='_blank') Pinpoint
+          img(src='https://scontent.fsnc1-2.fna.fbcdn.net/v/t31.0-8/16107108_10210434996704339_6693373703389521719_o.jpg?oh=ab851df0630028547aac1d3534514ff6&oe=59125C36')
+      hr
+    .uk-section#smt: .uk-container.uk-container-small
+      h1 Coming to a Bay Area location near you.
+      img(src='brushlogo.png')
+      p.uk-text-lead.uk-text-right Fall 2017
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.4/js/uikit.min.js')
